@@ -1,0 +1,32 @@
+# Dependencies
+/node_modules
+
+# Next.js output
+/.next/
+/out/
+
+# Test output
+/coverage/
+/playwright-report/
+/test-results/
+/.playwright-browsers/
+
+# Environment files (examples are safe to commit)
+.env*
+!.env.example
+
+# Deployment and tooling
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Operating system and editors
+.DS_Store
+*.swp
+*~
