@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { ContactForm } from "./contact-form";
 import { env, getLeadRateLimitSalt } from "@/lib/env";
@@ -8,8 +7,10 @@ import { createLeadSuccessWhatsAppLink } from "@/lib/leads/whatsapp";
 import { createClient } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
-  title: "Kontakt | BIOTACT",
+  title: "Kontakt",
   description: "Pošaljite upit BIOTACT timu.",
+  alternates: { canonical: "/kontakt" },
+  openGraph: { title: "Kontakt | BIOTACT", description: "Pošaljite upit BIOTACT timu.", url: "/kontakt" },
 };
 
 type ContactPageProps = Readonly<{ searchParams: Promise<{ package?: string | string[] }> }>;
@@ -28,10 +29,10 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
   const proof = createLeadFormProof(getLeadRateLimitSalt());
 
   return (
-    <main className="min-h-screen px-4 py-8 sm:px-6 sm:py-12">
+    <main id="glavni-sadrzaj" className="min-h-screen px-4 py-12 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-2xl">
-        <Link href="/" className="text-sm font-semibold underline underline-offset-4">← Početna</Link>
-        <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">Pošaljite upit</h1>
+        <p className="eyebrow">Lični kontakt</p>
+        <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">Pošaljite upit</h1>
         <p className="mt-4 leading-7 text-[#374c3d]">Ostavite kontakt i javićemo Vam se sa informacijama o BIOTACT paketima i načinu poručivanja.</p>
 
         {error ? (

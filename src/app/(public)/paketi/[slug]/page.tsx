@@ -13,16 +13,17 @@ const validSlug = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export async function generateMetadata({ params }: PackageDetailPageProps): Promise<Metadata> {
   const { slug } = await params;
-  if (!validSlug.test(slug)) return { title: "Paket nije pronađen | BIOTACT" };
+  if (!validSlug.test(slug)) return { title: "Paket nije pronađen" };
 
   const { data } = await getActivePackageBySlug(slug);
-  if (!data) return { title: "Paket nije pronađen | BIOTACT" };
+  if (!data) return { title: "Paket nije pronađen" };
 
   const description = data.description.replace(/\s+/g, " ").slice(0, 155);
   return {
-    title: `${data.name} | BIOTACT`,
+    title: data.name,
     description,
-    openGraph: { title: `${data.name} | BIOTACT`, description },
+    alternates: { canonical: `/paketi/${data.slug}` },
+    openGraph: { title: `${data.name} | BIOTACT`, description, url: `/paketi/${data.slug}` },
   };
 }
 
@@ -34,7 +35,7 @@ export default async function PackageDetailPage({ params }: PackageDetailPagePro
   if (!packageData && !error) notFound();
   if (error || !packageData) {
     return (
-      <main className="min-h-screen px-4 py-10 sm:px-6">
+      <main id="glavni-sadrzaj" className="min-h-screen px-4 py-10 sm:px-6">
         <section role="alert" className="mx-auto max-w-3xl rounded-2xl border border-red-900/20 bg-red-50 p-6">
           <h1 className="text-xl font-bold">Paket trenutno nije dostupan.</h1>
           <Link href="/paketi" className="mt-5 inline-block font-semibold underline">Nazad na pakete</Link>
@@ -49,7 +50,7 @@ export default async function PackageDetailPage({ params }: PackageDetailPagePro
   const whatsappLink = createPackageWhatsAppLink(env.NEXT_PUBLIC_WHATSAPP_NUMBER, packageData.name);
 
   return (
-    <main className="min-h-screen px-4 py-8 sm:px-6 sm:py-12">
+    <main id="glavni-sadrzaj" className="min-h-screen px-4 py-12 sm:px-6 sm:py-16">
       <article className="mx-auto max-w-4xl">
         <Link href="/paketi" className="text-sm font-semibold underline underline-offset-4">← Nazad na pakete</Link>
         <div className="mt-6 rounded-3xl border border-[#17301f]/15 bg-white/70 p-6 shadow-sm sm:p-10">

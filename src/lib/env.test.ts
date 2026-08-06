@@ -60,4 +60,10 @@ describe("validateEnvironment", () => {
       LEAD_RATE_LIMIT_SALT: "a".repeat(32),
     });
   });
+
+  it("prihvata javni kanonski URL", () => {
+    expect(validateEnvironment({ NEXT_PUBLIC_SITE_URL: "https://biotact.example" })).toEqual({
+      NEXT_PUBLIC_SITE_URL: "https://biotact.example",
+    });
+  });
 });

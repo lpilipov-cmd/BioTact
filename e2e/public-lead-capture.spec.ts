@@ -43,7 +43,7 @@ test("neaktivan ili nepoznat paket nije moguće preselektovati", async ({ page }
 
 test("detalj aktivnog paketa vodi na preselektovan kontakt", async ({ page }) => {
   await page.goto("/paketi/privremeni-imunitet");
-  await page.getByRole("link", { name: "Pošalji upit" }).click();
+  await page.locator("main").getByRole("link", { name: "Pošalji upit" }).click();
   await expect(page).toHaveURL(/\/kontakt\?package=privremeni-imunitet$/);
   await expect(page.getByLabel("Paket (opciono)")).toHaveValue("10000000-0000-4000-8000-000000000001");
 });

@@ -11,6 +11,7 @@ const environmentSchema = z
     ),
     NEXT_PUBLIC_SUPABASE_ANON_KEY: optionalValue(z.string().min(20)),
     NEXT_PUBLIC_WHATSAPP_NUMBER: optionalValue(z.string().min(8).max(20)),
+    NEXT_PUBLIC_SITE_URL: optionalValue(z.url()),
     LEAD_RATE_LIMIT_SALT: optionalValue(z.string().min(32)),
   })
   .refine(
@@ -82,6 +83,7 @@ export const env = validateEnvironment({
   NEXT_PUBLIC_SUPABASE_ANON_KEY:
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
   NEXT_PUBLIC_WHATSAPP_NUMBER: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER,
+  NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
   LEAD_RATE_LIMIT_SALT: process.env.LEAD_RATE_LIMIT_SALT,
 });
 
@@ -95,4 +97,8 @@ export function getLeadRateLimitSalt() {
   }
 
   return env.LEAD_RATE_LIMIT_SALT;
+}
+
+export function getSiteUrl() {
+  return (env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
 }

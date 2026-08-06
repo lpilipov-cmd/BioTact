@@ -14,8 +14,10 @@ type PackagesPageProps = Readonly<{
 }>;
 
 export const metadata: Metadata = {
-  title: "Paketi | BIOTACT",
+  title: "Paketi",
   description: "Pregled aktivnih BIOTACT wellness paketa i dostupnih informacija.",
+  alternates: { canonical: "/paketi" },
+  openGraph: { title: "Paketi | BIOTACT", description: "Pregled aktivnih BIOTACT wellness paketa.", url: "/paketi" },
 };
 
 export default async function PackagesPage({ searchParams }: PackagesPageProps) {
@@ -33,14 +35,9 @@ export default async function PackagesPage({ searchParams }: PackagesPageProps) 
   const { data: packages, error } = await query;
 
   return (
-    <main className="min-h-screen px-4 py-8 sm:px-6 sm:py-12">
+    <main id="glavni-sadrzaj" className="min-h-screen px-4 py-12 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-6xl">
-        <header className="flex flex-wrap items-center justify-between gap-4">
-          <Link href="/" className="font-bold tracking-[0.18em]">BIOTACT</Link>
-          <p className="text-sm text-[#5b6960]">Priroda. Nauka. Poverenje.</p>
-        </header>
-
-        <section className="mt-12 max-w-3xl">
+        <section className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#5b6960]">Wellness podrška</p>
           <h1 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">Paketi</h1>
           <p className="mt-4 leading-7 text-[#476050]">
@@ -87,9 +84,10 @@ export default async function PackagesPage({ searchParams }: PackagesPageProps) 
             })}
           </div>
         ) : (
-          <section className="mt-10 rounded-2xl border border-[#17301f]/15 bg-white/60 p-8 text-center">
+          <section className="empty-state">
             <h2 className="text-xl font-bold">Nema aktivnih paketa u ovoj kategoriji.</h2>
-            <p className="mt-2 text-sm text-[#5b6960]">Izaberite drugu kategoriju ili prikažite sve pakete.</p>
+            <p className="mt-2 text-sm text-[#5b6960]">Prikazujemo samo proverene i trenutno aktivne pakete. Izaberite drugu kategoriju ili nam pošaljite opšti upit.</p>
+            <Link href="/kontakt" className="button-secondary mt-5">Pošalji upit</Link>
           </section>
         )}
       </div>
