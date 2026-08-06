@@ -41,7 +41,7 @@ test("neprijavljen korisnik ne može da pristupi admin paketima", async ({ page 
 test("administrator kreira i uređuje paket uz bezbednu validaciju", async ({
   page,
 }, testInfo) => {
-  const suffix = testInfo.project.name.replace(/[^a-z0-9]+/g, "-");
+  const suffix = `${testInfo.project.name.replace(/[^a-z0-9]+/g, "-")}-${Date.now().toString(36)}`;
   const slug = `lokalni-e2e-${suffix}`;
   const updatedSlug = `${slug}-izmenjen`;
 

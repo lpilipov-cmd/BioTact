@@ -126,15 +126,15 @@ export type Database = {
     Functions: {
       submit_lead: {
         Args: {
-          p_channel?: string
           p_consent_given: boolean
-          p_consent_version: string
           p_contact: string
+          p_idempotency_key: string
+          p_ip_hash: string
           p_message?: string
           p_name: string
           p_package_interest_id?: string
         }
-        Returns: string
+        Returns: boolean
       }
     }
     Enums: {

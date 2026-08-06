@@ -62,24 +62,24 @@ select lives_ok(
     'Test korisnik',
     '+381601234567',
     true,
-    'privacy-v1',
+    repeat('a', 64),
+    '50000000-0000-4000-8000-000000000001',
     '20000000-0000-4000-8000-000000000001',
-    'Želim više informacija.',
-    'website'
+    'Želim više informacija.'
   )$$,
   'public lead function accepts a valid consented lead'
 );
 select throws_ok(
-  $$select public.submit_lead('Bez saglasnosti', '+381601234568', false, 'privacy-v1')$$,
+  $$select public.submit_lead('Bez saglasnosti', '+381601234568', false, repeat('b', 64), '50000000-0000-4000-8000-000000000002')$$,
   '22023',
-  'Consent is required.',
+  'consent_required',
   'public lead function rejects missing consent'
 );
 select throws_ok(
-  $$select public.submit_lead('Pogrešan kanal', '+381601234569', true, 'privacy-v1', null, null, 'email')$$,
+  $$select public.submit_lead('Neaktivan paket', '+381601234569', true, repeat('c', 64), '50000000-0000-4000-8000-000000000003', '20000000-0000-4000-8000-000000000002')$$,
   '22023',
-  'Invalid lead channel.',
-  'public lead function rejects an invalid channel'
+  'invalid_package_interest',
+  'public lead function rejects an inactive package'
 );
 
 reset role;
@@ -149,11 +149,11 @@ select is(
   'deleting a package preserves its leads and clears the foreign key'
 );
 select ok(
-  has_function_privilege('anon', 'public.submit_lead(text,text,boolean,text,uuid,text,text)', 'execute'),
+  has_function_privilege('anon', 'public.submit_lead(text,text,boolean,text,uuid,uuid,text)', 'execute'),
   'anon can execute the public submission function'
 );
 select ok(
-  not has_function_privilege('authenticated', 'public.submit_lead(text,text,boolean,text,uuid,text,text)', 'execute'),
+  not has_function_privilege('authenticated', 'public.submit_lead(text,text,boolean,text,uuid,uuid,text)', 'execute'),
   'ordinary authenticated users cannot execute the submission function'
 );
 

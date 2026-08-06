@@ -66,6 +66,7 @@ export default defineConfig({
     env: {
       ...localSupabaseEnvironment,
       BIOTACT_NEXT_DIST_DIR: ".next-e2e",
+      LEAD_RATE_LIMIT_SALT: "local-e2e-only-lead-salt-1234567890",
     },
     url: "http://127.0.0.1:3100",
     reuseExistingServer: false,

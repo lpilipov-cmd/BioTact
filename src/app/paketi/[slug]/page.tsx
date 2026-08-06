@@ -67,8 +67,14 @@ export default async function PackageDetailPage({ params }: PackageDetailPagePro
           </section>
 
           <p className="mt-8 text-2xl font-bold">{formatPackagePrice(packageData.price_rsd)}</p>
+          <Link
+            href={`/kontakt?package=${encodeURIComponent(packageData.slug)}`}
+            className="mt-5 inline-flex min-h-12 items-center rounded-xl bg-[#17301f] px-6 font-bold text-[#f7f3ea]"
+          >
+            Pošalji upit
+          </Link>
           {whatsappLink ? (
-            <a href={whatsappLink} target="_blank" rel="noreferrer" className="mt-5 inline-flex min-h-12 items-center rounded-xl bg-[#17301f] px-6 font-bold text-[#f7f3ea]">
+            <a href={whatsappLink} target="_blank" rel="noreferrer" className="mt-5 ml-0 inline-flex min-h-12 items-center rounded-xl border border-[#17301f] px-6 font-bold sm:ml-3">
               Pitaj putem WhatsApp-a
             </a>
           ) : (

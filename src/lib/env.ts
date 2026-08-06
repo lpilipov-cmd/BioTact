@@ -11,6 +11,7 @@ const environmentSchema = z
     ),
     NEXT_PUBLIC_SUPABASE_ANON_KEY: optionalValue(z.string().min(20)),
     NEXT_PUBLIC_WHATSAPP_NUMBER: optionalValue(z.string().min(8).max(20)),
+    LEAD_RATE_LIMIT_SALT: optionalValue(z.string().min(32)),
   })
   .refine(
     ({
@@ -81,8 +82,17 @@ export const env = validateEnvironment({
   NEXT_PUBLIC_SUPABASE_ANON_KEY:
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
   NEXT_PUBLIC_WHATSAPP_NUMBER: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER,
+  LEAD_RATE_LIMIT_SALT: process.env.LEAD_RATE_LIMIT_SALT,
 });
 
 export function getSupabaseEnvironment() {
   return requireSupabaseEnvironment(env);
+}
+
+export function getLeadRateLimitSalt() {
+  if (!env.LEAD_RATE_LIMIT_SALT) {
+    throw new Error("Serverska tajna za zaštitu upita nije podešena.");
+  }
+
+  return env.LEAD_RATE_LIMIT_SALT;
 }

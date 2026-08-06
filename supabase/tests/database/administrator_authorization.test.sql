@@ -81,7 +81,8 @@ select lives_ok(
     'Javni lokalni test',
     'javni@example.invalid',
     true,
-    'test-v1'
+    repeat('d', 64),
+    '50000000-0000-4000-8000-000000000004'
   )$$,
   'existing public submit_lead behavior still works'
 );

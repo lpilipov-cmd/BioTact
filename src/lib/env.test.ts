@@ -53,4 +53,11 @@ describe("validateEnvironment", () => {
       validateEnvironment({ NEXT_PUBLIC_WHATSAPP_NUMBER: "381601112233" }),
     ).toEqual({ NEXT_PUBLIC_WHATSAPP_NUMBER: "381601112233" });
   });
+
+  it("zahteva dovoljno dugu serversku tajnu za zaštitu upita", () => {
+    expect(() => validateEnvironment({ LEAD_RATE_LIMIT_SALT: "kratko" })).toThrow();
+    expect(validateEnvironment({ LEAD_RATE_LIMIT_SALT: "a".repeat(32) })).toEqual({
+      LEAD_RATE_LIMIT_SALT: "a".repeat(32),
+    });
+  });
 });
