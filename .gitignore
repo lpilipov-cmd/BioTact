@@ -19,6 +19,7 @@
 .vercel
 *.tsbuildinfo
 next-env.d.ts
+/src/lib/supabase/database.types.ts.tmp
 
 # Logs
 npm-debug.log*
