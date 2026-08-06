@@ -15,6 +15,17 @@ body {
   min-height: 100%;
 }
 
+@utility field-input {
+  min-height: 2.75rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid color-mix(in srgb, #17301f 25%, transparent);
+  background: white;
+  padding: 0.75rem;
+  font-weight: 400;
+  color: #17301f;
+}
+
 body {
   margin: 0;
   background: var(--background);

@@ -19,7 +19,7 @@ export default async function AdminPage() {
           {user.email}
         </p>
         <p className="mt-8 text-sm text-[#5b6960]">
-          Upravljanje leadovima dostupno je kroz navigaciju.
+          Upravljanje leadovima i paketima dostupno je kroz navigaciju.
         </p>
       </section>
     </main>

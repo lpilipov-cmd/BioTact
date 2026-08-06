@@ -16,8 +16,8 @@ select ok(
 );
 select is(
   (select count(*)::integer from public.packages),
-  6,
-  'development seed contains exactly six packages'
+  7,
+  'development seed contains six active and one inactive fictional package'
 );
 select is(
   (select count(distinct category)::integer from public.packages),

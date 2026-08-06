@@ -10,6 +10,7 @@ const environmentSchema = z
       z.string().min(20),
     ),
     NEXT_PUBLIC_SUPABASE_ANON_KEY: optionalValue(z.string().min(20)),
+    NEXT_PUBLIC_WHATSAPP_NUMBER: optionalValue(z.string().min(8).max(20)),
   })
   .refine(
     ({
@@ -79,6 +80,7 @@ export const env = validateEnvironment({
     process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
   NEXT_PUBLIC_SUPABASE_ANON_KEY:
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+  NEXT_PUBLIC_WHATSAPP_NUMBER: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER,
 });
 
 export function getSupabaseEnvironment() {

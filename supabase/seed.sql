@@ -17,7 +17,8 @@ values
   ('10000000-0000-4000-8000-000000000003', 'privremeni-forma', 'Privremeni paket - Forma', 'forma', 'Neutralni razvojni sadržaj za kategoriju forma. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-FORMA-001'], null, true, 30),
   ('10000000-0000-4000-8000-000000000004', 'privremeni-pokret', 'Privremeni paket - Pokret', 'pokret', 'Neutralni razvojni sadržaj za kategoriju pokret. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-POKRET-001'], null, true, 40),
   ('10000000-0000-4000-8000-000000000005', 'privremeni-lepota', 'Privremeni paket - Lepota', 'lepota', 'Neutralni razvojni sadržaj za kategoriju lepota. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-LEPOTA-001'], null, true, 50),
-  ('10000000-0000-4000-8000-000000000006', 'privremeni-srce', 'Privremeni paket - Srce', 'srce', 'Neutralni razvojni sadržaj za kategoriju srce. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-SRCE-001'], null, true, 60)
+  ('10000000-0000-4000-8000-000000000006', 'privremeni-srce', 'Privremeni paket - Srce', 'srce', 'Neutralni razvojni sadržaj za kategoriju srce. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-SRCE-001'], null, true, 60),
+  ('10000000-0000-4000-8000-000000000007', 'privremeni-neaktivan', 'Privremeni paket - Neaktivan', 'forma', 'Neutralni razvojni sadržaj neaktivnog lokalnog paketa. Konačni podaci zahtevaju potvrdu vlasnika.', array['TEMP-INACTIVE-001'], null, false, 70)
 on conflict (slug) do update set
   name = excluded.name,
   category = excluded.category,

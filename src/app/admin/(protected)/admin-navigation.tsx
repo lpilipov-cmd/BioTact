@@ -8,6 +8,7 @@ import { logoutAction } from "./actions";
 const links = [
   { href: "/admin", label: "Početna" },
   { href: "/admin/leads", label: "Leadovi" },
+  { href: "/admin/packages", label: "Paketi" },
 ] as const;
 
 export function AdminNavigation() {

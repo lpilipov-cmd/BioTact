@@ -47,4 +47,10 @@ describe("validateEnvironment", () => {
       requireSupabaseEnvironment(validateEnvironment({})),
     ).toThrow("Supabase javne promenljive okruženja nisu podešene.");
   });
+
+  it("prihvata opcioni javni WhatsApp broj", () => {
+    expect(
+      validateEnvironment({ NEXT_PUBLIC_WHATSAPP_NUMBER: "381601112233" }),
+    ).toEqual({ NEXT_PUBLIC_WHATSAPP_NUMBER: "381601112233" });
+  });
 });

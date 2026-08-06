@@ -168,7 +168,7 @@ select is(
 );
 select is(
   (select count(*)::integer from public.packages),
-  7,
+  8,
   'administrator can read active and inactive packages'
 );
 select is(
