@@ -1,7 +1,39 @@
 # BIOTACT production package review
 
-Status: **OWNER REVIEW DRAFT - NOT APPROVED FOR IMPORT**
+Status: **CATALOGUE-VERIFIED LAUNCH SET APPROVED FOR PUBLICATION**
 Prepared: 6 August 2026
+
+## Final launch decision - 6 August 2026
+
+The production launch is limited to four packages composed only of product codes that are visibly and unambiguously paired with products in the LR catalogue. All four records use `price_rsd: null`, are activated only by the guarded production import, and use public sort orders 1 through 4.
+
+| Sort | Package | Category | Final verified product codes | Launch decision |
+| ---: | --- | --- | --- | --- |
+| 1 | Imunitet Start | `imunitet` | `80361-50`, `80325-50` | **PUBLISH** |
+| 2 | Creva & Energija | `digestija` | `81180-99`, `80205-650` | **PUBLISH** |
+| 3 | Pokret & Snaga | `pokret` | `80850-680`, `80190-50` | **PUBLISH** |
+| 4 | Srce & Cirkulacija | `srce` | `80800-50`, `80338-699`, `80331-50` | **PUBLISH** |
+
+Final public descriptions:
+
+- **Imunitet Start:** Namenjen osobama koje žele podršku svakodnevnoj wellness rutini. Paket objedinjuje LR LIFETAKT Tečni Colostrum i Cistus Incanus Capsule iz kataloga.
+- **Creva & Energija:** Namenjen osobama koje žele jednostavnu podršku svakodnevnoj wellness rutini i ishrani. Paket objedinjuje PRO 12+ i LR LIFETAKT Herbal Fasting Tea.
+- **Pokret & Snaga:** Namenjen osobama koje žele podršku aktivnom načinu života. Paket objedinjuje Aloe Vera Drinking Gel Active Freedom i LR LIFETAKT Active Freedom Capsule.
+- **Srce & Cirkulacija:** Namenjen osobama koje žele podršku svakodnevnoj wellness rutini usmerenoj na srce i cirkulaciju. Paket objedinjuje Aloe Vera Drinking Gel Intense Sivera, Super Omega Capsule i LR LIFETAKT Reishi Plus Capsules.
+
+Catalogue verification used for this decision:
+
+- Catalogue p. 13: LR LIFETAKT Tečni Colostrum (`80361-50`) and LR LIFETAKT Cistus Incanus Capsule (`80325-50`).
+- Catalogue p. 7: PRO 12+ (`81180-99`) and LR LIFETAKT Herbal Fasting Tea (`80205-650`).
+- Catalogue p. 15: Aloe Vera Drinking Gel Active Freedom (`80850-680`) and LR LIFETAKT Active Freedom Capsule (`80190-50`).
+- Catalogue p. 11: Aloe Vera Drinking Gel Intense Sivera (`80800-50`), Super Omega Capsule (`80338-699`) and LR LIFETAKT Reishi Plus Capsules (`80331-50`).
+
+Explicit exclusions:
+
+- Body Mission and Lepota iznutra are not part of this launch.
+- Aloe Vera Immune Plus and Traditional Aloe Vera Gel with Honey are not part of this launch.
+- Conflicting code `80700-50`, every missing code, every `TEMP-*` code, prices and imagery are excluded.
+- Earlier package proposals below remain as an audit trail and do not override this final launch decision.
 
 This document reconciles the proposed BIOTACT packages against the committed product catalogue. It is a content-review artifact only. It must not be treated as a price list, medical recommendation, import script, or confirmation of current LR availability.
 
