@@ -2,7 +2,7 @@ begin;
 
 create extension if not exists pgtap with schema extensions;
 
-select plan(28);
+select plan(29);
 
 select has_table('public', 'admin_profiles', 'admin_profiles table exists');
 select ok(
@@ -21,6 +21,14 @@ select ok(
   has_function_privilege('authenticated', 'private.is_admin()', 'execute'),
   'authenticated requests may execute the scoped admin helper'
 );
+
+select is(
+  (select count(*)::integer from public.leads),
+  4,
+  'deterministic local-only seed contains four fictional leads'
+);
+
+delete from public.leads;
 
 insert into public.packages (
   id, slug, name, category, description, product_codes, active, sort_order

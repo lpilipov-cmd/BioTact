@@ -134,3 +134,89 @@ values (
   '2026-01-01 00:00:00+00'
 )
 on conflict (user_id) do nothing;
+
+-- LOCAL DEVELOPMENT AND E2E TESTING ONLY. All identities and contacts below
+-- are fictional and deterministic. This file is never included in remote push.
+insert into public.leads (
+  id,
+  name,
+  contact,
+  channel,
+  package_interest_id,
+  message,
+  status,
+  consent_given,
+  consent_version,
+  consented_at,
+  created_at,
+  updated_at
+)
+values
+  (
+    '20000000-0000-4000-8000-000000000001',
+    'Test Osoba Jedan',
+    '060 111 22 33',
+    'website',
+    '10000000-0000-4000-8000-000000000001',
+    'Fiktivni lokalni upit za proveru administratorskog prikaza.',
+    'novo',
+    true,
+    'local-test-v1',
+    '2026-01-04 12:00:00+00',
+    '2026-01-04 12:00:00+00',
+    '2026-01-04 12:00:00+00'
+  ),
+  (
+    '20000000-0000-4000-8000-000000000002',
+    'Test Osoba Dva',
+    'test.osoba.dva@example.invalid',
+    'instagram',
+    null,
+    null,
+    'kontaktiran',
+    true,
+    'local-test-v1',
+    '2026-01-03 12:00:00+00',
+    '2026-01-03 12:00:00+00',
+    '2026-01-03 12:00:00+00'
+  ),
+  (
+    '20000000-0000-4000-8000-000000000003',
+    'Test Osoba Tri',
+    '+49 151 00000000',
+    'whatsapp',
+    '10000000-0000-4000-8000-000000000003',
+    'Još jedan potpuno fiktivan lokalni upit.',
+    'konvertovan',
+    true,
+    'local-test-v1',
+    '2026-01-02 12:00:00+00',
+    '2026-01-02 12:00:00+00',
+    '2026-01-02 12:00:00+00'
+  ),
+  (
+    '20000000-0000-4000-8000-000000000004',
+    'Test Osoba Četiri',
+    'kontakt nije dostupan',
+    'referral',
+    '10000000-0000-4000-8000-000000000005',
+    'Fiktivan kontakt namenjen proveri bezbednog rezervnog prikaza.',
+    'novo',
+    true,
+    'local-test-v1',
+    '2026-01-01 12:00:00+00',
+    '2026-01-01 12:00:00+00',
+    '2026-01-01 12:00:00+00'
+  )
+on conflict (id) do update set
+  name = excluded.name,
+  contact = excluded.contact,
+  channel = excluded.channel,
+  package_interest_id = excluded.package_interest_id,
+  message = excluded.message,
+  status = excluded.status,
+  consent_given = excluded.consent_given,
+  consent_version = excluded.consent_version,
+  consented_at = excluded.consented_at,
+  created_at = excluded.created_at,
+  updated_at = excluded.updated_at;

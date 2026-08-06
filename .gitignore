@@ -3,6 +3,7 @@
 
 # Next.js output
 /.next/
+/.next-e2e/
 /out/
 
 # Test output

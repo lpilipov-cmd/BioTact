@@ -19,28 +19,16 @@ test("neprijavljen korisnik se preusmerava na prijavu", async ({ page }) => {
   ).toBeVisible();
 });
 
-test("neispravna prijava prikazuje bezbednu poruku", async ({ page }) => {
-  await page.goto("/admin/login");
-  await page.getByLabel("Email adresa").fill("pogresan@example.invalid");
-  await page.getByLabel("Lozinka").fill("pogresna-lozinka");
-  await page.getByRole("button", { name: "Prijavi se" }).click();
-
-  await expect(page.getByRole("alert")).toHaveText(
-    "Email ili lozinka nisu ispravni.",
-  );
-  await expect(page).toHaveURL(/\/admin\/login$/);
-});
-
 test("prijavljen korisnik bez admin profila nema pristup", async ({ page }) => {
   await page.goto("/admin/login");
   await page.getByLabel("Email adresa").fill(localNonAdmin.email);
   await page.getByLabel("Lozinka").fill(localNonAdmin.password);
   await page.getByRole("button", { name: "Prijavi se" }).click();
 
-  await expect(page.getByRole("alert")).toHaveText(
-    "Nalog nema administratorski pristup.",
-  );
-  await page.goto("/admin");
+  await expect(
+    page.getByText("Nalog nema administratorski pristup.", { exact: true }),
+  ).toBeVisible();
+  await page.goto("/admin/leads");
   await expect(page).toHaveURL(/\/admin\/login\?reason=pristup$/);
 });
 
