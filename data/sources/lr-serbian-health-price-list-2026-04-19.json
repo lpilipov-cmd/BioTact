@@ -1,0 +1,1650 @@
+{
+  "source_url": "https://onboarding.lr-world.info/cenovnik.html",
+  "retrieval_date": "2026-08-07",
+  "price_list_valid_from": "2026-04-19",
+  "source_language": "sr-Latn",
+  "source_currency": "EUR",
+  "selection_rule": "Only data-panel-lang=sr, Aloe vera and Zdravlje sections before Kozmetika, with both prices in EUR.",
+  "source_row_count": 67,
+  "unique_article_number_count": 50,
+  "rows": [
+    {
+      "occurrence_index": 1,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "80700",
+        "product_name": "Aloe vera napitak sa medom",
+        "package_content": "1000 ml",
+        "points": "38p",
+        "partner_price": "41,34 EUR",
+        "catalogue_price": "57,88 EUR"
+      },
+      "normalized": {
+        "article_number": "80700",
+        "package_content": "1000 ml",
+        "points": "38",
+        "partner_price_eur": "41.34",
+        "catalogue_price_eur": "57.88"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 2,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "80743",
+        "product_name": "Aloe vera napitak sa medom pakovanje od 3",
+        "package_content": "3x1000 ml",
+        "points": "92p",
+        "partner_price": "114,18 EUR",
+        "catalogue_price": "159,85 EUR"
+      },
+      "normalized": {
+        "article_number": "80743",
+        "package_content": "3x1000 ml",
+        "points": "92",
+        "partner_price_eur": "114.18",
+        "catalogue_price_eur": "159.85"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 3,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "81000",
+        "product_name": "Aloe Vera Immune Plus gel za piće",
+        "package_content": "1000 ml",
+        "points": "42p",
+        "partner_price": "45,40 EUR",
+        "catalogue_price": "63,55 EUR"
+      },
+      "normalized": {
+        "article_number": "81000",
+        "package_content": "1000 ml",
+        "points": "42",
+        "partner_price_eur": "45.40",
+        "catalogue_price_eur": "63.55"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 4,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "81003",
+        "product_name": "Aloe Vera Immune Plus gel za piće pakovanje od 3",
+        "package_content": "3x1000 ml",
+        "points": "104p",
+        "partner_price": "124,84 EUR",
+        "catalogue_price": "174,78 EUR"
+      },
+      "normalized": {
+        "article_number": "81003",
+        "package_content": "3x1000 ml",
+        "points": "104",
+        "partner_price_eur": "124.84",
+        "catalogue_price_eur": "174.78"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 5,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "80750",
+        "product_name": "Aloe vera napitak sa ukusom breskve",
+        "package_content": "1000 ml",
+        "points": "38p",
+        "partner_price": "41,34 EUR",
+        "catalogue_price": "57,88 EUR"
+      },
+      "normalized": {
+        "article_number": "80750",
+        "package_content": "1000 ml",
+        "points": "38",
+        "partner_price_eur": "41.34",
+        "catalogue_price_eur": "57.88"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 6,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "80783",
+        "product_name": "Aloe vera napitak sa ukusom breskve pakovanje od 3",
+        "package_content": "3x1000 ml",
+        "points": "92p",
+        "partner_price": "114,18 EUR",
+        "catalogue_price": "159,85 EUR"
+      },
+      "normalized": {
+        "article_number": "80783",
+        "package_content": "3x1000 ml",
+        "points": "92",
+        "partner_price_eur": "114.18",
+        "catalogue_price_eur": "159.85"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 7,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "80850",
+        "product_name": "Aloe vera Freedom napitak",
+        "package_content": "1000 ml",
+        "points": "42p",
+        "partner_price": "45,40 EUR",
+        "catalogue_price": "63,55 EUR"
+      },
+      "normalized": {
+        "article_number": "80850",
+        "package_content": "1000 ml",
+        "points": "42",
+        "partner_price_eur": "45.40",
+        "catalogue_price_eur": "63.55"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 8,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "80883",
+        "product_name": "Aloe vera Freedom napitak pakovanje od 3",
+        "package_content": "3x1000 ml",
+        "points": "104p",
+        "partner_price": "124,84 EUR",
+        "catalogue_price": "174,78 EUR"
+      },
+      "normalized": {
+        "article_number": "80883",
+        "package_content": "3x1000 ml",
+        "points": "104",
+        "partner_price_eur": "124.84",
+        "catalogue_price_eur": "174.78"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 9,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "80800",
+        "product_name": "Aloe vera Sivera napitak",
+        "package_content": "1000 ml",
+        "points": "42p",
+        "partner_price": "45,40 EUR",
+        "catalogue_price": "63,55 EUR"
+      },
+      "normalized": {
+        "article_number": "80800",
+        "package_content": "1000 ml",
+        "points": "42",
+        "partner_price_eur": "45.40",
+        "catalogue_price_eur": "63.55"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 10,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "80823",
+        "product_name": "Aloe vera Sivera napitak pakovanje od 3",
+        "package_content": "3x1000 ml",
+        "points": "104p",
+        "partner_price": "124,84 EUR",
+        "catalogue_price": "174,78 EUR"
+      },
+      "normalized": {
+        "article_number": "80823",
+        "package_content": "3x1000 ml",
+        "points": "104",
+        "partner_price_eur": "124.84",
+        "catalogue_price_eur": "174.78"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 11,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "81100",
+        "product_name": "Aloe vera Acai napitak",
+        "package_content": "1000 ml",
+        "points": "42p",
+        "partner_price": "45,40 EUR",
+        "catalogue_price": "63,55 EUR"
+      },
+      "normalized": {
+        "article_number": "81100",
+        "package_content": "1000 ml",
+        "points": "42",
+        "partner_price_eur": "45.40",
+        "catalogue_price_eur": "63.55"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 12,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "81103",
+        "product_name": "Aloe vera Acai napitak pakovanje od 3",
+        "package_content": "3x1000 ml",
+        "points": "104p",
+        "partner_price": "124,84 EUR",
+        "catalogue_price": "174,78 EUR"
+      },
+      "normalized": {
+        "article_number": "81103",
+        "package_content": "3x1000 ml",
+        "points": "104",
+        "partner_price_eur": "124.84",
+        "catalogue_price_eur": "174.78"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 13,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "95213",
+        "product_name": "Turbokid mesečni set (Aloe vera napitak sa medom, Vita Active, Colostrum Liquid)",
+        "package_content": "",
+        "points": "73p",
+        "partner_price": "95,49 EUR",
+        "catalogue_price": "133,70 EUR"
+      },
+      "normalized": {
+        "article_number": "95213",
+        "package_content": null,
+        "points": "73",
+        "partner_price_eur": "95.49",
+        "catalogue_price_eur": "133.70"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 14,
+      "source_section": "Aloe vera",
+      "source_section_index": 1,
+      "raw_source_row": {
+        "article_number": "96034",
+        "product_name": "Turbokid mesečni set (Aloe vera napitak sa ukusom breskve, Vita Active, Colostrum Liquid)",
+        "package_content": "",
+        "points": "73p",
+        "partner_price": "95,49 EUR",
+        "catalogue_price": "133,70 EUR"
+      },
+      "normalized": {
+        "article_number": "96034",
+        "package_content": null,
+        "points": "73",
+        "partner_price_eur": "95.49",
+        "catalogue_price_eur": "133.70"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 15,
+      "source_section": "Zdravlje",
+      "source_section_index": 2,
+      "raw_source_row": {
+        "article_number": "80102",
+        "product_name": "Pro Balance tablete",
+        "package_content": "360 tabletta",
+        "points": "38p",
+        "partner_price": "34,66 EUR",
+        "catalogue_price": "48,51 EUR"
+      },
+      "normalized": {
+        "article_number": "80102",
+        "package_content": "360 tableta",
+        "points": "38",
+        "partner_price_eur": "34.66",
+        "catalogue_price_eur": "48.51"
+      },
+      "duplicate_occurrence_count": 3
+    },
+    {
+      "occurrence_index": 16,
+      "source_section": "Zdravlje",
+      "source_section_index": 2,
+      "raw_source_row": {
+        "article_number": "81180",
+        "product_name": "Pro 12+ kapsule",
+        "package_content": "30 kapszula",
+        "points": "60p",
+        "partner_price": "52,78 EUR",
+        "catalogue_price": "73,88 EUR"
+      },
+      "normalized": {
+        "article_number": "81180",
+        "package_content": "30 kapsula",
+        "points": "60",
+        "partner_price_eur": "52.78",
+        "catalogue_price_eur": "73.88"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 17,
+      "source_section": "Zdravlje",
+      "source_section_index": 2,
+      "raw_source_row": {
+        "article_number": "80360",
+        "product_name": "Colostrum Compact kapsule",
+        "package_content": "60 kapszula",
+        "points": "63p",
+        "partner_price": "60,12 EUR",
+        "catalogue_price": "84,15 EUR"
+      },
+      "normalized": {
+        "article_number": "80360",
+        "package_content": "60 kapsula",
+        "points": "63",
+        "partner_price_eur": "60.12",
+        "catalogue_price_eur": "84.15"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 18,
+      "source_section": "Zdravlje",
+      "source_section_index": 2,
+      "raw_source_row": {
+        "article_number": "81330",
+        "product_name": "Liver support kapsule",
+        "package_content": "30 kapszula",
+        "points": "42p",
+        "partner_price": "33,46 EUR",
+        "catalogue_price": "46,84 EUR"
+      },
+      "normalized": {
+        "article_number": "81330",
+        "package_content": "30 kapsula",
+        "points": "42",
+        "partner_price_eur": "33.46",
+        "catalogue_price_eur": "46.84"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 19,
+      "source_section": "Zdravlje",
+      "source_section_index": 3,
+      "raw_source_row": {
+        "article_number": "80900",
+        "product_name": "Mind Master Green",
+        "package_content": "500 ml",
+        "points": "16p",
+        "partner_price": "19,58 EUR",
+        "catalogue_price": "27,43 EUR"
+      },
+      "normalized": {
+        "article_number": "80900",
+        "package_content": "500 ml",
+        "points": "16",
+        "partner_price_eur": "19.58",
+        "catalogue_price_eur": "27.43"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 20,
+      "source_section": "Zdravlje",
+      "source_section_index": 3,
+      "raw_source_row": {
+        "article_number": "80935",
+        "product_name": "Mind Master pakovanje od 5 (po izboru - Green/Red)",
+        "package_content": "5x500 ml",
+        "points": "67p",
+        "partner_price": "90,39 EUR",
+        "catalogue_price": "126,54 EUR"
+      },
+      "normalized": {
+        "article_number": "80935",
+        "package_content": "5x500 ml",
+        "points": "67",
+        "partner_price_eur": "90.39",
+        "catalogue_price_eur": "126.54"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 21,
+      "source_section": "Zdravlje",
+      "source_section_index": 3,
+      "raw_source_row": {
+        "article_number": "80980",
+        "product_name": "Mind Master Extreme",
+        "package_content": "14 tasak",
+        "points": "32p",
+        "partner_price": "37,43 EUR",
+        "catalogue_price": "52,39 EUR"
+      },
+      "normalized": {
+        "article_number": "80980",
+        "package_content": "14 tasak",
+        "points": "32",
+        "partner_price_eur": "37.43",
+        "catalogue_price_eur": "52.39"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 22,
+      "source_section": "Zdravlje",
+      "source_section_index": 3,
+      "raw_source_row": {
+        "article_number": "80800",
+        "product_name": "Aloe vera Sivera napitak",
+        "package_content": "1000 ml",
+        "points": "42p",
+        "partner_price": "45,40 EUR",
+        "catalogue_price": "63,55 EUR"
+      },
+      "normalized": {
+        "article_number": "80800",
+        "package_content": "1000 ml",
+        "points": "42",
+        "partner_price_eur": "45.40",
+        "catalogue_price_eur": "63.55"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 23,
+      "source_section": "Zdravlje",
+      "source_section_index": 3,
+      "raw_source_row": {
+        "article_number": "80823",
+        "product_name": "Aloe vera Sivera napitak pakovanje od 3",
+        "package_content": "3x1000 ml",
+        "points": "104p",
+        "partner_price": "124,84 EUR",
+        "catalogue_price": "174,78 EUR"
+      },
+      "normalized": {
+        "article_number": "80823",
+        "package_content": "3x1000 ml",
+        "points": "104",
+        "partner_price_eur": "124.84",
+        "catalogue_price_eur": "174.78"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 24,
+      "source_section": "Zdravlje",
+      "source_section_index": 3,
+      "raw_source_row": {
+        "article_number": "80338",
+        "product_name": "Super Omega 3 kapsule",
+        "package_content": "60 kapszula",
+        "points": "44p",
+        "partner_price": "39,55 EUR",
+        "catalogue_price": "55,37 EUR"
+      },
+      "normalized": {
+        "article_number": "80338",
+        "package_content": "60 kapsula",
+        "points": "44",
+        "partner_price_eur": "39.55",
+        "catalogue_price_eur": "55.37"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 25,
+      "source_section": "Zdravlje",
+      "source_section_index": 3,
+      "raw_source_row": {
+        "article_number": "80331",
+        "product_name": "Reishi Plus kapsule",
+        "package_content": "30 kapszula",
+        "points": "44p",
+        "partner_price": "43,40 EUR",
+        "catalogue_price": "60,75 EUR"
+      },
+      "normalized": {
+        "article_number": "80331",
+        "package_content": "30 kapsula",
+        "points": "44",
+        "partner_price_eur": "43.40",
+        "catalogue_price_eur": "60.75"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 26,
+      "source_section": "Zdravlje",
+      "source_section_index": 4,
+      "raw_source_row": {
+        "article_number": "80338",
+        "product_name": "Super Omega 3 kapsule",
+        "package_content": "60 kapszula",
+        "points": "44p",
+        "partner_price": "39,55 EUR",
+        "catalogue_price": "55,37 EUR"
+      },
+      "normalized": {
+        "article_number": "80338",
+        "package_content": "60 kapsula",
+        "points": "44",
+        "partner_price_eur": "39.55",
+        "catalogue_price_eur": "55.37"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 27,
+      "source_section": "Zdravlje",
+      "source_section_index": 4,
+      "raw_source_row": {
+        "article_number": "80301",
+        "product_name": "Vita Active",
+        "package_content": "150 ml",
+        "points": "23p",
+        "partner_price": "25,13 EUR",
+        "catalogue_price": "35,19 EUR"
+      },
+      "normalized": {
+        "article_number": "80301",
+        "package_content": "150 ml",
+        "points": "23",
+        "partner_price_eur": "25.13",
+        "catalogue_price_eur": "35.19"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 28,
+      "source_section": "Zdravlje",
+      "source_section_index": 4,
+      "raw_source_row": {
+        "article_number": "80102",
+        "product_name": "Pro Balance tablete",
+        "package_content": "360 tabletta",
+        "points": "38p",
+        "partner_price": "34,66 EUR",
+        "catalogue_price": "48,51 EUR"
+      },
+      "normalized": {
+        "article_number": "80102",
+        "package_content": "360 tableta",
+        "points": "38",
+        "partner_price_eur": "34.66",
+        "catalogue_price_eur": "48.51"
+      },
+      "duplicate_occurrence_count": 3
+    },
+    {
+      "occurrence_index": 29,
+      "source_section": "Zdravlje",
+      "source_section_index": 4,
+      "raw_source_row": {
+        "article_number": "80900",
+        "product_name": "Mind Master Green",
+        "package_content": "500 ml",
+        "points": "16p",
+        "partner_price": "19,58 EUR",
+        "catalogue_price": "27,43 EUR"
+      },
+      "normalized": {
+        "article_number": "80900",
+        "package_content": "500 ml",
+        "points": "16",
+        "partner_price_eur": "19.58",
+        "catalogue_price_eur": "27.43"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 30,
+      "source_section": "Zdravlje",
+      "source_section_index": 4,
+      "raw_source_row": {
+        "article_number": "80950",
+        "product_name": "Mind Master Red",
+        "package_content": "500 ml",
+        "points": "16p",
+        "partner_price": "19,58 EUR",
+        "catalogue_price": "27,43 EUR"
+      },
+      "normalized": {
+        "article_number": "80950",
+        "package_content": "500 ml",
+        "points": "16",
+        "partner_price_eur": "19.58",
+        "catalogue_price_eur": "27.43"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 31,
+      "source_section": "Zdravlje",
+      "source_section_index": 4,
+      "raw_source_row": {
+        "article_number": "80935",
+        "product_name": "Mind Master pakovanje od 5 (po izboru - Green/Red)",
+        "package_content": "5x500 ml",
+        "points": "67p",
+        "partner_price": "90,39 EUR",
+        "catalogue_price": "126,54 EUR"
+      },
+      "normalized": {
+        "article_number": "80935",
+        "package_content": "5x500 ml",
+        "points": "67",
+        "partner_price_eur": "90.39",
+        "catalogue_price_eur": "126.54"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 32,
+      "source_section": "Zdravlje",
+      "source_section_index": 4,
+      "raw_source_row": {
+        "article_number": "80940",
+        "product_name": "Mind Master Gold",
+        "package_content": "500 ml",
+        "points": "27p",
+        "partner_price": "22,93 EUR",
+        "catalogue_price": "32,09 EUR"
+      },
+      "normalized": {
+        "article_number": "80940",
+        "package_content": "500 ml",
+        "points": "27",
+        "partner_price_eur": "22.93",
+        "catalogue_price_eur": "32.09"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 33,
+      "source_section": "Zdravlje",
+      "source_section_index": 4,
+      "raw_source_row": {
+        "article_number": "80945",
+        "product_name": "Mind Master Gold pakovanje od 5",
+        "package_content": "5x500 ml",
+        "points": "111p",
+        "partner_price": "105,31 EUR",
+        "catalogue_price": "147,43 EUR"
+      },
+      "normalized": {
+        "article_number": "80945",
+        "package_content": "5x500 ml",
+        "points": "111",
+        "partner_price_eur": "105.31",
+        "catalogue_price_eur": "147.43"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 34,
+      "source_section": "Zdravlje",
+      "source_section_index": 5,
+      "raw_source_row": {
+        "article_number": "81000",
+        "product_name": "Aloe Vera Immune Plus gel za piće",
+        "package_content": "1000 ml",
+        "points": "42p",
+        "partner_price": "45,40 EUR",
+        "catalogue_price": "63,55 EUR"
+      },
+      "normalized": {
+        "article_number": "81000",
+        "package_content": "1000 ml",
+        "points": "42",
+        "partner_price_eur": "45.40",
+        "catalogue_price_eur": "63.55"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 35,
+      "source_section": "Zdravlje",
+      "source_section_index": 5,
+      "raw_source_row": {
+        "article_number": "81003",
+        "product_name": "Aloe Vera Immune Plus gel za piće pakovanje od 3",
+        "package_content": "3x1000 ml",
+        "points": "104p",
+        "partner_price": "124,84 EUR",
+        "catalogue_price": "174,78 EUR"
+      },
+      "normalized": {
+        "article_number": "81003",
+        "package_content": "3x1000 ml",
+        "points": "104",
+        "partner_price_eur": "124.84",
+        "catalogue_price_eur": "174.78"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 36,
+      "source_section": "Zdravlje",
+      "source_section_index": 5,
+      "raw_source_row": {
+        "article_number": "80360",
+        "product_name": "Colostrum Compact kapsule",
+        "package_content": "60 kapszula",
+        "points": "63p",
+        "partner_price": "60,12 EUR",
+        "catalogue_price": "84,15 EUR"
+      },
+      "normalized": {
+        "article_number": "80360",
+        "package_content": "60 kapsula",
+        "points": "63",
+        "partner_price_eur": "60.12",
+        "catalogue_price_eur": "84.15"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 37,
+      "source_section": "Zdravlje",
+      "source_section_index": 5,
+      "raw_source_row": {
+        "article_number": "80361",
+        "product_name": "Colostrum Liquid",
+        "package_content": "125 ml",
+        "points": "47p",
+        "partner_price": "44,33 EUR",
+        "catalogue_price": "62,06 EUR"
+      },
+      "normalized": {
+        "article_number": "80361",
+        "package_content": "125 ml",
+        "points": "47",
+        "partner_price_eur": "44.33",
+        "catalogue_price_eur": "62.06"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 38,
+      "source_section": "Zdravlje",
+      "source_section_index": 5,
+      "raw_source_row": {
+        "article_number": "80325",
+        "product_name": "Cistus Incanus kapsule",
+        "package_content": "60 kapszula",
+        "points": "44p",
+        "partner_price": "43,40 EUR",
+        "catalogue_price": "60,75 EUR"
+      },
+      "normalized": {
+        "article_number": "80325",
+        "package_content": "60 kapsula",
+        "points": "44",
+        "partner_price_eur": "43.40",
+        "catalogue_price_eur": "60.75"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 39,
+      "source_section": "Zdravlje",
+      "source_section_index": 5,
+      "raw_source_row": {
+        "article_number": "80850",
+        "product_name": "Aloe vera Freedom napitak",
+        "package_content": "1000 ml",
+        "points": "42p",
+        "partner_price": "45,40 EUR",
+        "catalogue_price": "63,55 EUR"
+      },
+      "normalized": {
+        "article_number": "80850",
+        "package_content": "1000 ml",
+        "points": "42",
+        "partner_price_eur": "45.40",
+        "catalogue_price_eur": "63.55"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 40,
+      "source_section": "Zdravlje",
+      "source_section_index": 5,
+      "raw_source_row": {
+        "article_number": "80883",
+        "product_name": "Aloe vera Freedom napitak pakovanje od 3",
+        "package_content": "3x1000 ml",
+        "points": "104p",
+        "partner_price": "124,84 EUR",
+        "catalogue_price": "174,78 EUR"
+      },
+      "normalized": {
+        "article_number": "80883",
+        "package_content": "3x1000 ml",
+        "points": "104",
+        "partner_price_eur": "124.84",
+        "catalogue_price_eur": "174.78"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 41,
+      "source_section": "Zdravlje",
+      "source_section_index": 5,
+      "raw_source_row": {
+        "article_number": "80190",
+        "product_name": "Active Freedom kapsule",
+        "package_content": "60 kapszula",
+        "points": "36p",
+        "partner_price": "34,96 EUR",
+        "catalogue_price": "48,93 EUR"
+      },
+      "normalized": {
+        "article_number": "80190",
+        "package_content": "60 kapsula",
+        "points": "36",
+        "partner_price_eur": "34.96",
+        "catalogue_price_eur": "48.93"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 42,
+      "source_section": "Zdravlje",
+      "source_section_index": 5,
+      "raw_source_row": {
+        "article_number": "80550",
+        "product_name": "Protein ital",
+        "package_content": "375 g",
+        "points": "48p",
+        "partner_price": "44,33 EUR",
+        "catalogue_price": "62,06 EUR"
+      },
+      "normalized": {
+        "article_number": "80550",
+        "package_content": "375 g",
+        "points": "48",
+        "partner_price_eur": "44.33",
+        "catalogue_price_eur": "62.06"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 43,
+      "source_section": "Zdravlje",
+      "source_section_index": 6,
+      "raw_source_row": {
+        "article_number": "81180",
+        "product_name": "Pro 12+ kapsule",
+        "package_content": "30 kapszula",
+        "points": "60p",
+        "partner_price": "52,78 EUR",
+        "catalogue_price": "73,88 EUR"
+      },
+      "normalized": {
+        "article_number": "81180",
+        "package_content": "30 kapsula",
+        "points": "60",
+        "partner_price_eur": "52.78",
+        "catalogue_price_eur": "73.88"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 44,
+      "source_section": "Zdravlje",
+      "source_section_index": 6,
+      "raw_source_row": {
+        "article_number": "80630",
+        "product_name": "Fiber Boost",
+        "package_content": "210 g",
+        "points": "27p",
+        "partner_price": "30,18 EUR",
+        "catalogue_price": "42,24 EUR"
+      },
+      "normalized": {
+        "article_number": "80630",
+        "package_content": "210 g",
+        "points": "27",
+        "partner_price_eur": "30.18",
+        "catalogue_price_eur": "42.24"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 45,
+      "source_section": "Zdravlje",
+      "source_section_index": 6,
+      "raw_source_row": {
+        "article_number": "80205",
+        "product_name": "Herbal Fasting dijetalna čajna mešavina",
+        "package_content": "250 g",
+        "points": "25p",
+        "partner_price": "23,64 EUR",
+        "catalogue_price": "33,10 EUR"
+      },
+      "normalized": {
+        "article_number": "80205",
+        "package_content": "250 g",
+        "points": "25",
+        "partner_price_eur": "23.64",
+        "catalogue_price_eur": "33.10"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 46,
+      "source_section": "Zdravlje",
+      "source_section_index": 6,
+      "raw_source_row": {
+        "article_number": "80332",
+        "product_name": "Woman Phyto kapsule",
+        "package_content": "90 kapszula",
+        "points": "30p",
+        "partner_price": "31,67 EUR",
+        "catalogue_price": "44,33 EUR"
+      },
+      "normalized": {
+        "article_number": "80332",
+        "package_content": "90 kapsula",
+        "points": "30",
+        "partner_price_eur": "31.67",
+        "catalogue_price_eur": "44.33"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 47,
+      "source_section": "Zdravlje",
+      "source_section_index": 6,
+      "raw_source_row": {
+        "article_number": "81140",
+        "product_name": "5in1 Beauty Elixir",
+        "package_content": "30 tubus",
+        "points": "190p",
+        "partner_price": "169,40 EUR",
+        "catalogue_price": "237,16 EUR"
+      },
+      "normalized": {
+        "article_number": "81140",
+        "package_content": "30 tubus",
+        "points": "190",
+        "partner_price_eur": "169.40",
+        "catalogue_price_eur": "237.16"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 48,
+      "source_section": "Zdravlje",
+      "source_section_index": 6,
+      "raw_source_row": {
+        "article_number": "81170",
+        "product_name": "5in1 Men´s Shot",
+        "package_content": "30 tubus",
+        "points": "190p",
+        "partner_price": "169,40 EUR",
+        "catalogue_price": "237,16 EUR"
+      },
+      "normalized": {
+        "article_number": "81170",
+        "package_content": "30 tubus",
+        "points": "190",
+        "partner_price_eur": "169.40",
+        "catalogue_price_eur": "237.16"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 49,
+      "source_section": "Zdravlje",
+      "source_section_index": 7,
+      "raw_source_row": {
+        "article_number": "81251",
+        "product_name": "FIGU ACTIVE slatki krompir supa",
+        "package_content": "488 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81251",
+        "package_content": "488 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 50,
+      "source_section": "Zdravlje",
+      "source_section_index": 7,
+      "raw_source_row": {
+        "article_number": "81245",
+        "product_name": "FIGU ACTIVE začinjena kari supa",
+        "package_content": "488 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81245",
+        "package_content": "488 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 51,
+      "source_section": "Zdravlje",
+      "source_section_index": 7,
+      "raw_source_row": {
+        "article_number": "81246",
+        "product_name": "FIGU ACTIVE ukusna supa od povrća",
+        "package_content": "488 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81246",
+        "package_content": "488 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 52,
+      "source_section": "Zdravlje",
+      "source_section_index": 7,
+      "raw_source_row": {
+        "article_number": "81244",
+        "product_name": "FIGU ACTIVE sočna supa od paradajza",
+        "package_content": "488 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81244",
+        "package_content": "488 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 53,
+      "source_section": "Zdravlje",
+      "source_section_index": 7,
+      "raw_source_row": {
+        "article_number": "81255",
+        "product_name": "FIGU ACTIVE ovsena kaša sa šumskim voćem",
+        "package_content": "450 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81255",
+        "package_content": "450 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 54,
+      "source_section": "Zdravlje",
+      "source_section_index": 7,
+      "raw_source_row": {
+        "article_number": "81247",
+        "product_name": "FIGU ACTIVE hrskavi musli sa malinom",
+        "package_content": "420 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81247",
+        "package_content": "420 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 55,
+      "source_section": "Zdravlje",
+      "source_section_index": 7,
+      "raw_source_row": {
+        "article_number": "81249",
+        "product_name": "Figu Active Berry Snack, kutija od 6",
+        "package_content": "6 szelet",
+        "points": "36p",
+        "partner_price": "29,40 EUR",
+        "catalogue_price": "41,16 EUR"
+      },
+      "normalized": {
+        "article_number": "81249",
+        "package_content": "6 pločica",
+        "points": "36",
+        "partner_price_eur": "29.40",
+        "catalogue_price_eur": "41.16"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 56,
+      "source_section": "Zdravlje",
+      "source_section_index": 7,
+      "raw_source_row": {
+        "article_number": "81248",
+        "product_name": "Figu Active Almond Snack, kutija od 6",
+        "package_content": "6 szelet",
+        "points": "36p",
+        "partner_price": "29,40 EUR",
+        "catalogue_price": "41,16 EUR"
+      },
+      "normalized": {
+        "article_number": "81248",
+        "package_content": "6 pločica",
+        "points": "36",
+        "partner_price_eur": "29.40",
+        "catalogue_price_eur": "41.16"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 57,
+      "source_section": "Zdravlje",
+      "source_section_index": 8,
+      "raw_source_row": {
+        "article_number": "81260",
+        "product_name": "LR BODY MISSION mesečno pakovanje (5 x LR Figu Active po izboru, 1 x Pro Balance tablete, 1 x Herbal Fasting dijetalna čajna mešavina, 1 x Protein ital, 1 x LR šejkr, Figu Active brzi pregled)",
+        "package_content": "",
+        "points": "300p",
+        "partner_price": "292,09 EUR",
+        "catalogue_price": "408,93 EUR"
+      },
+      "normalized": {
+        "article_number": "81260",
+        "package_content": null,
+        "points": "300",
+        "partner_price_eur": "292.09",
+        "catalogue_price_eur": "408.93"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 58,
+      "source_section": "Zdravlje",
+      "source_section_index": 8,
+      "raw_source_row": {
+        "article_number": "81241",
+        "product_name": "FIGU ACTIVE voćni jagoda šejk",
+        "package_content": "496 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81241",
+        "package_content": "496 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 59,
+      "source_section": "Zdravlje",
+      "source_section_index": 8,
+      "raw_source_row": {
+        "article_number": "81250",
+        "product_name": "FIGU ACTIVE ukusna karamela šejk",
+        "package_content": "496 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81250",
+        "package_content": "496 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 60,
+      "source_section": "Zdravlje",
+      "source_section_index": 8,
+      "raw_source_row": {
+        "article_number": "81242",
+        "product_name": "FIGU ACTIVE kafa šejk",
+        "package_content": "496 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81242",
+        "package_content": "496 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 61,
+      "source_section": "Zdravlje",
+      "source_section_index": 8,
+      "raw_source_row": {
+        "article_number": "81240",
+        "product_name": "FIGU ACTIVE blaga vanila šejk",
+        "package_content": "496 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81240",
+        "package_content": "496 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 62,
+      "source_section": "Zdravlje",
+      "source_section_index": 8,
+      "raw_source_row": {
+        "article_number": "81243",
+        "product_name": "FIGU ACTIVE kremasta čokolada šejk",
+        "package_content": "496 g",
+        "points": "54p",
+        "partner_price": "44,45 EUR",
+        "catalogue_price": "62,24 EUR"
+      },
+      "normalized": {
+        "article_number": "81243",
+        "package_content": "496 g",
+        "points": "54",
+        "partner_price_eur": "44.45",
+        "catalogue_price_eur": "62.24"
+      },
+      "duplicate_occurrence_count": 1
+    },
+    {
+      "occurrence_index": 63,
+      "source_section": "Zdravlje",
+      "source_section_index": 9,
+      "raw_source_row": {
+        "article_number": "80550",
+        "product_name": "Protein ital",
+        "package_content": "375 g",
+        "points": "48p",
+        "partner_price": "44,33 EUR",
+        "catalogue_price": "62,06 EUR"
+      },
+      "normalized": {
+        "article_number": "80550",
+        "package_content": "375 g",
+        "points": "48",
+        "partner_price_eur": "44.33",
+        "catalogue_price_eur": "62.06"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 64,
+      "source_section": "Zdravlje",
+      "source_section_index": 9,
+      "raw_source_row": {
+        "article_number": "80102",
+        "product_name": "Pro Balance tablete",
+        "package_content": "360 tabletta",
+        "points": "38p",
+        "partner_price": "34,66 EUR",
+        "catalogue_price": "48,51 EUR"
+      },
+      "normalized": {
+        "article_number": "80102",
+        "package_content": "360 tableta",
+        "points": "38",
+        "partner_price_eur": "34.66",
+        "catalogue_price_eur": "48.51"
+      },
+      "duplicate_occurrence_count": 3
+    },
+    {
+      "occurrence_index": 65,
+      "source_section": "Zdravlje",
+      "source_section_index": 9,
+      "raw_source_row": {
+        "article_number": "80205",
+        "product_name": "Herbal Fasting dijetalna čajna mešavina",
+        "package_content": "250 g",
+        "points": "25p",
+        "partner_price": "23,64 EUR",
+        "catalogue_price": "33,10 EUR"
+      },
+      "normalized": {
+        "article_number": "80205",
+        "package_content": "250 g",
+        "points": "25",
+        "partner_price_eur": "23.64",
+        "catalogue_price_eur": "33.10"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 66,
+      "source_section": "Zdravlje",
+      "source_section_index": 9,
+      "raw_source_row": {
+        "article_number": "80630",
+        "product_name": "Fiber Boost",
+        "package_content": "210 g",
+        "points": "27p",
+        "partner_price": "30,18 EUR",
+        "catalogue_price": "42,24 EUR"
+      },
+      "normalized": {
+        "article_number": "80630",
+        "package_content": "210 g",
+        "points": "27",
+        "partner_price_eur": "30.18",
+        "catalogue_price_eur": "42.24"
+      },
+      "duplicate_occurrence_count": 2
+    },
+    {
+      "occurrence_index": 67,
+      "source_section": "Zdravlje",
+      "source_section_index": 9,
+      "raw_source_row": {
+        "article_number": "80750",
+        "product_name": "Aloe vera napitak sa ukusom breskve",
+        "package_content": "1000 ml",
+        "points": "38p",
+        "partner_price": "41,34 EUR",
+        "catalogue_price": "57,88 EUR"
+      },
+      "normalized": {
+        "article_number": "80750",
+        "package_content": "1000 ml",
+        "points": "38",
+        "partner_price_eur": "41.34",
+        "catalogue_price_eur": "57.88"
+      },
+      "duplicate_occurrence_count": 2
+    }
+  ],
+  "duplicate_groups": [
+    {
+      "article_number": "81000",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Aloe vera",
+          "source_section_index": 1
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 5
+        }
+      ]
+    },
+    {
+      "article_number": "81003",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Aloe vera",
+          "source_section_index": 1
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 5
+        }
+      ]
+    },
+    {
+      "article_number": "80750",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Aloe vera",
+          "source_section_index": 1
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 9
+        }
+      ]
+    },
+    {
+      "article_number": "80850",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Aloe vera",
+          "source_section_index": 1
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 5
+        }
+      ]
+    },
+    {
+      "article_number": "80883",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Aloe vera",
+          "source_section_index": 1
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 5
+        }
+      ]
+    },
+    {
+      "article_number": "80800",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Aloe vera",
+          "source_section_index": 1
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 3
+        }
+      ]
+    },
+    {
+      "article_number": "80823",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Aloe vera",
+          "source_section_index": 1
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 3
+        }
+      ]
+    },
+    {
+      "article_number": "80102",
+      "occurrence_count": 3,
+      "source_occurrences": [
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 2
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 4
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 9
+        }
+      ]
+    },
+    {
+      "article_number": "81180",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 2
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 6
+        }
+      ]
+    },
+    {
+      "article_number": "80360",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 2
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 5
+        }
+      ]
+    },
+    {
+      "article_number": "80900",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 3
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 4
+        }
+      ]
+    },
+    {
+      "article_number": "80935",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 3
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 4
+        }
+      ]
+    },
+    {
+      "article_number": "80338",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 3
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 4
+        }
+      ]
+    },
+    {
+      "article_number": "80550",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 5
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 9
+        }
+      ]
+    },
+    {
+      "article_number": "80630",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 6
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 9
+        }
+      ]
+    },
+    {
+      "article_number": "80205",
+      "occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 6
+        },
+        {
+          "source_section": "Zdravlje",
+          "source_section_index": 9
+        }
+      ]
+    }
+  ],
+  "conflicting_duplicate_groups": []
+}
