@@ -1,0 +1,84 @@
+{
+  "draft_only": true,
+  "notice": "OWNER REVIEW REQUIRED. DO NOT EXECUTE OR IMPORT.",
+  "packages": [
+    {
+      "name": "Imunitet Start",
+      "slug": "imunitet-start",
+      "category": "imunitet",
+      "description": "Namenjen osobama koje žele podršku svakodnevnoj wellness rutini tokom različitih godišnjih doba. Proizvodi iz ovog paketa kombinuju aloe vera napitak, Cistus Incanus i kolostrum iz LR LIFETAKT portfolija.",
+      "product_codes": [
+        "80325-50"
+      ],
+      "price_rsd": null,
+      "active": false,
+      "sort_order": 10
+    },
+    {
+      "name": "Creva & Energija",
+      "slug": "creva-energija",
+      "category": "digestija",
+      "description": "Namenjen osobama koje žele jednostavnu podršku svakodnevnoj ishrani i unosu vlakana. Proizvodi iz ovog paketa obuhvataju PRO 12+ kapsule, Fiber Boost i LR LIFETAKT biljni čaj.",
+      "product_codes": [
+        "81180-99",
+        "80205-650"
+      ],
+      "price_rsd": null,
+      "active": false,
+      "sort_order": 20
+    },
+    {
+      "name": "Body Mission",
+      "slug": "body-mission",
+      "category": "forma",
+      "description": "Namenjen osobama koje žele praktičnije planiranje nutritivno uravnoteženih obroka i podršku kontroli telesne mase. Predlog kombinuje izbor LR FIGUACTIVE obroka sa LR LIFETAKT Pro Balance proizvodom, uz konačan sastav koji vlasnik treba da potvrdi.",
+      "product_codes": [
+        "80102-50"
+      ],
+      "price_rsd": null,
+      "active": false,
+      "sort_order": 30
+    },
+    {
+      "name": "Pokret & Snaga",
+      "slug": "pokret-snaga",
+      "category": "pokret",
+      "description": "Namenjen osobama koje žele podršku aktivnom načinu života. Proizvodi iz ovog predloga dolaze iz LR LIFETAKT portfolija za svakodnevnu rutinu pokreta i uključuju Active Freedom, Protein Power i Super Omega.",
+      "product_codes": [
+        "80850-680",
+        "80190-50",
+        "80550-411",
+        "80338-699"
+      ],
+      "price_rsd": null,
+      "active": false,
+      "sort_order": 40
+    },
+    {
+      "name": "Srce & Cirkulacija",
+      "slug": "srce-cirkulacija",
+      "category": "srce",
+      "description": "Namenjen osobama koje žele podršku svakodnevnoj wellness rutini usmerenoj na srce i cirkulaciju. Proizvodi iz ovog paketa su Super Omega Capsule, Aloe Vera Drinking Gel Intense Sivera i LR LIFETAKT Reishi Plus Capsules.",
+      "product_codes": [
+        "80338-699",
+        "80800-50",
+        "80331-50"
+      ],
+      "price_rsd": null,
+      "active": false,
+      "sort_order": 60
+    }
+  ],
+  "blocked_packages": [
+    {
+      "name": "Lepota iznutra",
+      "slug": "lepota-iznutra",
+      "category": "lepota",
+      "description": "Namenjen osobama koje žele podršku svakodnevnoj rutini lepote iznutra. Predlog kombinuje 5 in 1 Natural Beauty Elixir i tradicionalni aloe vera gel za piće sa medom.",
+      "price_rsd": null,
+      "active": false,
+      "sort_order": 50,
+      "blocking_reason": "Nijedan predloženi proizvod nema neupitno potvrđenu katalošku šifru. Šifra 5 in 1 Natural Beauty Elixir nije prikazana, a 80700-50 je u katalogu dodeljena i tradicionalnom gelu sa medom i Immune Plus proizvodu. product_codes je namerno izostavljen jer trenutna baza zahteva najmanje jednu stvarnu šifru. OWNER/LR VERIFICATION REQUIRED."
+    }
+  ]
+}
