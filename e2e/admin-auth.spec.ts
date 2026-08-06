@@ -32,6 +32,10 @@ test("prijavljen korisnik bez admin profila nema pristup", async ({ page }) => {
   await expect(page).toHaveURL(/\/admin\/login\?reason=pristup$/);
   await page.goto("/admin/packages");
   await expect(page).toHaveURL(/\/admin\/login\?reason=pristup$/);
+  await page.goto("/admin/products");
+  await expect(page).toHaveURL(/\/admin\/login\?reason=pristup$/);
+  await page.goto("/admin/products/new");
+  await expect(page).toHaveURL(/\/admin\/login\?reason=pristup$/);
 });
 
 test("administrator pristupa zaštićenoj strani i odjavljuje se", async ({

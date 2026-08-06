@@ -12,6 +12,7 @@ export function SiteFooter() {
         <nav aria-label="Navigacija u podnožju" className="grid content-start gap-3 text-sm md:justify-self-end">
           <Link href="/" className="underline-offset-4 hover:underline">Početna</Link>
           <Link href="/paketi" className="underline-offset-4 hover:underline">Paketi</Link>
+          <Link href="/proizvodi" className="underline-offset-4 hover:underline">Proizvodi</Link>
           <Link href="/o-nama" className="underline-offset-4 hover:underline">O nama</Link>
           <Link href="/kontakt" className="underline-offset-4 hover:underline">Kontakt</Link>
         </nav>

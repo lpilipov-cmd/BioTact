@@ -4,14 +4,18 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 import { publicLeadSchema, type PublicLeadInput } from "@/lib/leads/public-validation";
+import type { Tables } from "@/lib/supabase/database.types";
 
 type PackageOption = Readonly<{ id: string; name: string }>;
+type ProductOption = Readonly<Pick<Tables<"products">, "id" | "name" | "article_number">>;
 
 type ContactFormProps = Readonly<{
   formStartedAt: number;
   formToken: string;
   initialPackageId?: string;
+  initialProductId?: string;
   packages: readonly PackageOption[];
+  products: readonly ProductOption[];
   whatsappLink: string | null;
 }>;
 
@@ -19,7 +23,9 @@ export function ContactForm({
   formStartedAt,
   formToken,
   initialPackageId,
+  initialProductId,
   packages,
+  products,
   whatsappLink,
 }: ContactFormProps) {
   const [idempotencyKey] = useState(() => crypto.randomUUID());
@@ -35,6 +41,7 @@ export function ContactForm({
       name: "",
       contact: "",
       packageInterestId: initialPackageId ?? "",
+      productInterestId: initialProductId ?? "",
       message: "",
       consent: false,
       website: "",
@@ -112,6 +119,17 @@ export function ContactForm({
         <label htmlFor="name" className="font-bold">Ime i prezime</label>
         <input id="name" autoComplete="name" maxLength={100} className="field-input mt-2" aria-invalid={Boolean(errors.name)} {...register("name")} />
         {errorFor("name")}
+      </div>
+
+      <div>
+        <label htmlFor="productInterestId" className="font-bold">Proizvod (opciono)</label>
+        <select id="productInterestId" className="field-input mt-2" {...register("productInterestId")}>
+          <option value="">Nisam izabrao/la proizvod</option>
+          {products.map((product) => (
+            <option key={product.id} value={product.id}>{product.name} ({product.article_number})</option>
+          ))}
+        </select>
+        {errorFor("productInterestId")}
       </div>
 
       <div>

@@ -72,7 +72,7 @@ export async function POST(request: Request) {
   }
 
   const supabase = await createClient();
-  const { error } = await supabase.rpc("submit_lead", {
+  const commonArguments = {
     p_name: parsed.data.name,
     p_contact: parsed.data.contact,
     p_consent_given: true,
@@ -80,7 +80,10 @@ export async function POST(request: Request) {
     p_idempotency_key: parsed.data.idempotencyKey,
     p_package_interest_id: parsed.data.packageInterestId,
     p_message: parsed.data.message,
-  });
+  };
+  const { error } = parsed.data.productInterestId
+    ? await supabase.rpc("submit_product_lead", { ...commonArguments, p_product_interest_id: parsed.data.productInterestId })
+    : await supabase.rpc("submit_lead", commonArguments);
 
   if (!error) return Response.json({ ok: true }, { headers: jsonHeaders });
   if (error.code === "P0001" && error.message.includes("rate_limit_exceeded")) {

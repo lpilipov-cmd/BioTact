@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const publicRoutes = ["/", "/paketi", "/paketi/privremeni-imunitet", "/kontakt", "/o-nama"];
+const publicRoutes = ["/", "/paketi", "/paketi/privremeni-imunitet", "/proizvodi", "/kontakt", "/o-nama"];
 
 test("zajednički javni shell povezuje sve rute bez admin navigacije", async ({ page }, testInfo) => {
   for (const route of publicRoutes) {
@@ -19,7 +19,7 @@ test("zajednički javni shell povezuje sve rute bez admin navigacije", async ({ 
   const navigation = page.getByRole("navigation", {
     name: testInfo.project.name === "mobile-375" ? "Mobilna navigacija" : "Glavna navigacija",
   });
-  for (const [label, href] of [["Početna", "/"], ["Paketi", "/paketi"], ["O nama", "/o-nama"], ["Kontakt", "/kontakt"]] as const) {
+  for (const [label, href] of [["Početna", "/"], ["Paketi", "/paketi"], ["Proizvodi", "/proizvodi"], ["O nama", "/o-nama"], ["Kontakt", "/kontakt"]] as const) {
     await expect(navigation.getByRole("link", { name: label, exact: true })).toHaveAttribute("href", href);
   }
   await expect(navigation.getByRole("link", { name: "Pošalji upit" })).toHaveAttribute("href", "/kontakt");
@@ -80,6 +80,7 @@ test("javni sajt nema korpu ili checkout i objavljuje SEO rute", async ({ page, 
   const sitemap = await request.get("/sitemap.xml");
   const sitemapText = await sitemap.text();
   expect(sitemapText).toContain("/o-nama");
+  expect(sitemapText).toContain("/proizvodi");
   expect(sitemapText).toContain("/paketi/privremeni-imunitet");
   expect(sitemapText).not.toContain("/admin");
 });

@@ -17,7 +17,7 @@
     "test:e2e": "BIOTACT_E2E_LOCAL_SUPABASE=1 PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers playwright test",
     "db:reset": "supabase db reset --local",
     "db:test": "supabase test db --local supabase/tests/database",
-    "db:types": "supabase gen types --local --lang typescript --schema public > src/lib/supabase/database.types.ts.tmp && perl -0pi -e 's/\\n+\\z/\\n/' src/lib/supabase/database.types.ts.tmp && mv src/lib/supabase/database.types.ts.tmp src/lib/supabase/database.types.ts"
+    "db:types": "supabase gen types --local --lang typescript --schema public,private > src/lib/supabase/database.types.ts.tmp && perl -0pi -e 's/\\n+\\z/\\n/' src/lib/supabase/database.types.ts.tmp && mv src/lib/supabase/database.types.ts.tmp src/lib/supabase/database.types.ts"
   },
   "dependencies": {
     "@supabase/ssr": "0.12.4",

@@ -9,6 +9,7 @@ const links = [
   { href: "/admin", label: "Početna" },
   { href: "/admin/leads", label: "Leadovi" },
   { href: "/admin/packages", label: "Paketi" },
+  { href: "/admin/products", label: "Proizvodi" },
 ] as const;
 
 export function AdminNavigation() {

@@ -19,6 +19,10 @@ export const publicLeadSchema = z.object({
     (value) => (value === "" || value === null ? undefined : value),
     z.string().uuid("Izabrani paket nije ispravan.").optional(),
   ),
+  productInterestId: z.preprocess(
+    (value) => (value === "" || value === null ? undefined : value),
+    z.string().uuid("Izabrani proizvod nije ispravan.").optional(),
+  ),
   message: z.preprocess(
     (value) => (typeof value === "string" && value.trim() === "" ? undefined : value),
     z.string().trim().max(2000, "Poruka može imati najviše 2.000 znakova.").optional(),
@@ -28,6 +32,10 @@ export const publicLeadSchema = z.object({
   formStartedAt: z.number().int().positive(),
   formToken: z.string().min(64).max(64),
   idempotencyKey: z.string().uuid(),
+}).superRefine((value, context) => {
+  if (value.packageInterestId && value.productInterestId) {
+    context.addIssue({ code: "custom", path: ["productInterestId"], message: "Izaberite paket ili proizvod, ne oba." });
+  }
 });
 
 export type PublicLeadInput = z.input<typeof publicLeadSchema>;

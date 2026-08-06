@@ -19,10 +19,17 @@ describe("publicLeadSchema", () => {
     const parsed = publicLeadSchema.parse({
       ...validLead,
       packageInterestId: "",
+      productInterestId: "",
       message: "   ",
     });
     expect(parsed.packageInterestId).toBeUndefined();
     expect(parsed.message).toBeUndefined();
+  });
+
+  it("prihvata proizvod, ali ne paket i proizvod istovremeno", () => {
+    const productInterestId = "20000000-0000-4000-8000-000000000001";
+    expect(publicLeadSchema.safeParse({ ...validLead, packageInterestId: "", productInterestId }).success).toBe(true);
+    expect(publicLeadSchema.safeParse({ ...validLead, productInterestId }).success).toBe(false);
   });
 
   it.each([

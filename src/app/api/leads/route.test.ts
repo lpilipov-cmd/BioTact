@@ -49,6 +49,13 @@ describe("POST /api/leads", () => {
     expect(JSON.stringify(rpc.mock.calls)).not.toContain("203.0.113.10");
   });
 
+  it("prosleđuje interesovanje za proizvod kroz kompatibilni RPC", async () => {
+    const productInterestId = "20000000-0000-4000-8000-000000000001";
+    const response = await POST(request({ ...validBody(), productInterestId }));
+    expect(response.status).toBe(200);
+    expect(rpc).toHaveBeenCalledWith("submit_product_lead", expect.objectContaining({ p_product_interest_id: productInterestId }));
+  });
+
   it("odbija honeypot i prebrzo popunjavanje pre baze", async () => {
     expect((await POST(request({ ...validBody(), website: "bot.example" }))).status).toBe(400);
     const fastProof = createLeadFormProof(salt);
