@@ -21,7 +21,7 @@ export default async function ProductPage({ params }: Props) {
   if (!product && !error) notFound();
   if (!product) return <main className="min-h-screen p-6"><p role="alert">Proizvod trenutno nije dostupan.</p></main>;
   const [{ data: related }, { data: relationships }] = await Promise.all([
-    supabase.from("products").select("slug,name,category,subcategory,short_description,package_content,catalogue_price_eur,image_path").eq("active", true).eq("subcategory", product.subcategory ?? "").neq("id", product.id).limit(3),
+    supabase.from("products").select("slug,article_number,name,category,subcategory,short_description,package_content,catalogue_price_eur,image_path").eq("active", true).eq("subcategory", product.subcategory ?? "").neq("id", product.id).limit(3),
     supabase.from("package_products").select("package:packages(slug,name)").eq("product_id", product.id).order("sort_order"),
   ]);
   const relatedPackages = relationships?.flatMap((item) => item.package ? [item.package] : []) ?? [];

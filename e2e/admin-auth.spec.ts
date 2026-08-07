@@ -58,6 +58,19 @@ test("administrator pristupa zaštićenoj strani i odjavljuje se", async ({
   await expect(page.getByText(/partnerska cena|poeni/i)).toHaveCount(0);
   await expect(page.getByText(/artikal\s+\d+/i)).toHaveCount(0);
   await expect(page.getByRole("link", { name: /Pogledaj proizvod Aloe vera napitak sa medom$/i })).toBeVisible();
+  await expect(page.getByText("MULTIPACK", { exact: true })).toHaveCount(8);
+  await expect(page.getByText("3 × 1.000 ml", { exact: true })).toHaveCount(6);
+  await expect(page.getByText("5 × 500 ml", { exact: true })).toHaveCount(1);
+  await expect(page.getByText("5 × 500 ml — izbor Formula Green / Formula Red", { exact: true })).toHaveCount(1);
+
+  const choicePack = page.getByRole("link", { name: /Pogledaj proizvod Mind Master pakovanje od 5/i });
+  await expect(choicePack.locator("img")).toHaveCount(2);
+  await choicePack.click();
+  await expect(page.getByText("Ponuda sadrži pet jedinica po slobodnom izboru Formula Green / Formula Red; fotografije prikazuju dostupne varijante, ne fiksnu kombinaciju.", { exact: true })).toBeVisible();
+  await expect(page.getByText("126,54 €", { exact: true })).toBeVisible();
+  await expect(page.getByText(/partnerska cena|poeni/i)).toHaveCount(0);
+  await expect(page.getByText("Interna šifra artikla: 80935")).not.toBeVisible();
+  await page.goto("/admin/products/preview");
 
   expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
 

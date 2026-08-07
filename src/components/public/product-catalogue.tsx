@@ -8,6 +8,7 @@ import { formatEurPrice } from "@/lib/products/format";
 import { ProductImage } from "./product-image";
 
 export type CatalogueProduct = Readonly<{
+  article_number: string;
   slug: string;
   name: string;
   category: string;
@@ -97,7 +98,7 @@ export function ProductCatalogue({
           {visible.map((product) => (
             <article key={product.slug} className="product-card">
               <Link href={`${detailBasePath}/${product.slug}`} aria-label={`Pogledaj proizvod ${product.name}`} className="product-card-image-link">
-                <ProductImage imagePath={product.image_path} name={product.name} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                <ProductImage imagePath={product.image_path} articleNumber={product.article_number} name={product.name} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
               </Link>
               <div className="flex flex-1 flex-col px-1 pb-1 pt-5">
                 <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#7a6b45]">{product.subcategory ?? product.category}</p>

@@ -250,6 +250,55 @@ textarea {
   background: linear-gradient(145deg, #fffdf8, #e9e0cc);
 }
 
+.product-visual-images {
+  position: absolute;
+  inset: 0;
+}
+
+.product-visual-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.product-visual-images-dual {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.25rem;
+  padding: 2.25rem 0.5rem 1.75rem;
+}
+
+.product-type-badge,
+.product-quantity-badge {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid color-mix(in srgb, #dbc487 65%, transparent);
+  background: #17301f;
+  color: #f7f3ea;
+  box-shadow: 0 8px 20px color-mix(in srgb, #17301f 18%, transparent);
+  font-weight: 800;
+}
+
+.product-type-badge {
+  top: 0.75rem;
+  left: 0.75rem;
+  border-radius: 999px;
+  padding: 0.38rem 0.65rem;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+}
+
+.product-quantity-badge {
+  right: 0.75rem;
+  bottom: 0.75rem;
+  max-width: calc(100% - 1.5rem);
+  border-radius: 0.8rem;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-align: right;
+}
+
 .product-card-cta {
   display: flex;
   align-items: center;

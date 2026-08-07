@@ -2,14 +2,16 @@
   "status": "local_owner_preview_only_all_products_inactive",
   "totals": {
     "candidates": 50,
-    "verified": 40,
-    "unresolved": 10
+    "verified_unique_image": 40,
+    "verified_constituent_image": 8,
+    "unresolved": 2,
+    "visual_coverage": 48
   },
   "products": [
     {
       "article_number": "80700",
       "product_name": "Aloe vera napitak sa medom",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
       "product_source_url": null,
@@ -25,22 +27,25 @@
     {
       "article_number": "80743",
       "product_name": "Aloe vera napitak sa medom pakovanje od 3",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
-      "product_source_url": null,
-      "local_image_path": null,
+      "image_status": "verified_constituent_image",
+      "source_type": "official_lr_collection",
+      "source_reference": "Official LR Collection, page 14: SKU 80743, 3 x 1000 ml; constituent SKU 80700.",
+      "product_source_url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page14.html",
+      "local_image_path": "/products/80700/product.webp",
       "source_copy_path": null,
       "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Strana 14 nemačkog kataloga navodi SKU 80743, ali prikazuje samo jednu bocu 80700, ne trostruko pakovanje.",
+      "file_type": "webp",
+      "notes_on_variant_verification": "Official LR listing confirms a three-unit SKU of the exact Traditional Honey variant; the verified 80700 bottle image represents one constituent unit, not separate outer packaging.",
       "previous_status": "unresolved",
-      "new_status": "unresolved"
+      "new_status": "verified_constituent_image",
+      "constituent_image_paths": [
+        "/products/80700/product.webp"
+      ]
     },
     {
       "article_number": "81000",
       "product_name": "Aloe Vera Immune Plus gel za piće",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
       "product_source_url": null,
@@ -56,22 +61,25 @@
     {
       "article_number": "81003",
       "product_name": "Aloe Vera Immune Plus gel za piće pakovanje od 3",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
-      "product_source_url": null,
-      "local_image_path": null,
+      "image_status": "verified_constituent_image",
+      "source_type": "official_lr_collection",
+      "source_reference": "Official LR Collection, page 14: SKU 81003, 3 x 1000 ml; constituent SKU 81000.",
+      "product_source_url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page14.html",
+      "local_image_path": "/products/81000/product.webp",
       "source_copy_path": null,
       "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Strana 14 navodi SKU 81003, ali prikazuje samo jednu bocu 81000, ne trostruko pakovanje.",
+      "file_type": "webp",
+      "notes_on_variant_verification": "Official LR listing confirms a three-unit SKU of the exact Immune Plus variant; the verified 81000 bottle image represents one constituent unit, not separate outer packaging.",
       "previous_status": "unresolved",
-      "new_status": "unresolved"
+      "new_status": "verified_constituent_image",
+      "constituent_image_paths": [
+        "/products/81000/product.webp"
+      ]
     },
     {
       "article_number": "80750",
       "product_name": "Aloe vera napitak sa ukusom breskve",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
       "product_source_url": null,
@@ -87,22 +95,25 @@
     {
       "article_number": "80783",
       "product_name": "Aloe vera napitak sa ukusom breskve pakovanje od 3",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
-      "product_source_url": null,
-      "local_image_path": null,
+      "image_status": "verified_constituent_image",
+      "source_type": "official_lr_collection",
+      "source_reference": "Official LR Collection, page 15: SKU 80783, 3 x 1000 ml; constituent SKU 80750.",
+      "product_source_url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page15.html",
+      "local_image_path": "/products/80750/product.webp",
       "source_copy_path": null,
       "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Strana 15 navodi SKU 80783, ali prikazuje samo jednu bocu 80750, ne trostruko pakovanje.",
+      "file_type": "webp",
+      "notes_on_variant_verification": "Official LR listing confirms a three-unit SKU of the exact Peach variant; the verified 80750 bottle image represents one constituent unit, not separate outer packaging.",
       "previous_status": "unresolved",
-      "new_status": "unresolved"
+      "new_status": "verified_constituent_image",
+      "constituent_image_paths": [
+        "/products/80750/product.webp"
+      ]
     },
     {
       "article_number": "80850",
       "product_name": "Aloe vera Freedom napitak",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
       "product_source_url": null,
@@ -118,22 +129,25 @@
     {
       "article_number": "80883",
       "product_name": "Aloe vera Freedom napitak pakovanje od 3",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
-      "product_source_url": null,
-      "local_image_path": null,
+      "image_status": "verified_constituent_image",
+      "source_type": "official_lr_collection",
+      "source_reference": "Official LR Collection, page 15: SKU 80883, 3 x 1000 ml; constituent SKU 80850.",
+      "product_source_url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page15.html",
+      "local_image_path": "/products/80850/product.webp",
       "source_copy_path": null,
       "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Strana 15 navodi SKU 80883, ali prikazuje samo jednu bocu 80850, ne trostruko pakovanje.",
+      "file_type": "webp",
+      "notes_on_variant_verification": "Official LR listing confirms a three-unit SKU of the exact Active Freedom variant; the verified 80850 bottle image represents one constituent unit, not separate outer packaging.",
       "previous_status": "unresolved",
-      "new_status": "unresolved"
+      "new_status": "verified_constituent_image",
+      "constituent_image_paths": [
+        "/products/80850/product.webp"
+      ]
     },
     {
       "article_number": "80800",
       "product_name": "Aloe vera Sivera napitak",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
       "product_source_url": null,
@@ -149,22 +163,25 @@
     {
       "article_number": "80823",
       "product_name": "Aloe vera Sivera napitak pakovanje od 3",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
-      "product_source_url": null,
-      "local_image_path": null,
+      "image_status": "verified_constituent_image",
+      "source_type": "official_lr_collection",
+      "source_reference": "Official LR Collection, page 16: SKU 80823, 3 x 1000 ml; constituent SKU 80800.",
+      "product_source_url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page28.html",
+      "local_image_path": "/products/80800/product.webp",
       "source_copy_path": null,
       "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Strana 16 navodi SKU 80823, ali prikazuje samo jednu bocu 80800, ne trostruko pakovanje.",
+      "file_type": "webp",
+      "notes_on_variant_verification": "Official LR listing confirms a three-unit SKU of the exact Intense Sivera variant; the verified 80800 bottle image represents one constituent unit, not separate outer packaging.",
       "previous_status": "unresolved",
-      "new_status": "unresolved"
+      "new_status": "verified_constituent_image",
+      "constituent_image_paths": [
+        "/products/80800/product.webp"
+      ]
     },
     {
       "article_number": "81100",
       "product_name": "Aloe vera Acai napitak",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "collection_pdf",
       "source_reference": "DE_Collection012026(1).pdf, strana 16",
       "product_source_url": null,
@@ -182,17 +199,20 @@
     {
       "article_number": "81103",
       "product_name": "Aloe vera Acai napitak pakovanje od 3",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
-      "product_source_url": null,
-      "local_image_path": null,
+      "image_status": "verified_constituent_image",
+      "source_type": "official_lr_collection",
+      "source_reference": "Official LR Collection, page 16: SKU 81103, 3 x 1000 ml; constituent SKU 81100.",
+      "product_source_url": "https://media.lrworld.com/Collection/BG_bg/files/BG_Collection102025.pdf",
+      "local_image_path": "/products/81100/product.webp",
       "source_copy_path": null,
       "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Strana 16 navodi SKU 81103, ali prikazuje samo jednu bocu 81100, ne trostruko pakovanje.",
+      "file_type": "webp",
+      "notes_on_variant_verification": "Official LR listing confirms a three-unit SKU of the exact Açaí Pro Summer variant; the verified 81100 bottle image represents one constituent unit, not separate outer packaging.",
       "previous_status": "unresolved",
-      "new_status": "unresolved"
+      "new_status": "verified_constituent_image",
+      "constituent_image_paths": [
+        "/products/81100/product.webp"
+      ]
     },
     {
       "article_number": "95213",
@@ -227,7 +247,7 @@
     {
       "article_number": "80102",
       "product_name": "Pro Balance tablete",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
       "product_source_url": null,
@@ -243,7 +263,7 @@
     {
       "article_number": "81180",
       "product_name": "Pro 12+ kapsule",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
       "product_source_url": null,
@@ -259,7 +279,7 @@
     {
       "article_number": "80360",
       "product_name": "Colostrum Compact kapsule",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
       "product_source_url": null,
@@ -275,7 +295,7 @@
     {
       "article_number": "81330",
       "product_name": "Liver support kapsule",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 8",
       "product_source_url": null,
@@ -291,7 +311,7 @@
     {
       "article_number": "80900",
       "product_name": "Mind Master Green",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/imported/mind-master-green.jpg",
       "product_source_url": "https://srb.lr-world.info/proizvod.html?id=health-mind-master-green",
@@ -307,22 +327,26 @@
     {
       "article_number": "80935",
       "product_name": "Mind Master pakovanje od 5 (po izboru - Green/Red)",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
-      "product_source_url": null,
-      "local_image_path": null,
+      "image_status": "verified_constituent_image",
+      "source_type": "official_lr_collection",
+      "source_reference": "Official LR Collection, pages 26 and 28: SKU 80935, 5 x 500 ml, free choice Formula Green / Formula Red; constituents 80900 and 80950.",
+      "product_source_url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page28.html",
+      "local_image_path": "/products/80900/product.webp",
       "source_copy_path": null,
       "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Strane 26 i 28 navode izbor Green/Red 5-set SKU 80935, ali svaka prikazuje samo jednu bocu jedne varijante; nijedna nije tačna slika slobodnog seta.",
+      "file_type": "webp",
+      "notes_on_variant_verification": "Official LR listing confirms five units with free Green/Red choice. Both exact verified constituent variants are shown; the presentation does not imply a fixed combination or special box.",
       "previous_status": "unresolved",
-      "new_status": "unresolved"
+      "new_status": "verified_constituent_image",
+      "constituent_image_paths": [
+        "/products/80900/product.webp",
+        "/products/80950/product.webp"
+      ]
     },
     {
       "article_number": "80980",
       "product_name": "Mind Master Extreme",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
       "product_source_url": null,
@@ -338,7 +362,7 @@
     {
       "article_number": "80338",
       "product_name": "Super Omega 3 kapsule",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 11",
       "product_source_url": null,
@@ -354,7 +378,7 @@
     {
       "article_number": "80331",
       "product_name": "Reishi Plus kapsule",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 11",
       "product_source_url": null,
@@ -370,7 +394,7 @@
     {
       "article_number": "80301",
       "product_name": "Vita Active",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/home/vita-active.webp",
       "product_source_url": "https://srb.lr-world.info/proizvod.html?id=health-vitaaktiv-vitaminok-immunerosito",
@@ -386,7 +410,7 @@
     {
       "article_number": "80950",
       "product_name": "Mind Master Red",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
       "product_source_url": null,
@@ -402,7 +426,7 @@
     {
       "article_number": "80940",
       "product_name": "Mind Master Gold",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
       "product_source_url": null,
@@ -418,22 +442,25 @@
     {
       "article_number": "80945",
       "product_name": "Mind Master Gold pakovanje od 5",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
-      "product_source_url": null,
-      "local_image_path": null,
+      "image_status": "verified_constituent_image",
+      "source_type": "official_lr_collection",
+      "source_reference": "Official LR Collection, page 27: SKU 80945, 5 x 500 ml; constituent SKU 80940.",
+      "product_source_url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page27.html",
+      "local_image_path": "/products/80940/product.webp",
       "source_copy_path": null,
       "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Strana 27 navodi Gold 5-set SKU 80945, ali prikazuje samo jednu bocu 80940, ne petokomadni set.",
+      "file_type": "webp",
+      "notes_on_variant_verification": "Official LR listing confirms a five-unit SKU of the exact Formula Gold variant; the verified 80940 bottle image represents one constituent unit, not separate outer packaging.",
       "previous_status": "unresolved",
-      "new_status": "unresolved"
+      "new_status": "verified_constituent_image",
+      "constituent_image_paths": [
+        "/products/80940/product.webp"
+      ]
     },
     {
       "article_number": "80361",
       "product_name": "Colostrum Liquid",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
       "product_source_url": null,
@@ -449,7 +476,7 @@
     {
       "article_number": "80325",
       "product_name": "Cistus Incanus kapsule",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
       "product_source_url": null,
@@ -465,7 +492,7 @@
     {
       "article_number": "80190",
       "product_name": "Active Freedom kapsule",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 15",
       "product_source_url": null,
@@ -481,7 +508,7 @@
     {
       "article_number": "80550",
       "product_name": "Protein ital",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 15",
       "product_source_url": null,
@@ -497,7 +524,7 @@
     {
       "article_number": "80630",
       "product_name": "Fiber Boost",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
       "product_source_url": null,
@@ -513,7 +540,7 @@
     {
       "article_number": "80205",
       "product_name": "Herbal Fasting dijetalna čajna mešavina",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
       "product_source_url": null,
@@ -529,7 +556,7 @@
     {
       "article_number": "80332",
       "product_name": "Woman Phyto kapsule",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 9",
       "product_source_url": null,
@@ -545,7 +572,7 @@
     {
       "article_number": "81140",
       "product_name": "5in1 Beauty Elixir",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/5in1/beauty-elixir-shot.png",
       "product_source_url": "https://srb.lr-world.info/5in1-beauty-elixir.html",
@@ -561,7 +588,7 @@
     {
       "article_number": "81170",
       "product_name": "5in1 Men´s Shot",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/5in1/men-shot.png",
       "product_source_url": "https://srb.lr-world.info/5in1-mens-shot.html",
@@ -577,7 +604,7 @@
     {
       "article_number": "81251",
       "product_name": "FIGU ACTIVE slatki krompir supa",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
       "product_source_url": null,
@@ -593,7 +620,7 @@
     {
       "article_number": "81245",
       "product_name": "FIGU ACTIVE začinjena kari supa",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Spicy-Curry-Soup_1024x768px-b257601fbf.jpg",
       "product_source_url": "https://srb.lr-world.info/body-mission.html",
@@ -609,7 +636,7 @@
     {
       "article_number": "81246",
       "product_name": "FIGU ACTIVE ukusna supa od povrća",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Yummi-Veggie-Soup_1024x768px-562054084e.jpg",
       "product_source_url": "https://srb.lr-world.info/body-mission.html",
@@ -625,7 +652,7 @@
     {
       "article_number": "81244",
       "product_name": "FIGU ACTIVE sočna supa od paradajza",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Juicy-Tomato-Soup_1024x768px-12a855bdd3.jpg",
       "product_source_url": "https://srb.lr-world.info/body-mission.html",
@@ -641,7 +668,7 @@
     {
       "article_number": "81255",
       "product_name": "FIGU ACTIVE ovsena kaša sa šumskim voćem",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "collection_pdf",
       "source_reference": "DE_Collection012026(1).pdf, strana 48",
       "product_source_url": null,
@@ -659,7 +686,7 @@
     {
       "article_number": "81247",
       "product_name": "FIGU ACTIVE hrskavi musli sa malinom",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
       "product_source_url": null,
@@ -675,7 +702,7 @@
     {
       "article_number": "81249",
       "product_name": "Figu Active Berry Snack, kutija od 6",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "collection_pdf",
       "source_reference": "DE_Collection012026(1).pdf, strana 49",
       "product_source_url": null,
@@ -693,7 +720,7 @@
     {
       "article_number": "81248",
       "product_name": "Figu Active Almond Snack, kutija od 6",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "collection_pdf",
       "source_reference": "DE_Collection012026(1).pdf, strana 49",
       "product_source_url": null,
@@ -711,7 +738,7 @@
     {
       "article_number": "81260",
       "product_name": "LR BODY MISSION mesečno pakovanje",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "collection_pdf",
       "source_reference": "DE_Collection012026(1).pdf, strana 43",
       "product_source_url": null,
@@ -729,7 +756,7 @@
     {
       "article_number": "81241",
       "product_name": "FIGU ACTIVE voćni jagoda šejk",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/imported/Fruity-Strawberry-Shake_1024x768px-7bb82961fe.jpg",
       "product_source_url": "https://srb.lr-world.info/body-mission.html",
@@ -745,7 +772,7 @@
     {
       "article_number": "81250",
       "product_name": "FIGU ACTIVE ukusna karamela šejk",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "health_mission_pdf",
       "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
       "product_source_url": null,
@@ -761,7 +788,7 @@
     {
       "article_number": "81242",
       "product_name": "FIGU ACTIVE kafa šejk",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Lovely-Coffee-Shake_1024x768px-5b59dd322e.jpg",
       "product_source_url": "https://srb.lr-world.info/body-mission.html",
@@ -777,7 +804,7 @@
     {
       "article_number": "81240",
       "product_name": "FIGU ACTIVE blaga vanila šejk",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/imported/Soft-Vanilla-Shake_1024x768px-5440de61b5.jpg",
       "product_source_url": "https://srb.lr-world.info/body-mission.html",
@@ -793,7 +820,7 @@
     {
       "article_number": "81243",
       "product_name": "FIGU ACTIVE kremasta čokolada šejk",
-      "image_status": "verified",
+      "image_status": "verified_unique_image",
       "source_type": "lr_web",
       "source_reference": "https://srb.lr-world.info/assets/imported/Smooth-Cocoa-Shake_1024x768px-f0837dfbfd.jpg",
       "product_source_url": "https://srb.lr-world.info/body-mission.html",
