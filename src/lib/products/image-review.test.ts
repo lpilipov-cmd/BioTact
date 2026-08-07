@@ -1,4 +1,5 @@
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 
@@ -8,7 +9,7 @@ describe("LR product image review", () => {
   it("contains one unique, valid decision for every reviewed article", () => {
     expect(imageReview.products).toHaveLength(50);
     expect(new Set(imageReview.products.map((item) => item.article_number)).size).toBe(50);
-    expect(imageReview.totals).toEqual({ candidates: 50, verified: 35, unresolved: 15 });
+    expect(imageReview.totals).toEqual({ candidates: 50, verified: 40, unresolved: 10 });
   });
 
   it("keeps every verified derivative local and resolvable", () => {
@@ -22,5 +23,13 @@ describe("LR product image review", () => {
         expect(item.local_image_path).toBeNull();
       }
     }
+  });
+
+  it("does not reuse one derivative for unrelated reviewed SKUs", () => {
+    const hashes = imageReview.products
+      .filter((item) => item.image_status === "verified")
+      .map((item) => createHash("sha256").update(readFileSync(resolve("public", item.local_image_path!.slice(1)))).digest("hex"));
+
+    expect(new Set(hashes).size).toBe(hashes.length);
   });
 });

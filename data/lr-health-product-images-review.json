@@ -2,8 +2,8 @@
   "status": "local_owner_preview_only_all_products_inactive",
   "totals": {
     "candidates": 50,
-    "verified": 35,
-    "unresolved": 15
+    "verified": 40,
+    "unresolved": 10
   },
   "products": [
     {
@@ -27,13 +27,15 @@
       "product_name": "Aloe vera napitak sa medom pakovanje od 3",
       "image_status": "unresolved",
       "source_type": null,
-      "source_reference": null,
+      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
       "product_source_url": null,
       "local_image_path": null,
       "source_copy_path": null,
       "image_dimensions": null,
       "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "notes_on_variant_verification": "Strana 14 nemačkog kataloga navodi SKU 80743, ali prikazuje samo jednu bocu 80700, ne trostruko pakovanje.",
+      "previous_status": "unresolved",
+      "new_status": "unresolved"
     },
     {
       "article_number": "81000",
@@ -56,13 +58,15 @@
       "product_name": "Aloe Vera Immune Plus gel za piće pakovanje od 3",
       "image_status": "unresolved",
       "source_type": null,
-      "source_reference": null,
+      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
       "product_source_url": null,
       "local_image_path": null,
       "source_copy_path": null,
       "image_dimensions": null,
       "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "notes_on_variant_verification": "Strana 14 navodi SKU 81003, ali prikazuje samo jednu bocu 81000, ne trostruko pakovanje.",
+      "previous_status": "unresolved",
+      "new_status": "unresolved"
     },
     {
       "article_number": "80750",
@@ -85,13 +89,15 @@
       "product_name": "Aloe vera napitak sa ukusom breskve pakovanje od 3",
       "image_status": "unresolved",
       "source_type": null,
-      "source_reference": null,
+      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
       "product_source_url": null,
       "local_image_path": null,
       "source_copy_path": null,
       "image_dimensions": null,
       "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "notes_on_variant_verification": "Strana 15 navodi SKU 80783, ali prikazuje samo jednu bocu 80750, ne trostruko pakovanje.",
+      "previous_status": "unresolved",
+      "new_status": "unresolved"
     },
     {
       "article_number": "80850",
@@ -114,13 +120,15 @@
       "product_name": "Aloe vera Freedom napitak pakovanje od 3",
       "image_status": "unresolved",
       "source_type": null,
-      "source_reference": null,
+      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
       "product_source_url": null,
       "local_image_path": null,
       "source_copy_path": null,
       "image_dimensions": null,
       "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "notes_on_variant_verification": "Strana 15 navodi SKU 80883, ali prikazuje samo jednu bocu 80850, ne trostruko pakovanje.",
+      "previous_status": "unresolved",
+      "new_status": "unresolved"
     },
     {
       "article_number": "80800",
@@ -143,65 +151,78 @@
       "product_name": "Aloe vera Sivera napitak pakovanje od 3",
       "image_status": "unresolved",
       "source_type": null,
-      "source_reference": null,
+      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
       "product_source_url": null,
       "local_image_path": null,
       "source_copy_path": null,
       "image_dimensions": null,
       "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "notes_on_variant_verification": "Strana 16 navodi SKU 80823, ali prikazuje samo jednu bocu 80800, ne trostruko pakovanje.",
+      "previous_status": "unresolved",
+      "new_status": "unresolved"
     },
     {
       "article_number": "81100",
       "product_name": "Aloe vera Acai napitak",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": null,
+      "image_status": "verified",
+      "source_type": "collection_pdf",
+      "source_reference": "DE_Collection012026(1).pdf, strana 16",
       "product_source_url": null,
-      "local_image_path": null,
-      "source_copy_path": null,
-      "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "local_image_path": "/products/81100/product.webp",
+      "source_copy_path": "/products/81100/source.jp2",
+      "image_dimensions": {
+        "width": 484,
+        "height": 512
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Tačna Açaí Pro Summer boca, naziv, 1000 ml pakovanje i SKU 81100 prikazani su zajedno na stranici 16.",
+      "previous_status": "unresolved",
+      "new_status": "verified"
     },
     {
       "article_number": "81103",
       "product_name": "Aloe vera Acai napitak pakovanje od 3",
       "image_status": "unresolved",
       "source_type": null,
-      "source_reference": null,
+      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
       "product_source_url": null,
       "local_image_path": null,
       "source_copy_path": null,
       "image_dimensions": null,
       "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "notes_on_variant_verification": "Strana 16 navodi SKU 81103, ali prikazuje samo jednu bocu 81100, ne trostruko pakovanje.",
+      "previous_status": "unresolved",
+      "new_status": "unresolved"
     },
     {
       "article_number": "95213",
       "product_name": "Turbokid mesečni set (Aloe vera napitak sa medom, Vita Active, Colostrum Liquid)",
       "image_status": "unresolved",
       "source_type": null,
-      "source_reference": null,
+      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
       "product_source_url": null,
       "local_image_path": null,
       "source_copy_path": null,
       "image_dimensions": null,
       "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "notes_on_variant_verification": "TurboKid set sa medom i SKU 95213 nisu pronađeni u novim PDF izvorima.",
+      "previous_status": "unresolved",
+      "new_status": "unresolved"
     },
     {
       "article_number": "96034",
       "product_name": "Turbokid mesečni set (Aloe vera napitak sa ukusom breskve, Vita Active, Colostrum Liquid)",
       "image_status": "unresolved",
       "source_type": null,
-      "source_reference": null,
+      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
       "product_source_url": null,
       "local_image_path": null,
       "source_copy_path": null,
       "image_dimensions": null,
       "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "notes_on_variant_verification": "TurboKid set sa breskvom i SKU 96034 nisu pronađeni u novim PDF izvorima.",
+      "previous_status": "unresolved",
+      "new_status": "unresolved"
     },
     {
       "article_number": "80102",
@@ -288,13 +309,15 @@
       "product_name": "Mind Master pakovanje od 5 (po izboru - Green/Red)",
       "image_status": "unresolved",
       "source_type": null,
-      "source_reference": null,
+      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
       "product_source_url": null,
       "local_image_path": null,
       "source_copy_path": null,
       "image_dimensions": null,
       "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "notes_on_variant_verification": "Strane 26 i 28 navode izbor Green/Red 5-set SKU 80935, ali svaka prikazuje samo jednu bocu jedne varijante; nijedna nije tačna slika slobodnog seta.",
+      "previous_status": "unresolved",
+      "new_status": "unresolved"
     },
     {
       "article_number": "80980",
@@ -397,13 +420,15 @@
       "product_name": "Mind Master Gold pakovanje od 5",
       "image_status": "unresolved",
       "source_type": null,
-      "source_reference": null,
+      "source_reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
       "product_source_url": null,
       "local_image_path": null,
       "source_copy_path": null,
       "image_dimensions": null,
       "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "notes_on_variant_verification": "Strana 27 navodi Gold 5-set SKU 80945, ali prikazuje samo jednu bocu 80940, ne petokomadni set.",
+      "previous_status": "unresolved",
+      "new_status": "unresolved"
     },
     {
       "article_number": "80361",
@@ -616,15 +641,20 @@
     {
       "article_number": "81255",
       "product_name": "FIGU ACTIVE ovsena kaša sa šumskim voćem",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": null,
+      "image_status": "verified",
+      "source_type": "collection_pdf",
+      "source_reference": "DE_Collection012026(1).pdf, strana 48",
       "product_source_url": null,
-      "local_image_path": null,
-      "source_copy_path": null,
-      "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "local_image_path": "/products/81255/product.webp",
+      "source_copy_path": "/products/81255/source.jpg",
+      "image_dimensions": {
+        "width": 939,
+        "height": 1200
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Tačno pakovanje Berry Dream Bowl od 450 g i SKU 81255 prikazani su zajedno na stranici 48; srpski cenovnik koristi opisni naziv ovsena kaša sa šumskim voćem.",
+      "previous_status": "unresolved",
+      "new_status": "verified"
     },
     {
       "article_number": "81247",
@@ -645,41 +675,56 @@
     {
       "article_number": "81249",
       "product_name": "Figu Active Berry Snack, kutija od 6",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": null,
+      "image_status": "verified",
+      "source_type": "collection_pdf",
+      "source_reference": "DE_Collection012026(1).pdf, strana 49",
       "product_source_url": null,
-      "local_image_path": null,
-      "source_copy_path": null,
-      "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "local_image_path": "/products/81249/product.webp",
+      "source_copy_path": "/products/81249/source.jp2",
+      "image_dimensions": {
+        "width": 316,
+        "height": 154
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Zvanični katalog neposredno označava Berry Snack sliku prodajnim SKU-om 81249 i pakovanjem 6 x 35 g; slika prikazuje jednu fabrički zatvorenu jedinicu iz pakovanja.",
+      "previous_status": "unresolved",
+      "new_status": "verified"
     },
     {
       "article_number": "81248",
       "product_name": "Figu Active Almond Snack, kutija od 6",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": null,
+      "image_status": "verified",
+      "source_type": "collection_pdf",
+      "source_reference": "DE_Collection012026(1).pdf, strana 49",
       "product_source_url": null,
-      "local_image_path": null,
-      "source_copy_path": null,
-      "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "local_image_path": "/products/81248/product.webp",
+      "source_copy_path": "/products/81248/source.jp2",
+      "image_dimensions": {
+        "width": 316,
+        "height": 154
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Zvanični katalog neposredno označava Almond Snack sliku prodajnim SKU-om 81248 i pakovanjem 6 x 35 g; slika prikazuje jednu fabrički zatvorenu jedinicu iz pakovanja.",
+      "previous_status": "unresolved",
+      "new_status": "verified"
     },
     {
       "article_number": "81260",
       "product_name": "LR BODY MISSION mesečno pakovanje",
-      "image_status": "unresolved",
-      "source_type": null,
-      "source_reference": null,
+      "image_status": "verified",
+      "source_type": "collection_pdf",
+      "source_reference": "DE_Collection012026(1).pdf, strana 43",
       "product_source_url": null,
-      "local_image_path": null,
-      "source_copy_path": null,
-      "image_dimensions": null,
-      "file_type": null,
-      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+      "local_image_path": "/products/81260/product.webp",
+      "source_copy_path": "/products/81260/source.jp2",
+      "image_dimensions": {
+        "width": 679,
+        "height": 473
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Tačan LR BODY MISSION jednomesečni set, naziv, slobodan izbor sastava i SKU 81260 prikazani su zajedno na stranici 43.",
+      "previous_status": "unresolved",
+      "new_status": "verified"
     },
     {
       "article_number": "81241",

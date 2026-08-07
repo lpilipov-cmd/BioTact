@@ -326,7 +326,7 @@
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
       ],
-      "image_path": null,
+      "image_path": "/products/81100/product.webp",
       "image_source_url": null,
       "product_source_url": null
     },
@@ -1190,7 +1190,7 @@
         "PDF supports only the broader product family, not a uniquely coded variant description.",
         "Short description remains null pending owner content review."
       ],
-      "image_path": null,
+      "image_path": "/products/81255/product.webp",
       "image_source_url": null,
       "product_source_url": null
     },
@@ -1249,7 +1249,7 @@
         "PDF supports only the broader product family, not a uniquely coded variant description.",
         "Short description remains null pending owner content review."
       ],
-      "image_path": null,
+      "image_path": "/products/81249/product.webp",
       "image_source_url": null,
       "product_source_url": null
     },
@@ -1279,7 +1279,7 @@
         "PDF supports only the broader product family, not a uniquely coded variant description.",
         "Short description remains null pending owner content review."
       ],
-      "image_path": null,
+      "image_path": "/products/81248/product.webp",
       "image_source_url": null,
       "product_source_url": null
     },
@@ -1308,7 +1308,7 @@
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
       ],
-      "image_path": null,
+      "image_path": "/products/81260/product.webp",
       "image_source_url": null,
       "product_source_url": null
     },
