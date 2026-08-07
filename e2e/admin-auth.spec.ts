@@ -52,6 +52,21 @@ test("administrator pristupa zaštićenoj strani i odjavljuje se", async ({
   ).toBeVisible();
   await expect(page.getByText(localAdmin.email)).toBeVisible();
 
+  await page.goto("/admin/products/preview");
+  await expect(page.getByRole("heading", { name: "BIOTACT katalog pre objave." })).toBeVisible();
+  await expect(page.locator("[data-testid=product-grid] article")).toHaveCount(50);
+  await expect(page.getByText(/partnerska cena|poeni/i)).toHaveCount(0);
+  await expect(page.getByText(/artikal\s+\d+/i)).toHaveCount(0);
+  await expect(page.getByRole("link", { name: /Pogledaj proizvod Aloe vera napitak sa medom$/i })).toBeVisible();
+
+  expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
+
+  await page.getByRole("link", { name: "Pogledaj proizvod Aloe vera napitak sa medom", exact: true }).click();
+  await expect(page).toHaveURL(/\/admin\/products\/preview\/aloe-vera-napitak-sa-medom-80700$/);
+  await expect(page.getByRole("heading", { name: "Aloe vera napitak sa medom" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Pošalji upit" })).toHaveAttribute("href", "/kontakt?product=aloe-vera-napitak-sa-medom-80700");
+  await expect(page.getByText("Interna šifra artikla: 80700")).not.toBeVisible();
+
   const hasHorizontalOverflow = await page.evaluate(
     () => document.documentElement.scrollWidth > window.innerWidth,
   );

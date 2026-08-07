@@ -1,0 +1,765 @@
+{
+  "status": "local_owner_preview_only_all_products_inactive",
+  "totals": {
+    "candidates": 50,
+    "verified": 35,
+    "unresolved": 15
+  },
+  "products": [
+    {
+      "article_number": "80700",
+      "product_name": "Aloe vera napitak sa medom",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
+      "product_source_url": null,
+      "local_image_path": "/products/80700/product.webp",
+      "source_copy_path": "/products/80700/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80743",
+      "product_name": "Aloe vera napitak sa medom pakovanje od 3",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "81000",
+      "product_name": "Aloe Vera Immune Plus gel za piće",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
+      "product_source_url": null,
+      "local_image_path": "/products/81000/product.webp",
+      "source_copy_path": "/products/81000/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "81003",
+      "product_name": "Aloe Vera Immune Plus gel za piće pakovanje od 3",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "80750",
+      "product_name": "Aloe vera napitak sa ukusom breskve",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
+      "product_source_url": null,
+      "local_image_path": "/products/80750/product.webp",
+      "source_copy_path": "/products/80750/source.jpg",
+      "image_dimensions": {
+        "width": 236,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80783",
+      "product_name": "Aloe vera napitak sa ukusom breskve pakovanje od 3",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "80850",
+      "product_name": "Aloe vera Freedom napitak",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
+      "product_source_url": null,
+      "local_image_path": "/products/80850/product.webp",
+      "source_copy_path": "/products/80850/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80883",
+      "product_name": "Aloe vera Freedom napitak pakovanje od 3",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "80800",
+      "product_name": "Aloe vera Sivera napitak",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
+      "product_source_url": null,
+      "local_image_path": "/products/80800/product.webp",
+      "source_copy_path": "/products/80800/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80823",
+      "product_name": "Aloe vera Sivera napitak pakovanje od 3",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "81100",
+      "product_name": "Aloe vera Acai napitak",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "81103",
+      "product_name": "Aloe vera Acai napitak pakovanje od 3",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "95213",
+      "product_name": "Turbokid mesečni set (Aloe vera napitak sa medom, Vita Active, Colostrum Liquid)",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "96034",
+      "product_name": "Turbokid mesečni set (Aloe vera napitak sa ukusom breskve, Vita Active, Colostrum Liquid)",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "80102",
+      "product_name": "Pro Balance tablete",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
+      "product_source_url": null,
+      "local_image_path": "/products/80102/product.webp",
+      "source_copy_path": "/products/80102/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "81180",
+      "product_name": "Pro 12+ kapsule",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
+      "product_source_url": null,
+      "local_image_path": "/products/81180/product.webp",
+      "source_copy_path": "/products/81180/source.jpg",
+      "image_dimensions": {
+        "width": 241,
+        "height": 330
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80360",
+      "product_name": "Colostrum Compact kapsule",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
+      "product_source_url": null,
+      "local_image_path": "/products/80360/product.webp",
+      "source_copy_path": "/products/80360/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "81330",
+      "product_name": "Liver support kapsule",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 8",
+      "product_source_url": null,
+      "local_image_path": "/products/81330/product.webp",
+      "source_copy_path": "/products/81330/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80900",
+      "product_name": "Mind Master Green",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/imported/mind-master-green.jpg",
+      "product_source_url": "https://srb.lr-world.info/proizvod.html?id=health-mind-master-green",
+      "local_image_path": "/products/80900/product.webp",
+      "source_copy_path": "/products/80900/source.jpg",
+      "image_dimensions": {
+        "width": 510,
+        "height": 638
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    },
+    {
+      "article_number": "80935",
+      "product_name": "Mind Master pakovanje od 5 (po izboru - Green/Red)",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "80980",
+      "product_name": "Mind Master Extreme",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
+      "product_source_url": null,
+      "local_image_path": "/products/80980/product.webp",
+      "source_copy_path": "/products/80980/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80338",
+      "product_name": "Super Omega 3 kapsule",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 11",
+      "product_source_url": null,
+      "local_image_path": "/products/80338/product.webp",
+      "source_copy_path": "/products/80338/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80331",
+      "product_name": "Reishi Plus kapsule",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 11",
+      "product_source_url": null,
+      "local_image_path": "/products/80331/product.webp",
+      "source_copy_path": "/products/80331/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80301",
+      "product_name": "Vita Active",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/home/vita-active.webp",
+      "product_source_url": "https://srb.lr-world.info/proizvod.html?id=health-vitaaktiv-vitaminok-immunerosito",
+      "local_image_path": "/products/80301/product.webp",
+      "source_copy_path": "/products/80301/source.webp",
+      "image_dimensions": {
+        "width": 400,
+        "height": 400
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    },
+    {
+      "article_number": "80950",
+      "product_name": "Mind Master Red",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
+      "product_source_url": null,
+      "local_image_path": "/products/80950/product.webp",
+      "source_copy_path": "/products/80950/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80940",
+      "product_name": "Mind Master Gold",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
+      "product_source_url": null,
+      "local_image_path": "/products/80940/product.webp",
+      "source_copy_path": "/products/80940/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80945",
+      "product_name": "Mind Master Gold pakovanje od 5",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "80361",
+      "product_name": "Colostrum Liquid",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
+      "product_source_url": null,
+      "local_image_path": "/products/80361/product.webp",
+      "source_copy_path": "/products/80361/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80325",
+      "product_name": "Cistus Incanus kapsule",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
+      "product_source_url": null,
+      "local_image_path": "/products/80325/product.webp",
+      "source_copy_path": "/products/80325/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80190",
+      "product_name": "Active Freedom kapsule",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 15",
+      "product_source_url": null,
+      "local_image_path": "/products/80190/product.webp",
+      "source_copy_path": "/products/80190/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80550",
+      "product_name": "Protein ital",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 15",
+      "product_source_url": null,
+      "local_image_path": "/products/80550/product.webp",
+      "source_copy_path": "/products/80550/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80630",
+      "product_name": "Fiber Boost",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
+      "product_source_url": null,
+      "local_image_path": "/products/80630/product.webp",
+      "source_copy_path": "/products/80630/source.jpg",
+      "image_dimensions": {
+        "width": 325,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80205",
+      "product_name": "Herbal Fasting dijetalna čajna mešavina",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
+      "product_source_url": null,
+      "local_image_path": "/products/80205/product.webp",
+      "source_copy_path": "/products/80205/source.jpg",
+      "image_dimensions": {
+        "width": 239,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "80332",
+      "product_name": "Woman Phyto kapsule",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 9",
+      "product_source_url": null,
+      "local_image_path": "/products/80332/product.webp",
+      "source_copy_path": "/products/80332/source.jpg",
+      "image_dimensions": {
+        "width": 325,
+        "height": 325
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "81140",
+      "product_name": "5in1 Beauty Elixir",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/5in1/beauty-elixir-shot.png",
+      "product_source_url": "https://srb.lr-world.info/5in1-beauty-elixir.html",
+      "local_image_path": "/products/81140/product.webp",
+      "source_copy_path": "/products/81140/source.png",
+      "image_dimensions": {
+        "width": 1044,
+        "height": 1200
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    },
+    {
+      "article_number": "81170",
+      "product_name": "5in1 Men´s Shot",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/5in1/men-shot.png",
+      "product_source_url": "https://srb.lr-world.info/5in1-mens-shot.html",
+      "local_image_path": "/products/81170/product.webp",
+      "source_copy_path": "/products/81170/source.png",
+      "image_dimensions": {
+        "width": 985,
+        "height": 1200
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    },
+    {
+      "article_number": "81251",
+      "product_name": "FIGU ACTIVE slatki krompir supa",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
+      "product_source_url": null,
+      "local_image_path": "/products/81251/product.webp",
+      "source_copy_path": "/products/81251/source.jpg",
+      "image_dimensions": {
+        "width": 990,
+        "height": 798
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "81245",
+      "product_name": "FIGU ACTIVE začinjena kari supa",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Spicy-Curry-Soup_1024x768px-b257601fbf.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "local_image_path": "/products/81245/product.webp",
+      "source_copy_path": "/products/81245/source.jpg",
+      "image_dimensions": {
+        "width": 1024,
+        "height": 768
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    },
+    {
+      "article_number": "81246",
+      "product_name": "FIGU ACTIVE ukusna supa od povrća",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Yummi-Veggie-Soup_1024x768px-562054084e.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "local_image_path": "/products/81246/product.webp",
+      "source_copy_path": "/products/81246/source.jpg",
+      "image_dimensions": {
+        "width": 1024,
+        "height": 768
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    },
+    {
+      "article_number": "81244",
+      "product_name": "FIGU ACTIVE sočna supa od paradajza",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Juicy-Tomato-Soup_1024x768px-12a855bdd3.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "local_image_path": "/products/81244/product.webp",
+      "source_copy_path": "/products/81244/source.jpg",
+      "image_dimensions": {
+        "width": 1024,
+        "height": 768
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    },
+    {
+      "article_number": "81255",
+      "product_name": "FIGU ACTIVE ovsena kaša sa šumskim voćem",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "81247",
+      "product_name": "FIGU ACTIVE hrskavi musli sa malinom",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
+      "product_source_url": null,
+      "local_image_path": "/products/81247/product.webp",
+      "source_copy_path": "/products/81247/source.jpg",
+      "image_dimensions": {
+        "width": 564,
+        "height": 904
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "81249",
+      "product_name": "Figu Active Berry Snack, kutija od 6",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "81248",
+      "product_name": "Figu Active Almond Snack, kutija od 6",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "81260",
+      "product_name": "LR BODY MISSION mesečno pakovanje",
+      "image_status": "unresolved",
+      "source_type": null,
+      "source_reference": null,
+      "product_source_url": null,
+      "local_image_path": null,
+      "source_copy_path": null,
+      "image_dimensions": null,
+      "file_type": null,
+      "notes_on_variant_verification": "Nije pronađena slika koja nedvosmisleno potvrđuje tačno pakovanje i varijantu; zamenska slika nije korišćena."
+    },
+    {
+      "article_number": "81241",
+      "product_name": "FIGU ACTIVE voćni jagoda šejk",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/imported/Fruity-Strawberry-Shake_1024x768px-7bb82961fe.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "local_image_path": "/products/81241/product.webp",
+      "source_copy_path": "/products/81241/source.jpg",
+      "image_dimensions": {
+        "width": 1024,
+        "height": 768
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    },
+    {
+      "article_number": "81250",
+      "product_name": "FIGU ACTIVE ukusna karamela šejk",
+      "image_status": "verified",
+      "source_type": "health_mission_pdf",
+      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
+      "product_source_url": null,
+      "local_image_path": "/products/81250/product.webp",
+      "source_copy_path": "/products/81250/source.jpg",
+      "image_dimensions": {
+        "width": 527,
+        "height": 400
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+    },
+    {
+      "article_number": "81242",
+      "product_name": "FIGU ACTIVE kafa šejk",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Lovely-Coffee-Shake_1024x768px-5b59dd322e.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "local_image_path": "/products/81242/product.webp",
+      "source_copy_path": "/products/81242/source.jpg",
+      "image_dimensions": {
+        "width": 1024,
+        "height": 768
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    },
+    {
+      "article_number": "81240",
+      "product_name": "FIGU ACTIVE blaga vanila šejk",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/imported/Soft-Vanilla-Shake_1024x768px-5440de61b5.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "local_image_path": "/products/81240/product.webp",
+      "source_copy_path": "/products/81240/source.jpg",
+      "image_dimensions": {
+        "width": 1024,
+        "height": 768
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    },
+    {
+      "article_number": "81243",
+      "product_name": "FIGU ACTIVE kremasta čokolada šejk",
+      "image_status": "verified",
+      "source_type": "lr_web",
+      "source_reference": "https://srb.lr-world.info/assets/imported/Smooth-Cocoa-Shake_1024x768px-f0837dfbfd.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "local_image_path": "/products/81243/product.webp",
+      "source_copy_path": "/products/81243/source.jpg",
+      "image_dimensions": {
+        "width": 1024,
+        "height": 768
+      },
+      "file_type": "webp",
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+    }
+  ]
+}

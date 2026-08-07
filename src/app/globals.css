@@ -150,3 +150,167 @@ textarea {
 .skip-link:focus {
   transform: translateY(0);
 }
+
+.catalogue-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 82% 8%, color-mix(in srgb, #c9a24d 16%, transparent), transparent 28rem),
+    #f1ead9;
+}
+
+.catalogue-header {
+  display: grid;
+  gap: 2rem;
+  background: #17301f;
+  color: #f7f3ea;
+  padding: 4rem max(1rem, calc((100vw - 80rem) / 2));
+}
+
+.catalogue-header h1 {
+  margin-top: 0.75rem;
+  max-width: 15ch;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.96;
+}
+
+.catalogue-header > p {
+  align-self: end;
+  max-width: 34rem;
+  color: #d7dfd7;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.catalogue-toolbar {
+  display: grid;
+  gap: 0.85rem;
+  border: 1px solid color-mix(in srgb, #17301f 15%, transparent);
+  border-radius: 1.5rem;
+  background: color-mix(in srgb, white 70%, transparent);
+  padding: 1rem;
+  box-shadow: 0 20px 55px color-mix(in srgb, #17301f 7%, transparent);
+}
+
+.catalogue-toolbar label {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 0;
+  color: #5b6960;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.catalogue-toolbar input,
+.catalogue-toolbar select {
+  min-height: 3rem;
+  min-width: 0;
+  width: 100%;
+  border: 1px solid color-mix(in srgb, #17301f 18%, transparent);
+  border-radius: 0.85rem;
+  background: white;
+  padding: 0 0.9rem;
+  color: #17301f;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.product-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, #17301f 13%, transparent);
+  border-radius: 1.75rem;
+  background: color-mix(in srgb, white 80%, transparent);
+  padding: 0.65rem;
+  box-shadow: 0 18px 45px color-mix(in srgb, #17301f 7%, transparent);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 60px color-mix(in srgb, #17301f 12%, transparent);
+}
+
+.product-card-image-link > div,
+.product-detail-image > div {
+  background: linear-gradient(145deg, #fffdf8, #e9e0cc);
+}
+
+.product-card-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, #17301f 14%, transparent);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.product-detail-shell {
+  width: 100%;
+  max-width: 76rem;
+  min-height: 100vh;
+  margin-inline: auto;
+  padding: 3rem 1rem 6rem;
+}
+
+.product-back-link {
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: #c9a24d;
+  text-underline-offset: 0.35rem;
+}
+
+.product-detail-hero {
+  display: grid;
+  gap: 2.25rem;
+  margin-top: 2rem;
+  border: 1px solid color-mix(in srgb, #17301f 13%, transparent);
+  border-radius: 2rem;
+  background: color-mix(in srgb, white 76%, transparent);
+  padding: 1rem;
+  box-shadow: 0 28px 80px color-mix(in srgb, #17301f 9%, transparent);
+}
+
+.product-detail-image > div {
+  border-radius: 1.5rem;
+}
+
+.product-disclaimer {
+  margin-top: 2rem;
+  border-left: 3px solid #c9a24d;
+  background: color-mix(in srgb, white 45%, transparent);
+  padding: 1rem 1.25rem;
+  color: #5b6960;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+@media (min-width: 40rem) {
+  .catalogue-header { grid-template-columns: 1.4fr 0.6fr; padding-block: 5.5rem; }
+  .catalogue-toolbar { grid-template-columns: 1.5fr 1fr; padding: 1.25rem; }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+  .product-detail-shell { padding-inline: 1.5rem; }
+  .product-detail-hero { padding: 1.5rem; }
+}
+
+@media (min-width: 64rem) {
+  .catalogue-toolbar { grid-template-columns: 1.6fr repeat(3, minmax(0, 1fr)); }
+  .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .product-detail-hero { grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); gap: 4rem; padding: 2rem; }
+}

@@ -35,7 +35,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF assigns 80700-50 inconsistently; no catalogue_source_code stored."
-      ]
+      ],
+      "image_path": "/products/80700/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-napitak-sa-medom-pakovanje-od-3-80743",
@@ -62,7 +65,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-immune-plus-gel-za-pice-81000",
@@ -88,7 +94,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF assigns 80700-50 inconsistently; no catalogue_source_code stored."
-      ]
+      ],
+      "image_path": "/products/81000/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-immune-plus-gel-za-pice-pakovanje-od-3-81003",
@@ -115,7 +124,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-napitak-sa-ukusom-breskve-80750",
@@ -139,7 +151,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/80750/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-napitak-sa-ukusom-breskve-pakovanje-od-3-80783",
@@ -166,7 +181,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-freedom-napitak-80850",
@@ -190,7 +208,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/80850/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-freedom-napitak-pakovanje-od-3-80883",
@@ -217,7 +238,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-sivera-napitak-80800",
@@ -241,7 +265,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/80800/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-sivera-napitak-pakovanje-od-3-80823",
@@ -268,7 +295,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-acai-napitak-81100",
@@ -295,7 +325,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "aloe-vera-acai-napitak-pakovanje-od-3-81103",
@@ -322,7 +355,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "turbokid-mesecni-set-aloe-vera-napitak-sa-medom-vita-active-colostrum-liquid-95213",
@@ -349,7 +385,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "turbokid-mesecni-set-aloe-vera-napitak-sa-ukusom-breskve-vita-active-colostrum-liquid-96034",
@@ -376,7 +415,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "pro-balance-tablete-80102",
@@ -402,7 +444,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/80102/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "pro-12-kapsule-81180",
@@ -426,7 +471,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/81180/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "colostrum-compact-kapsule-80360",
@@ -452,7 +500,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/80360/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "liver-support-kapsule-81330",
@@ -478,7 +529,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81330/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "mind-master-green-80900",
@@ -505,7 +559,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": "/products/80900/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/imported/mind-master-green.jpg",
+      "product_source_url": "https://srb.lr-world.info/proizvod.html?id=health-mind-master-green"
     },
     {
       "slug": "mind-master-pakovanje-od-5-po-izboru-green-red-80935",
@@ -532,7 +589,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "mind-master-extreme-80980",
@@ -558,7 +618,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/80980/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "super-omega-3-kapsule-80338",
@@ -582,7 +645,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/80338/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "reishi-plus-kapsule-80331",
@@ -606,7 +672,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/80331/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "vita-active-80301",
@@ -633,7 +702,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": "/products/80301/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/home/vita-active.webp",
+      "product_source_url": "https://srb.lr-world.info/proizvod.html?id=health-vitaaktiv-vitaminok-immunerosito"
     },
     {
       "slug": "mind-master-red-80950",
@@ -657,7 +729,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/80950/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "mind-master-gold-80940",
@@ -683,7 +758,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/80940/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "mind-master-gold-pakovanje-od-5-80945",
@@ -710,7 +788,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "colostrum-liquid-80361",
@@ -734,7 +815,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/80361/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "cistus-incanus-kapsule-80325",
@@ -758,7 +842,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/80325/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "active-freedom-kapsule-80190",
@@ -782,7 +869,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/80190/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "protein-ital-80550",
@@ -809,7 +899,10 @@
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": "/products/80550/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "fiber-boost-80630",
@@ -835,7 +928,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/80630/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "herbal-fasting-dijetalna-cajna-mesavina-80205",
@@ -859,7 +955,10 @@
       "price_match_status": "exact_serbian_eur_source",
       "catalogue_match_status": "matched_exactly_to_pdf",
       "content_status": "catalogue_supported",
-      "unresolved_differences": []
+      "unresolved_differences": [],
+      "image_path": "/products/80205/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "woman-phyto-kapsule-80332",
@@ -885,7 +984,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/80332/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "5in1-beauty-elixir-81140",
@@ -911,7 +1013,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81140/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/5in1/beauty-elixir-shot.png",
+      "product_source_url": "https://srb.lr-world.info/5in1-beauty-elixir.html"
     },
     {
       "slug": "5in1-men-s-shot-81170",
@@ -938,7 +1043,10 @@
       "unresolved_differences": [
         "Product is not clearly identified in the supplied PDF catalogue.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": "/products/81170/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/5in1/men-shot.png",
+      "product_source_url": "https://srb.lr-world.info/5in1-mens-shot.html"
     },
     {
       "slug": "figu-active-slatki-krompir-supa-81251",
@@ -964,7 +1072,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81251/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "figu-active-zacinjena-kari-supa-81245",
@@ -990,7 +1101,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81245/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/imported/BM_Rezept_Spicy-Curry-Soup_1024x768px-b257601fbf.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html"
     },
     {
       "slug": "figu-active-ukusna-supa-od-povrca-81246",
@@ -1016,7 +1130,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81246/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/imported/BM_Rezept_Yummi-Veggie-Soup_1024x768px-562054084e.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html"
     },
     {
       "slug": "figu-active-socna-supa-od-paradajza-81244",
@@ -1042,7 +1159,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81244/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/imported/BM_Rezept_Juicy-Tomato-Soup_1024x768px-12a855bdd3.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html"
     },
     {
       "slug": "figu-active-ovsena-kasa-sa-sumskim-vocem-81255",
@@ -1069,7 +1189,10 @@
       "unresolved_differences": [
         "PDF supports only the broader product family, not a uniquely coded variant description.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "figu-active-hrskavi-musli-sa-malinom-81247",
@@ -1095,7 +1218,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81247/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "figu-active-berry-snack-kutija-od-6-81249",
@@ -1122,7 +1248,10 @@
       "unresolved_differences": [
         "PDF supports only the broader product family, not a uniquely coded variant description.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "figu-active-almond-snack-kutija-od-6-81248",
@@ -1149,7 +1278,10 @@
       "unresolved_differences": [
         "PDF supports only the broader product family, not a uniquely coded variant description.",
         "Short description remains null pending owner content review."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "lr-body-mission-mesecno-pakovanje-81260",
@@ -1175,7 +1307,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": null,
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "figu-active-vocni-jagoda-sejk-81241",
@@ -1201,7 +1336,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81241/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/imported/Fruity-Strawberry-Shake_1024x768px-7bb82961fe.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html"
     },
     {
       "slug": "figu-active-ukusna-karamela-sejk-81250",
@@ -1227,7 +1365,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81250/product.webp",
+      "image_source_url": null,
+      "product_source_url": null
     },
     {
       "slug": "figu-active-kafa-sejk-81242",
@@ -1253,7 +1394,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81242/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/imported/BM_Rezept_Lovely-Coffee-Shake_1024x768px-5b59dd322e.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html"
     },
     {
       "slug": "figu-active-blaga-vanila-sejk-81240",
@@ -1279,7 +1423,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81240/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/imported/Soft-Vanilla-Shake_1024x768px-5440de61b5.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html"
     },
     {
       "slug": "figu-active-kremasta-cokolada-sejk-81243",
@@ -1305,7 +1452,10 @@
       "content_status": "catalogue_supported",
       "unresolved_differences": [
         "PDF does not provide an unambiguous source code with matching variant and package content."
-      ]
+      ],
+      "image_path": "/products/81243/product.webp",
+      "image_source_url": "https://srb.lr-world.info/assets/imported/Smooth-Cocoa-Shake_1024x768px-f0837dfbfd.jpg",
+      "product_source_url": "https://srb.lr-world.info/body-mission.html"
     }
   ],
   "blocked_products": []

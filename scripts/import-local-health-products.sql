@@ -142,4 +142,49 @@ on conflict (product_id) do update set
   points = excluded.points,
   source_price_valid_from = excluded.source_price_valid_from;
 
+with product_images (article_number, image_path, image_source_url, product_source_url) as (
+  values
+  ('80700', '/products/80700/product.webp', null, null),
+  ('80750', '/products/80750/product.webp', null, null),
+  ('81000', '/products/81000/product.webp', null, null),
+  ('80800', '/products/80800/product.webp', null, null),
+  ('80850', '/products/80850/product.webp', null, null),
+  ('80102', '/products/80102/product.webp', null, null),
+  ('81180', '/products/81180/product.webp', null, null),
+  ('80630', '/products/80630/product.webp', null, null),
+  ('80205', '/products/80205/product.webp', null, null),
+  ('81330', '/products/81330/product.webp', null, null),
+  ('80332', '/products/80332/product.webp', null, null),
+  ('80338', '/products/80338/product.webp', null, null),
+  ('80331', '/products/80331/product.webp', null, null),
+  ('80361', '/products/80361/product.webp', null, null),
+  ('80360', '/products/80360/product.webp', null, null),
+  ('80325', '/products/80325/product.webp', null, null),
+  ('80190', '/products/80190/product.webp', null, null),
+  ('80550', '/products/80550/product.webp', null, null),
+  ('80950', '/products/80950/product.webp', null, null),
+  ('80940', '/products/80940/product.webp', null, null),
+  ('80980', '/products/80980/product.webp', null, null),
+  ('81247', '/products/81247/product.webp', null, null),
+  ('81250', '/products/81250/product.webp', null, null),
+  ('81251', '/products/81251/product.webp', null, null),
+  ('80301', '/products/80301/product.webp', 'https://srb.lr-world.info/assets/home/vita-active.webp', 'https://srb.lr-world.info/proizvod.html?id=health-vitaaktiv-vitaminok-immunerosito'),
+  ('80900', '/products/80900/product.webp', 'https://srb.lr-world.info/assets/imported/mind-master-green.jpg', 'https://srb.lr-world.info/proizvod.html?id=health-mind-master-green'),
+  ('81140', '/products/81140/product.webp', 'https://srb.lr-world.info/assets/5in1/beauty-elixir-shot.png', 'https://srb.lr-world.info/5in1-beauty-elixir.html'),
+  ('81170', '/products/81170/product.webp', 'https://srb.lr-world.info/assets/5in1/men-shot.png', 'https://srb.lr-world.info/5in1-mens-shot.html'),
+  ('81241', '/products/81241/product.webp', 'https://srb.lr-world.info/assets/imported/Fruity-Strawberry-Shake_1024x768px-7bb82961fe.jpg', 'https://srb.lr-world.info/body-mission.html'),
+  ('81242', '/products/81242/product.webp', 'https://srb.lr-world.info/assets/imported/BM_Rezept_Lovely-Coffee-Shake_1024x768px-5b59dd322e.jpg', 'https://srb.lr-world.info/body-mission.html'),
+  ('81240', '/products/81240/product.webp', 'https://srb.lr-world.info/assets/imported/Soft-Vanilla-Shake_1024x768px-5440de61b5.jpg', 'https://srb.lr-world.info/body-mission.html'),
+  ('81243', '/products/81243/product.webp', 'https://srb.lr-world.info/assets/imported/Smooth-Cocoa-Shake_1024x768px-f0837dfbfd.jpg', 'https://srb.lr-world.info/body-mission.html'),
+  ('81245', '/products/81245/product.webp', 'https://srb.lr-world.info/assets/imported/BM_Rezept_Spicy-Curry-Soup_1024x768px-b257601fbf.jpg', 'https://srb.lr-world.info/body-mission.html'),
+  ('81246', '/products/81246/product.webp', 'https://srb.lr-world.info/assets/imported/BM_Rezept_Yummi-Veggie-Soup_1024x768px-562054084e.jpg', 'https://srb.lr-world.info/body-mission.html'),
+  ('81244', '/products/81244/product.webp', 'https://srb.lr-world.info/assets/imported/BM_Rezept_Juicy-Tomato-Soup_1024x768px-12a855bdd3.jpg', 'https://srb.lr-world.info/body-mission.html')
+)
+update public.products as products
+set image_path = product_images.image_path,
+    image_source_url = product_images.image_source_url,
+    product_source_url = product_images.product_source_url
+from product_images
+where products.article_number = product_images.article_number;
+
 commit;
