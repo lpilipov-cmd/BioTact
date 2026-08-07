@@ -2,7 +2,7 @@ import { expect, test, type Page } from "@playwright/test";
 
 const localAdmin = {
   email: "admin@biotact.local",
-  password: "Biotact-local-admin-2026!",
+  password: process.env.BIOTACT_E2E_ADMIN_PASSWORD ?? "Biotact-local-admin-2026!",
 };
 
 async function login(page: Page) {

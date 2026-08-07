@@ -28,11 +28,11 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
       <header className="catalogue-header">
         <div>
           <p className="eyebrow text-[#dbc487]!">BIOTACT izbor</p>
-          <h1>Proizvodi za promišljenu wellness rutinu.</h1>
+          <h1>Proizvodi</h1>
         </div>
-        <p>Velike fotografije, jasne kategorije, sadržaj pakovanja i kataloške cene — sve što je potrebno za mirniji početni izbor.</p>
+        <p>Istražite proverene LR proizvode kroz jasne kolekcije i velike fotografije.</p>
       </header>
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
+      <div className="catalogue-content">
         {error ? <p role="alert" className="rounded-2xl bg-red-50 p-5">Proizvodi trenutno nisu dostupni.</p> : products?.length ? <ProductCatalogue products={products} initialSubcategory={initialSubcategory} /> : <section className="empty-state" data-testid="empty-product-catalogue"><h2 className="text-2xl font-bold">Katalog proizvoda je u pripremi.</h2><p className="mx-auto mt-3 max-w-xl text-[#5b6960]">Objavićemo samo proverene i aktivne proizvode. U međuvremenu nam možete poslati opšti upit.</p><Link className="button-primary mt-6" href="/kontakt">Pošalji opšti upit</Link></section>}
       </div>
     </main>

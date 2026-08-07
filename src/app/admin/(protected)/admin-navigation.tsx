@@ -21,7 +21,7 @@ export function AdminNavigation() {
         <Link href="/admin" className="font-bold tracking-[0.18em]">
           BIOTACT
         </Link>
-        <nav aria-label="Administratorska navigacija" className="flex items-center gap-1">
+        <nav aria-label="Administratorska navigacija" className="flex w-full flex-wrap items-center gap-1 sm:w-auto sm:justify-end">
           {links.map((link) => {
             const active =
               link.href === "/admin"
