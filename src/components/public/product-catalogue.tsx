@@ -1,11 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo, useState } from "react";
 
-import { formatEurPrice } from "@/lib/products/format";
-
-import { ProductImage } from "./product-image";
+import { ProductCard } from "./product-card";
 
 export type CatalogueProduct = Readonly<{
   article_number: string;
@@ -23,6 +20,7 @@ type Props = Readonly<{
   products: readonly CatalogueProduct[];
   detailBasePath?: string;
   preview?: boolean;
+  initialSubcategory?: string;
 }>;
 
 const sortOptions = [
@@ -36,10 +34,11 @@ export function ProductCatalogue({
   products,
   detailBasePath = "/proizvodi",
   preview = false,
+  initialSubcategory = "",
 }: Props) {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
-  const [subcategory, setSubcategory] = useState("");
+  const [subcategory, setSubcategory] = useState(initialSubcategory);
   const [sort, setSort] = useState<(typeof sortOptions)[number][0]>("recommended");
   const categories = useMemo(() => [...new Set(products.map((item) => item.category))].sort(), [products]);
   const subcategories = useMemo(
@@ -95,23 +94,7 @@ export function ProductCatalogue({
 
       {visible.length ? (
         <div className="product-grid" data-testid="product-grid">
-          {visible.map((product) => (
-            <article key={product.slug} className="product-card">
-              <Link href={`${detailBasePath}/${product.slug}`} aria-label={`Pogledaj proizvod ${product.name}`} className="product-card-image-link">
-                <ProductImage imagePath={product.image_path} articleNumber={product.article_number} name={product.name} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
-              </Link>
-              <div className="flex flex-1 flex-col px-1 pb-1 pt-5">
-                <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#7a6b45]">{product.subcategory ?? product.category}</p>
-                <h2 className="mt-2 text-xl font-bold leading-tight"><Link href={`${detailBasePath}/${product.slug}`}>{product.name}</Link></h2>
-                {product.short_description ? <p className="mt-3 line-clamp-3 text-sm leading-6 text-[#5b6960]">{product.short_description}</p> : null}
-                <div className="mt-auto pt-5">
-                  <p className="text-sm text-[#5b6960]">{product.package_content ?? "Sadržaj pakovanja na upit"}</p>
-                  <p className="mt-2 text-xl font-bold">{formatEurPrice(product.catalogue_price_eur)}</p>
-                  <Link className="product-card-cta" href={`${detailBasePath}/${product.slug}`}>Pogledaj proizvod <span aria-hidden="true">→</span></Link>
-                </div>
-              </div>
-            </article>
-          ))}
+          {visible.map((product) => <ProductCard key={product.slug} product={product} detailBasePath={detailBasePath} />)}
         </div>
       ) : (
         <section className="empty-state" data-testid="empty-product-catalogue">

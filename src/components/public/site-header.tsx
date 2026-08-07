@@ -6,8 +6,8 @@ import { useState } from "react";
 
 const links = [
   { href: "/", label: "Početna" },
-  { href: "/paketi", label: "Paketi" },
   { href: "/proizvodi", label: "Proizvodi" },
+  { href: "/paketi", label: "Paketi" },
   { href: "/o-nama", label: "O nama" },
   { href: "/kontakt", label: "Kontakt" },
 ] as const;
@@ -38,8 +38,8 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
-          <Link href="/kontakt" className="ml-3 inline-flex min-h-11 items-center rounded-xl bg-[#17301f] px-5 text-sm font-bold text-[#f7f3ea] transition hover:bg-[#1f3a28]">
-            Pošalji upit
+          <Link href="/proizvodi" className="ml-3 inline-flex min-h-11 items-center rounded-full bg-[#17301f] px-5 text-sm font-bold text-[#f7f3ea] transition hover:bg-[#1f3a28]">
+            Pronađi proizvod
           </Link>
         </nav>
 
@@ -76,8 +76,8 @@ export function SiteHeader() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/kontakt" onClick={() => setOpen(false)} className="mt-2 inline-flex min-h-12 items-center justify-center rounded-xl bg-[#17301f] px-5 font-bold text-[#f7f3ea]">
-              Pošalji upit
+            <Link href="/proizvodi" onClick={() => setOpen(false)} className="mt-2 inline-flex min-h-12 items-center justify-center rounded-full bg-[#17301f] px-5 font-bold text-[#f7f3ea]">
+              Pronađi proizvod
             </Link>
           </div>
         </nav>

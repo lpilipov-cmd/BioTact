@@ -22,7 +22,7 @@ test("zajednički javni shell povezuje sve rute bez admin navigacije", async ({ 
   for (const [label, href] of [["Početna", "/"], ["Paketi", "/paketi"], ["Proizvodi", "/proizvodi"], ["O nama", "/o-nama"], ["Kontakt", "/kontakt"]] as const) {
     await expect(navigation.getByRole("link", { name: label, exact: true })).toHaveAttribute("href", href);
   }
-  await expect(navigation.getByRole("link", { name: "Pošalji upit" })).toHaveAttribute("href", "/kontakt");
+  await expect(navigation.getByRole("link", { name: "Pronađi proizvod" })).toHaveAttribute("href", "/proizvodi");
 });
 
 test("mobilni meni radi tastaturom na 375px", async ({ page }, testInfo) => {
@@ -54,7 +54,7 @@ test("paket kartice i CTA dugmad vode na postojeće javne tokove", async ({ page
   await page.locator("main").getByRole("link", { name: "Pogledaj pakete" }).click();
   await expect(page).toHaveURL(/\/paketi$/);
   await page.goto("/");
-  await page.locator("main").getByRole("link", { name: "Pošalji upit" }).first().click();
+  await page.locator("main").getByRole("link", { name: "Kontaktiraj nas" }).click();
   await expect(page).toHaveURL(/\/kontakt$/);
 });
 
@@ -62,7 +62,7 @@ test("o nama transparentno opisuje LR odnos bez prodajnih ili zdravstvenih obeć
   await page.goto("/o-nama");
   await expect(page.getByText("BIOTACT nije proizvođač tih proizvoda.")).toBeVisible();
   await expect(page.getByText("LR Health & Beauty", { exact: false }).first()).toBeVisible();
-  await expect(page.getByText("odgovarajući LR proces", { exact: false })).toBeVisible();
+  await expect(page.getByText("odgovarajući LR proces", { exact: false }).first()).toBeVisible();
   await expect(page.getByText(/garantovan[ae] zarad|leči bolesti/i)).toHaveCount(0);
   await expect(page.getByText(/testimonials|svedočenja kupaca/i)).toHaveCount(0);
 });

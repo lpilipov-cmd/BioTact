@@ -24,4 +24,7 @@ test("prazan katalog proizvoda je bezbedan, upotrebljiv i responzivan", async ({
 test("zaštićeni pregled ne može anonimno da se otvori", async ({ page }) => {
   await page.goto("/admin/products/preview");
   await expect(page).toHaveURL(/\/admin\/login\?reason=pristup$/);
+
+  await page.goto("/admin/storefront-preview");
+  await expect(page).toHaveURL(/\/admin\/login\?reason=pristup$/);
 });
