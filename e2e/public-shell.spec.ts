@@ -28,6 +28,7 @@ test("zajednički javni shell povezuje sve rute bez admin navigacije", async ({ 
 test("mobilni meni radi tastaturom na 375px", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "mobile-375", "Provera je namenjena mobilnom projektu.");
   await page.goto("/");
+  await page.waitForLoadState("networkidle");
 
   await page.keyboard.press("Tab");
   await expect(page.getByRole("link", { name: "Pređi na glavni sadržaj" })).toBeFocused();

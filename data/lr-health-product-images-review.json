@@ -12,17 +12,41 @@
       "article_number": "80700",
       "product_name": "Aloe vera napitak sa medom",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80700",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/aloe_vera_drinking_gel_traditional_honey.html?productAlias=80700-681",
       "local_image_path": "/products/80700/product.webp",
       "source_copy_path": "/products/80700/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80700-681/aloe_vera_drinking_gel_traditional_honey.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80700/source.jpg",
+        "optimized_path": "/products/80700/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80743",
@@ -40,23 +64,62 @@
       "new_status": "verified_constituent_image",
       "constituent_image_paths": [
         "/products/80700/product.webp"
-      ]
+      ],
+      "quality_review": {
+        "previous_source": {
+          "type": "official_lr_collection",
+          "reference": "Official LR Collection, page 14: SKU 80743, 3 x 1000 ml; constituent SKU 80700.",
+          "url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page14.html"
+        },
+        "previous_source_dimensions": null,
+        "previous_optimized_dimensions": null,
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": null,
+        "optimized_path": "/products/80700/product.webp",
+        "verification_reason": "Tačna, već potvrđena veza multipack artikla i sastavne slike ostaje nepromenjena; nema izmišljene spoljne ambalaže.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "81000",
       "product_name": "Aloe Vera Immune Plus gel za piće",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81000",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/aloe_vera_drinking_gel_immune_plus.html?productAlias=81000-1",
       "local_image_path": "/products/81000/product.webp",
       "source_copy_path": "/products/81000/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81000-1/aloe_vera_drinking_gel_immune_plus.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81000/source.jpg",
+        "optimized_path": "/products/81000/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81003",
@@ -74,23 +137,62 @@
       "new_status": "verified_constituent_image",
       "constituent_image_paths": [
         "/products/81000/product.webp"
-      ]
+      ],
+      "quality_review": {
+        "previous_source": {
+          "type": "official_lr_collection",
+          "reference": "Official LR Collection, page 14: SKU 81003, 3 x 1000 ml; constituent SKU 81000.",
+          "url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page14.html"
+        },
+        "previous_source_dimensions": null,
+        "previous_optimized_dimensions": null,
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": null,
+        "optimized_path": "/products/81000/product.webp",
+        "verification_reason": "Tačna, već potvrđena veza multipack artikla i sastavne slike ostaje nepromenjena; nema izmišljene spoljne ambalaže.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "80750",
       "product_name": "Aloe vera napitak sa ukusom breskve",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80750",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/aloe_vera_drinking_gel_peach_flavour.html?productAlias=80750-680",
       "local_image_path": "/products/80750/product.webp",
       "source_copy_path": "/products/80750/source.jpg",
       "image_dimensions": {
-        "width": 236,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 4",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 236,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 236,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80750-680/aloe_vera_drinking_gel_peach_flavour.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80750/source.jpg",
+        "optimized_path": "/products/80750/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80783",
@@ -108,23 +210,62 @@
       "new_status": "verified_constituent_image",
       "constituent_image_paths": [
         "/products/80750/product.webp"
-      ]
+      ],
+      "quality_review": {
+        "previous_source": {
+          "type": "official_lr_collection",
+          "reference": "Official LR Collection, page 15: SKU 80783, 3 x 1000 ml; constituent SKU 80750.",
+          "url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page15.html"
+        },
+        "previous_source_dimensions": null,
+        "previous_optimized_dimensions": null,
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": null,
+        "optimized_path": "/products/80750/product.webp",
+        "verification_reason": "Tačna, već potvrđena veza multipack artikla i sastavne slike ostaje nepromenjena; nema izmišljene spoljne ambalaže.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "80850",
       "product_name": "Aloe vera Freedom napitak",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80850",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/aloe_vera_drinking_gel_active_freedom.html?productAlias=80850-680",
       "local_image_path": "/products/80850/product.webp",
       "source_copy_path": "/products/80850/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80850-680/aloe_vera_drinking_gel_active_freedom.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80850/source.jpg",
+        "optimized_path": "/products/80850/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80883",
@@ -142,23 +283,62 @@
       "new_status": "verified_constituent_image",
       "constituent_image_paths": [
         "/products/80850/product.webp"
-      ]
+      ],
+      "quality_review": {
+        "previous_source": {
+          "type": "official_lr_collection",
+          "reference": "Official LR Collection, page 15: SKU 80883, 3 x 1000 ml; constituent SKU 80850.",
+          "url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page15.html"
+        },
+        "previous_source_dimensions": null,
+        "previous_optimized_dimensions": null,
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": null,
+        "optimized_path": "/products/80850/product.webp",
+        "verification_reason": "Tačna, već potvrđena veza multipack artikla i sastavne slike ostaje nepromenjena; nema izmišljene spoljne ambalaže.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "80800",
       "product_name": "Aloe vera Sivera napitak",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80800",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/aloe_vera_drinking_gel_intense_sivera.html?productAlias=80800-781",
       "local_image_path": "/products/80800/product.webp",
       "source_copy_path": "/products/80800/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80800-781/aloe_vera_drinking_gel_intense_sivera.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80800/source.jpg",
+        "optimized_path": "/products/80800/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80823",
@@ -176,7 +356,22 @@
       "new_status": "verified_constituent_image",
       "constituent_image_paths": [
         "/products/80800/product.webp"
-      ]
+      ],
+      "quality_review": {
+        "previous_source": {
+          "type": "official_lr_collection",
+          "reference": "Official LR Collection, page 16: SKU 80823, 3 x 1000 ml; constituent SKU 80800.",
+          "url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page28.html"
+        },
+        "previous_source_dimensions": null,
+        "previous_optimized_dimensions": null,
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": null,
+        "optimized_path": "/products/80800/product.webp",
+        "verification_reason": "Tačna, već potvrđena veza multipack artikla i sastavne slike ostaje nepromenjena; nema izmišljene spoljne ambalaže.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "81100",
@@ -194,7 +389,28 @@
       "file_type": "webp",
       "notes_on_variant_verification": "Tačna Açaí Pro Summer boca, naziv, 1000 ml pakovanje i SKU 81100 prikazani su zajedno na stranici 16.",
       "previous_status": "unresolved",
-      "new_status": "verified"
+      "new_status": "verified",
+      "quality_review": {
+        "previous_source": {
+          "type": "collection_pdf",
+          "reference": "DE_Collection012026(1).pdf, strana 16",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 484,
+          "height": 512
+        },
+        "previous_optimized_dimensions": {
+          "width": 484,
+          "height": 512
+        },
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": "/products/81100/source.jp2",
+        "optimized_path": "/products/81100/product.webp",
+        "verification_reason": "Postojeća slika ostaje jer je identitet proizvoda potvrđen, a raspoloživi zvanični LR izvor ne daje smislenije poboljšanje.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "81103",
@@ -212,7 +428,22 @@
       "new_status": "verified_constituent_image",
       "constituent_image_paths": [
         "/products/81100/product.webp"
-      ]
+      ],
+      "quality_review": {
+        "previous_source": {
+          "type": "official_lr_collection",
+          "reference": "Official LR Collection, page 16: SKU 81103, 3 x 1000 ml; constituent SKU 81100.",
+          "url": "https://media.lrworld.com/Collection/BG_bg/files/BG_Collection102025.pdf"
+        },
+        "previous_source_dimensions": null,
+        "previous_optimized_dimensions": null,
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": null,
+        "optimized_path": "/products/81100/product.webp",
+        "verification_reason": "Tačna, već potvrđena veza multipack artikla i sastavne slike ostaje nepromenjena; nema izmišljene spoljne ambalaže.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "95213",
@@ -227,7 +458,22 @@
       "file_type": null,
       "notes_on_variant_verification": "TurboKid set sa medom i SKU 95213 nisu pronađeni u novim PDF izvorima.",
       "previous_status": "unresolved",
-      "new_status": "unresolved"
+      "new_status": "unresolved",
+      "quality_review": {
+        "previous_source": {
+          "type": null,
+          "reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
+          "url": null
+        },
+        "previous_source_dimensions": null,
+        "previous_optimized_dimensions": null,
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": null,
+        "optimized_path": null,
+        "verification_reason": "TurboKid set sa medom i SKU 95213 nisu pronađeni u novim PDF izvorima.",
+        "status": "unresolved"
+      }
     },
     {
       "article_number": "96034",
@@ -242,71 +488,182 @@
       "file_type": null,
       "notes_on_variant_verification": "TurboKid set sa breskvom i SKU 96034 nisu pronađeni u novim PDF izvorima.",
       "previous_status": "unresolved",
-      "new_status": "unresolved"
+      "new_status": "unresolved",
+      "quality_review": {
+        "previous_source": {
+          "type": null,
+          "reference": "BioTact_LR_Katalog_Redizajn_2026(1).pdf i DE_Collection012026(1).pdf pregledani; nema prihvatljive tačne slike.",
+          "url": null
+        },
+        "previous_source_dimensions": null,
+        "previous_optimized_dimensions": null,
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": null,
+        "optimized_path": null,
+        "verification_reason": "TurboKid set sa breskvom i SKU 96034 nisu pronađeni u novim PDF izvorima.",
+        "status": "unresolved"
+      }
     },
     {
       "article_number": "80102",
       "product_name": "Pro Balance tablete",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80102",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/pro_balance_tabletten.html?productAlias=80102-401",
       "local_image_path": "/products/80102/product.webp",
       "source_copy_path": "/products/80102/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 5",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80102-401/pro_balance_tabletten.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80102/source.jpg",
+        "optimized_path": "/products/80102/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81180",
       "product_name": "Pro 12+ kapsule",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81180",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/pro_12_+_kapseln.html?productAlias=81180-1",
       "local_image_path": "/products/81180/product.webp",
       "source_copy_path": "/products/81180/source.jpg",
       "image_dimensions": {
-        "width": 241,
-        "height": 330
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 241,
+          "height": 330
+        },
+        "previous_optimized_dimensions": {
+          "width": 241,
+          "height": 330
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81180-1/pro_12_+_kapseln.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81180/source.jpg",
+        "optimized_path": "/products/81180/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80360",
       "product_name": "Colostrum Compact kapsule",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80360",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/colostrum_kapseln.html?productAlias=80360-701",
       "local_image_path": "/products/80360/product.webp",
       "source_copy_path": "/products/80360/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80360-701/colostrum_kapseln.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80360/source.jpg",
+        "optimized_path": "/products/80360/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81330",
       "product_name": "Liver support kapsule",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 8",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81330",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_lifetakt_liver_support.html?productAlias=81330-99",
       "local_image_path": "/products/81330/product.webp",
       "source_copy_path": "/products/81330/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 8",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81330-99/lr_lifetakt_liver_support_capsules.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81330/source.jpg",
+        "optimized_path": "/products/81330/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80900",
@@ -322,7 +679,28 @@
         "height": 638
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/imported/mind-master-green.jpg",
+          "url": "https://srb.lr-world.info/proizvod.html?id=health-mind-master-green"
+        },
+        "previous_source_dimensions": {
+          "width": 510,
+          "height": 638
+        },
+        "previous_optimized_dimensions": {
+          "width": 510,
+          "height": 638
+        },
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": "/products/80900/source.jpg",
+        "optimized_path": "/products/80900/product.webp",
+        "verification_reason": "Postojeća slika ostaje jer je identitet proizvoda potvrđen, a raspoloživi zvanični LR izvor ne daje smislenije poboljšanje.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "80935",
@@ -341,103 +719,262 @@
       "constituent_image_paths": [
         "/products/80900/product.webp",
         "/products/80950/product.webp"
-      ]
+      ],
+      "quality_review": {
+        "previous_source": {
+          "type": "official_lr_collection",
+          "reference": "Official LR Collection, pages 26 and 28: SKU 80935, 5 x 500 ml, free choice Formula Green / Formula Red; constituents 80900 and 80950.",
+          "url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page28.html"
+        },
+        "previous_source_dimensions": null,
+        "previous_optimized_dimensions": null,
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": null,
+        "optimized_path": "/products/80900/product.webp",
+        "verification_reason": "Tačna, već potvrđena veza multipack artikla i sastavne slike ostaje nepromenjena; nema izmišljene spoljne ambalaže.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "80980",
       "product_name": "Mind Master Extreme",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80980",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/mind_master_extreme_performance_powder.html?productAlias=80980-101",
       "local_image_path": "/products/80980/product.webp",
       "source_copy_path": "/products/80980/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80980-101/mind_master_extreme_performance_powder.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80980/source.jpg",
+        "optimized_path": "/products/80980/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80338",
       "product_name": "Super Omega 3 kapsule",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 11",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80338",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/super_omega_kapseln.html?productAlias=80338-601",
       "local_image_path": "/products/80338/product.webp",
       "source_copy_path": "/products/80338/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 11",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80338-601/super_omega_kapseln.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80338/source.jpg",
+        "optimized_path": "/products/80338/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80331",
       "product_name": "Reishi Plus kapsule",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 11",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80331",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/reishi_plus_kapseln.html?productAlias=80331-501",
       "local_image_path": "/products/80331/product.webp",
       "source_copy_path": "/products/80331/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 11",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80331-501/reishi_plus_kapseln.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80331/source.jpg",
+        "optimized_path": "/products/80331/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80301",
       "product_name": "Vita Active",
       "image_status": "verified_unique_image",
-      "source_type": "lr_web",
-      "source_reference": "https://srb.lr-world.info/assets/home/vita-active.webp",
-      "product_source_url": "https://srb.lr-world.info/proizvod.html?id=health-vitaaktiv-vitaminok-immunerosito",
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80301",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/vita_active_rote_fruchte.html?productAlias=80301-501",
       "local_image_path": "/products/80301/product.webp",
-      "source_copy_path": "/products/80301/source.webp",
+      "source_copy_path": "/products/80301/source.jpg",
       "image_dimensions": {
-        "width": 400,
-        "height": 400
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/home/vita-active.webp",
+          "url": "https://srb.lr-world.info/proizvod.html?id=health-vitaaktiv-vitaminok-immunerosito"
+        },
+        "previous_source_dimensions": {
+          "width": 400,
+          "height": 400
+        },
+        "previous_optimized_dimensions": {
+          "width": 400,
+          "height": 400
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80301-501/vita_active_rote_fruchte.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80301/source.jpg",
+        "optimized_path": "/products/80301/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80950",
       "product_name": "Mind Master Red",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80950",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/mind_master_formula_red.html?productAlias=80950-601",
       "local_image_path": "/products/80950/product.webp",
       "source_copy_path": "/products/80950/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80950-601/mind_master_formula_red.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80950/source.jpg",
+        "optimized_path": "/products/80950/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80940",
       "product_name": "Mind Master Gold",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80940",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/mind_master_formula_gold.html?productAlias=80940-1",
       "local_image_path": "/products/80940/product.webp",
       "source_copy_path": "/products/80940/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 17",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80940-1/mind_master_formula_gold.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80940/source.jpg",
+        "optimized_path": "/products/80940/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80945",
@@ -455,119 +992,302 @@
       "new_status": "verified_constituent_image",
       "constituent_image_paths": [
         "/products/80940/product.webp"
-      ]
+      ],
+      "quality_review": {
+        "previous_source": {
+          "type": "official_lr_collection",
+          "reference": "Official LR Collection, page 27: SKU 80945, 5 x 500 ml; constituent SKU 80940.",
+          "url": "https://media.lrworld.com/Collection/UK_en/files/basic-html/page27.html"
+        },
+        "previous_source_dimensions": null,
+        "previous_optimized_dimensions": null,
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": null,
+        "optimized_path": "/products/80940/product.webp",
+        "verification_reason": "Tačna, već potvrđena veza multipack artikla i sastavne slike ostaje nepromenjena; nema izmišljene spoljne ambalaže.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "80361",
       "product_name": "Colostrum Liquid",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80361",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/colostrum_liquid.html?productAlias=80361-401",
       "local_image_path": "/products/80361/product.webp",
       "source_copy_path": "/products/80361/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80361-401/colostrum_liquid.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80361/source.jpg",
+        "optimized_path": "/products/80361/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80325",
       "product_name": "Cistus Incanus kapsule",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80325",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/cistus_incanus_kapseln.html?productAlias=80325-501",
       "local_image_path": "/products/80325/product.webp",
       "source_copy_path": "/products/80325/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 13",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80325-501/cistus_incanus_kapseln.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80325/source.jpg",
+        "optimized_path": "/products/80325/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80190",
       "product_name": "Active Freedom kapsule",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 15",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80190",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/active_freedom_kapseln.html?productAlias=80190-501",
       "local_image_path": "/products/80190/product.webp",
       "source_copy_path": "/products/80190/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 15",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80190-501/active_freedom_kapseln.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80190/source.jpg",
+        "optimized_path": "/products/80190/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80550",
       "product_name": "Protein ital",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 15",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80550",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/protein_power_drink_powder.html?productAlias=80550-401",
       "local_image_path": "/products/80550/product.webp",
       "source_copy_path": "/products/80550/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 15",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80550-401/protein_power_drink_powder.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80550/source.jpg",
+        "optimized_path": "/products/80550/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80630",
       "product_name": "Fiber Boost",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80630",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/fiber_boost_drink_powder.html?productAlias=80630-599",
       "local_image_path": "/products/80630/product.webp",
       "source_copy_path": "/products/80630/source.jpg",
       "image_dimensions": {
-        "width": 325,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 325,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 325,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80630-599/fiber_boost_drink_powder.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80630/source.jpg",
+        "optimized_path": "/products/80630/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80205",
       "product_name": "Herbal Fasting dijetalna čajna mešavina",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80205",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_lifetakt_herbal_fasting_tea.html?productAlias=80205-601",
       "local_image_path": "/products/80205/product.webp",
       "source_copy_path": "/products/80205/source.jpg",
       "image_dimensions": {
-        "width": 239,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 7",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 239,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80205-601/lr_lifetakt_herbal_fasting_tea.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80205/source.jpg",
+        "optimized_path": "/products/80205/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "80332",
       "product_name": "Woman Phyto kapsule",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 9",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 80332",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/woman_phyto_kapseln.html?productAlias=80332-501",
       "local_image_path": "/products/80332/product.webp",
       "source_copy_path": "/products/80332/source.jpg",
       "image_dimensions": {
-        "width": 325,
-        "height": 325
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 9",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 325,
+          "height": 325
+        },
+        "previous_optimized_dimensions": {
+          "width": 325,
+          "height": 325
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/80332-501/woman_phyto_kapseln.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/80332/source.jpg",
+        "optimized_path": "/products/80332/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81140",
@@ -583,7 +1303,28 @@
         "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/5in1/beauty-elixir-shot.png",
+          "url": "https://srb.lr-world.info/5in1-beauty-elixir.html"
+        },
+        "previous_source_dimensions": {
+          "width": 2065,
+          "height": 2373
+        },
+        "previous_optimized_dimensions": {
+          "width": 1044,
+          "height": 1200
+        },
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": "/products/81140/source.png",
+        "optimized_path": "/products/81140/product.webp",
+        "verification_reason": "Postojeća slika ostaje jer je identitet proizvoda potvrđen, a raspoloživi zvanični LR izvor ne daje smislenije poboljšanje.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "81170",
@@ -599,89 +1340,230 @@
         "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/5in1/men-shot.png",
+          "url": "https://srb.lr-world.info/5in1-mens-shot.html"
+        },
+        "previous_source_dimensions": {
+          "width": 1433,
+          "height": 1745
+        },
+        "previous_optimized_dimensions": {
+          "width": 985,
+          "height": 1200
+        },
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": "/products/81170/source.png",
+        "optimized_path": "/products/81170/product.webp",
+        "verification_reason": "Postojeća slika ostaje jer je identitet proizvoda potvrđen, a raspoloživi zvanični LR izvor ne daje smislenije poboljšanje.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "81251",
       "product_name": "FIGU ACTIVE slatki krompir supa",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81251",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_figuactive_sweet_potato_soup.html?productAlias=81251-1",
       "local_image_path": "/products/81251/product.webp",
       "source_copy_path": "/products/81251/source.jpg",
       "image_dimensions": {
-        "width": 990,
-        "height": 798
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 990,
+          "height": 798
+        },
+        "previous_optimized_dimensions": {
+          "width": 990,
+          "height": 798
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81251-1/lr_figuactive_sweet_potato_soup.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81251/source.jpg",
+        "optimized_path": "/products/81251/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81245",
       "product_name": "FIGU ACTIVE začinjena kari supa",
       "image_status": "verified_unique_image",
-      "source_type": "lr_web",
-      "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Spicy-Curry-Soup_1024x768px-b257601fbf.jpg",
-      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81245",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_figuactive_spicy_curry_soup.html?productAlias=81245-1",
       "local_image_path": "/products/81245/product.webp",
       "source_copy_path": "/products/81245/source.jpg",
       "image_dimensions": {
-        "width": 1024,
-        "height": 768
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Spicy-Curry-Soup_1024x768px-b257601fbf.jpg",
+          "url": "https://srb.lr-world.info/body-mission.html"
+        },
+        "previous_source_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "previous_optimized_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81245-1/lr_figuactive_spicy_curry_soup.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81245/source.jpg",
+        "optimized_path": "/products/81245/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica povezuje kratki broj artikla, tačan ukus i pakovanje; precizna fotografija ambalaže zamenjuje raniji vizual pripremljenog obroka.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81246",
       "product_name": "FIGU ACTIVE ukusna supa od povrća",
       "image_status": "verified_unique_image",
-      "source_type": "lr_web",
-      "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Yummi-Veggie-Soup_1024x768px-562054084e.jpg",
-      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81246",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_figuactive_yummy_veggie_soup.html?productAlias=81246-1",
       "local_image_path": "/products/81246/product.webp",
       "source_copy_path": "/products/81246/source.jpg",
       "image_dimensions": {
-        "width": 1024,
-        "height": 768
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Yummi-Veggie-Soup_1024x768px-562054084e.jpg",
+          "url": "https://srb.lr-world.info/body-mission.html"
+        },
+        "previous_source_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "previous_optimized_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81246-1/lr_figuactive_yummy_veggie_soup.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81246/source.jpg",
+        "optimized_path": "/products/81246/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica povezuje kratki broj artikla, tačan ukus i pakovanje; precizna fotografija ambalaže zamenjuje raniji vizual pripremljenog obroka.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81244",
       "product_name": "FIGU ACTIVE sočna supa od paradajza",
       "image_status": "verified_unique_image",
-      "source_type": "lr_web",
-      "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Juicy-Tomato-Soup_1024x768px-12a855bdd3.jpg",
-      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81244",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_figuactive_juicy_tomato_soup.html?productAlias=81244-1",
       "local_image_path": "/products/81244/product.webp",
       "source_copy_path": "/products/81244/source.jpg",
       "image_dimensions": {
-        "width": 1024,
-        "height": 768
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Juicy-Tomato-Soup_1024x768px-12a855bdd3.jpg",
+          "url": "https://srb.lr-world.info/body-mission.html"
+        },
+        "previous_source_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "previous_optimized_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81244-1/lr_figuactive_juicy_tomato_soup.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81244/source.jpg",
+        "optimized_path": "/products/81244/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica povezuje kratki broj artikla, tačan ukus i pakovanje; precizna fotografija ambalaže zamenjuje raniji vizual pripremljenog obroka.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81255",
       "product_name": "FIGU ACTIVE ovsena kaša sa šumskim voćem",
       "image_status": "verified_unique_image",
-      "source_type": "collection_pdf",
-      "source_reference": "DE_Collection012026(1).pdf, strana 48",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81255",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_figuactive_berry_dream_bowl.html?productAlias=81255-1",
       "local_image_path": "/products/81255/product.webp",
       "source_copy_path": "/products/81255/source.jpg",
       "image_dimensions": {
-        "width": 939,
+        "width": 884,
         "height": 1200
       },
       "file_type": "webp",
       "notes_on_variant_verification": "Tačno pakovanje Berry Dream Bowl od 450 g i SKU 81255 prikazani su zajedno na stranici 48; srpski cenovnik koristi opisni naziv ovsena kaša sa šumskim voćem.",
       "previous_status": "unresolved",
-      "new_status": "verified"
+      "new_status": "verified",
+      "quality_review": {
+        "previous_source": {
+          "type": "collection_pdf",
+          "reference": "DE_Collection012026(1).pdf, strana 48",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 1020,
+          "height": 1304
+        },
+        "previous_optimized_dimensions": {
+          "width": 939,
+          "height": 1200
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81255-1/lr_figuactive_berry_dream_bowl.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81255/source.jpg",
+        "optimized_path": "/products/81255/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81247",
@@ -697,7 +1579,28 @@
         "height": 904
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 564,
+          "height": 904
+        },
+        "previous_optimized_dimensions": {
+          "width": 564,
+          "height": 904
+        },
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": "/products/81247/source.jpg",
+        "optimized_path": "/products/81247/product.webp",
+        "verification_reason": "Postojeća slika ostaje jer je identitet proizvoda potvrđen, a raspoloživi zvanični LR izvor ne daje smislenije poboljšanje.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "81249",
@@ -715,7 +1618,28 @@
       "file_type": "webp",
       "notes_on_variant_verification": "Zvanični katalog neposredno označava Berry Snack sliku prodajnim SKU-om 81249 i pakovanjem 6 x 35 g; slika prikazuje jednu fabrički zatvorenu jedinicu iz pakovanja.",
       "previous_status": "unresolved",
-      "new_status": "verified"
+      "new_status": "verified",
+      "quality_review": {
+        "previous_source": {
+          "type": "collection_pdf",
+          "reference": "DE_Collection012026(1).pdf, strana 49",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 316,
+          "height": 154
+        },
+        "previous_optimized_dimensions": {
+          "width": 316,
+          "height": 154
+        },
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": "/products/81249/source.jp2",
+        "optimized_path": "/products/81249/product.webp",
+        "verification_reason": "Postojeća slika ostaje jer je identitet proizvoda potvrđen, a raspoloživi zvanični LR izvor ne daje smislenije poboljšanje.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "81248",
@@ -733,105 +1657,284 @@
       "file_type": "webp",
       "notes_on_variant_verification": "Zvanični katalog neposredno označava Almond Snack sliku prodajnim SKU-om 81248 i pakovanjem 6 x 35 g; slika prikazuje jednu fabrički zatvorenu jedinicu iz pakovanja.",
       "previous_status": "unresolved",
-      "new_status": "verified"
+      "new_status": "verified",
+      "quality_review": {
+        "previous_source": {
+          "type": "collection_pdf",
+          "reference": "DE_Collection012026(1).pdf, strana 49",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 316,
+          "height": 154
+        },
+        "previous_optimized_dimensions": {
+          "width": 316,
+          "height": 154
+        },
+        "upgraded_source_url": null,
+        "upgraded_source_dimensions": null,
+        "local_source_path": "/products/81248/source.jp2",
+        "optimized_path": "/products/81248/product.webp",
+        "verification_reason": "Postojeća slika ostaje jer je identitet proizvoda potvrđen, a raspoloživi zvanični LR izvor ne daje smislenije poboljšanje.",
+        "status": "retained_verified"
+      }
     },
     {
       "article_number": "81260",
       "product_name": "LR BODY MISSION mesečno pakovanje",
       "image_status": "verified_unique_image",
-      "source_type": "collection_pdf",
-      "source_reference": "DE_Collection012026(1).pdf, strana 43",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81260",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_body_mission_1_monat_%28free_choice%29.html?productAlias=81260-1",
       "local_image_path": "/products/81260/product.webp",
-      "source_copy_path": "/products/81260/source.jp2",
+      "source_copy_path": "/products/81260/source.jpg",
       "image_dimensions": {
-        "width": 679,
-        "height": 473
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
       "notes_on_variant_verification": "Tačan LR BODY MISSION jednomesečni set, naziv, slobodan izbor sastava i SKU 81260 prikazani su zajedno na stranici 43.",
       "previous_status": "unresolved",
-      "new_status": "verified"
+      "new_status": "verified",
+      "quality_review": {
+        "previous_source": {
+          "type": "collection_pdf",
+          "reference": "DE_Collection012026(1).pdf, strana 43",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 679,
+          "height": 473
+        },
+        "previous_optimized_dimensions": {
+          "width": 679,
+          "height": 473
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81260-1/lr_body_mission_1_monat_(free_choice).jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81260/source.jpg",
+        "optimized_path": "/products/81260/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81241",
       "product_name": "FIGU ACTIVE voćni jagoda šejk",
       "image_status": "verified_unique_image",
-      "source_type": "lr_web",
-      "source_reference": "https://srb.lr-world.info/assets/imported/Fruity-Strawberry-Shake_1024x768px-7bb82961fe.jpg",
-      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81241",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_figuactive_fruity_strawberry_shake.html?productAlias=81241-1",
       "local_image_path": "/products/81241/product.webp",
       "source_copy_path": "/products/81241/source.jpg",
       "image_dimensions": {
-        "width": 1024,
-        "height": 768
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/imported/Fruity-Strawberry-Shake_1024x768px-7bb82961fe.jpg",
+          "url": "https://srb.lr-world.info/body-mission.html"
+        },
+        "previous_source_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "previous_optimized_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81241-1/lr_figuactive_fruity_strawberry_shake.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81241/source.jpg",
+        "optimized_path": "/products/81241/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica povezuje kratki broj artikla, tačan ukus i pakovanje; precizna fotografija ambalaže zamenjuje raniji vizual pripremljenog obroka.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81250",
       "product_name": "FIGU ACTIVE ukusna karamela šejk",
       "image_status": "verified_unique_image",
-      "source_type": "health_mission_pdf",
-      "source_reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
-      "product_source_url": null,
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81250",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_figuactive_tasty_caramel_shake.html?productAlias=81250-1",
       "local_image_path": "/products/81250/product.webp",
       "source_copy_path": "/products/81250/source.jpg",
       "image_dimensions": {
-        "width": 527,
-        "height": 400
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena vidljivom oznakom proizvoda i položajem slike uz naziv u katalogu; kanonski broj artikla je usklađen sa pregledom srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "health_mission_pdf",
+          "reference": "KATALOG_LR_HEALTH_MISSION_2026.pdf, strana 21",
+          "url": null
+        },
+        "previous_source_dimensions": {
+          "width": 527,
+          "height": 400
+        },
+        "previous_optimized_dimensions": {
+          "width": 527,
+          "height": 400
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81250-1/lr_figuactive_tasty_caramel_shake.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81250/source.jpg",
+        "optimized_path": "/products/81250/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica i CDN slika zajedno potvrđuju naziv, varijantu, tip pakovanja i kompatibilni kratki broj artikla; slika zamenjuje manji kataloški ili web izvor.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81242",
       "product_name": "FIGU ACTIVE kafa šejk",
       "image_status": "verified_unique_image",
-      "source_type": "lr_web",
-      "source_reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Lovely-Coffee-Shake_1024x768px-5b59dd322e.jpg",
-      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81242",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_figuactive_lovely_coffee_shake.html?productAlias=81242-1",
       "local_image_path": "/products/81242/product.webp",
       "source_copy_path": "/products/81242/source.jpg",
       "image_dimensions": {
-        "width": 1024,
-        "height": 768
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/imported/BM_Rezept_Lovely-Coffee-Shake_1024x768px-5b59dd322e.jpg",
+          "url": "https://srb.lr-world.info/body-mission.html"
+        },
+        "previous_source_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "previous_optimized_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81242-1/lr_figuactive_lovely_coffee_shake.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81242/source.jpg",
+        "optimized_path": "/products/81242/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica povezuje kratki broj artikla, tačan ukus i pakovanje; precizna fotografija ambalaže zamenjuje raniji vizual pripremljenog obroka.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81240",
       "product_name": "FIGU ACTIVE blaga vanila šejk",
       "image_status": "verified_unique_image",
-      "source_type": "lr_web",
-      "source_reference": "https://srb.lr-world.info/assets/imported/Soft-Vanilla-Shake_1024x768px-5440de61b5.jpg",
-      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81240",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_figuactive_soft_vanilla_shake.html?productAlias=81240-1",
       "local_image_path": "/products/81240/product.webp",
       "source_copy_path": "/products/81240/source.jpg",
       "image_dimensions": {
-        "width": 1024,
-        "height": 768
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/imported/Soft-Vanilla-Shake_1024x768px-5440de61b5.jpg",
+          "url": "https://srb.lr-world.info/body-mission.html"
+        },
+        "previous_source_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "previous_optimized_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81240-1/lr_figuactive_soft_vanilla_shake.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81240/source.jpg",
+        "optimized_path": "/products/81240/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica povezuje kratki broj artikla, tačan ukus i pakovanje; precizna fotografija ambalaže zamenjuje raniji vizual pripremljenog obroka.",
+        "status": "upgraded_official"
+      }
     },
     {
       "article_number": "81243",
       "product_name": "FIGU ACTIVE kremasta čokolada šejk",
       "image_status": "verified_unique_image",
-      "source_type": "lr_web",
-      "source_reference": "https://srb.lr-world.info/assets/imported/Smooth-Cocoa-Shake_1024x768px-f0837dfbfd.jpg",
-      "product_source_url": "https://srb.lr-world.info/body-mission.html",
+      "source_type": "official_lr_shop_cdn",
+      "source_reference": "Official LR Online Shop, exact product page for article 81243",
+      "product_source_url": "https://shop.lrworld.com/product/de/de/lr_figuactive_smooth_cocoa_shake.html?productAlias=81243-1",
       "local_image_path": "/products/81243/product.webp",
       "source_copy_path": "/products/81243/source.jpg",
       "image_dimensions": {
-        "width": 1024,
-        "height": 768
+        "width": 884,
+        "height": 1200
       },
       "file_type": "webp",
-      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika."
+      "notes_on_variant_verification": "Varijanta je potvrđena nazivom/alt oznakom na LR referentnoj stranici i usklađena sa kanonskim brojem artikla iz pregleda srpskog cenovnika.",
+      "quality_review": {
+        "previous_source": {
+          "type": "lr_web",
+          "reference": "https://srb.lr-world.info/assets/imported/Smooth-Cocoa-Shake_1024x768px-f0837dfbfd.jpg",
+          "url": "https://srb.lr-world.info/body-mission.html"
+        },
+        "previous_source_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "previous_optimized_dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "upgraded_source_url": "https://cdn.lrworld.com/images_cms/images/product/884x1200/81243-1/lr_figuactive_smooth_cocoa_shake.jpg",
+        "upgraded_source_dimensions": {
+          "width": 884,
+          "height": 1200
+        },
+        "local_source_path": "/products/81243/source.jpg",
+        "optimized_path": "/products/81243/product.webp",
+        "verification_reason": "Zvanična LR prodajna stranica povezuje kratki broj artikla, tačan ukus i pakovanje; precizna fotografija ambalaže zamenjuje raniji vizual pripremljenog obroka.",
+        "status": "upgraded_official"
+      }
     }
-  ]
+  ],
+  "quality_upgrade": {
+    "audited_product_records": 50,
+    "audited_unique_image_files": 40,
+    "upgraded_official": 33,
+    "retained_verified": 15,
+    "retained_unique_image_files": 7,
+    "retained_constituent_relationships": 8,
+    "unresolved": 2,
+    "source_domains": [
+      "shop.lrworld.com",
+      "cdn.lrworld.com",
+      "srb.lr-world.info"
+    ]
+  }
 }

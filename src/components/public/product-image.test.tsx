@@ -10,6 +10,7 @@ describe("ProductImage", () => {
     );
 
     expect(markup).toContain("Slika proizvoda još nije dostupna");
+    expect(markup).toContain("Prikaz će biti dodat tek nakon provere tačnog LR pakovanja.");
     expect(markup).toContain('data-testid="missing-product-image"');
     expect(markup).not.toContain("<img");
   });
@@ -23,5 +24,14 @@ describe("ProductImage", () => {
     expect(markup).toContain("3 × 1.000 ml");
     expect(markup).toContain("MULTIPACK");
     expect(markup).not.toMatch(/kutija|box/i);
+  });
+
+  it("ograničava mali provereni izvor umesto da ga slepo uvećava", () => {
+    const markup = renderToStaticMarkup(
+      <ProductImage imagePath="/products/81248/product.webp" articleNumber="81248" name="Figu Active Almond Snack" sizes="100vw" />,
+    );
+
+    expect(markup).toContain('data-image-scale="small"');
+    expect(markup).toContain("%2Fproducts%2F81248%2Fproduct.webp");
   });
 });

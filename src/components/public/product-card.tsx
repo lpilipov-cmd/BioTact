@@ -13,7 +13,7 @@ export function ProductCard({ product, detailBasePath = "/proizvodi", priority =
   return (
     <article className="product-card catalogue-product-card" data-collection={collection.id}>
       <Link href={`${detailBasePath}/${product.slug}`} aria-label={`Pogledaj proizvod ${product.name}`} className="product-card-image-link">
-        <ProductImage imagePath={product.image_path} articleNumber={product.article_number} name={product.name} sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) 50vw, (max-width: 1440px) 33vw, 25vw" priority={priority} />
+        <ProductImage imagePath={product.image_path} articleNumber={product.article_number} name={product.name} sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) 50vw, (max-width: 1440px) 33vw, 25vw" preload={priority} />
       </Link>
       <div className="product-card-body">
         <p className="product-card-classification">{collection.label}</p>

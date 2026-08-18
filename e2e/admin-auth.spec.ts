@@ -112,6 +112,34 @@ test("administrator pristupa zaštićenoj strani i odjavljuje se", async ({
   await expect(page.getByRole("link", { name: "Pošalji upit" })).toHaveAttribute("href", "/kontakt?product=aloe-vera-napitak-sa-medom-80700");
   await expect(page.getByText("Interna šifra artikla: 80700")).not.toBeVisible();
 
+  const productImage = page.locator(".product-detail-image img").first();
+  await expect(productImage).toBeVisible();
+  await expect.poll(() => productImage.evaluate((image) => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+
+  for (const width of [1280, 1024, 768, 375]) {
+    await page.setViewportSize({ width, height: width === 375 ? 812 : 900 });
+    await expect(page.getByRole("link", { name: "Pošalji upit" })).toBeVisible();
+
+    const layout = await page.evaluate(() => {
+      const image = document.querySelector<HTMLElement>(".product-detail-image")?.getBoundingClientRect();
+      const information = document.querySelector<HTMLElement>(".product-detail-information")?.getBoundingClientRect();
+      return {
+        hasHorizontalOverflow: document.documentElement.scrollWidth > window.innerWidth,
+        image: image ? { left: image.left, right: image.right, top: image.top, bottom: image.bottom } : null,
+        information: information ? { left: information.left, right: information.right, top: information.top, bottom: information.bottom } : null,
+      };
+    });
+
+    expect(layout.hasHorizontalOverflow).toBe(false);
+    expect(layout.image).not.toBeNull();
+    expect(layout.information).not.toBeNull();
+    if (width >= 1024) {
+      expect(layout.image!.right).toBeLessThanOrEqual(layout.information!.left);
+    } else {
+      expect(layout.image!.bottom).toBeLessThanOrEqual(layout.information!.top);
+    }
+  }
+
   const hasHorizontalOverflow = await page.evaluate(
     () => document.documentElement.scrollWidth > window.innerWidth,
   );

@@ -36,4 +36,12 @@ describe("product presentation", () => {
       });
     }
   });
+
+  it("limits retained small sources to their usable display size", () => {
+    expect(getProductPresentation("81100").imageScale).toBe("medium");
+    expect(getProductPresentation("81103").imageScale).toBe("medium");
+    expect(getProductPresentation("81248").imageScale).toBe("small");
+    expect(getProductPresentation("81249").imageScale).toBe("small");
+    expect(getProductPresentation("80700").imageScale).toBeUndefined();
+  });
 });

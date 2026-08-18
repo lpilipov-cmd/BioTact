@@ -7,10 +7,10 @@ type ProductImageProps = Readonly<{
   articleNumber: string;
   name: string;
   sizes: string;
-  priority?: boolean;
+  preload?: boolean;
 }>;
 
-export function ProductImage({ imagePath, articleNumber, name, sizes, priority = false }: ProductImageProps) {
+export function ProductImage({ imagePath, articleNumber, name, sizes, preload = false }: ProductImageProps) {
   const presentation = getProductPresentation(articleNumber);
   const imagePaths = presentation.constituentImagePaths.length
     ? presentation.constituentImagePaths
@@ -19,28 +19,35 @@ export function ProductImage({ imagePath, articleNumber, name, sizes, priority =
       : [];
 
   return (
-    <div className="product-visual relative aspect-square overflow-hidden rounded-2xl bg-[#eae1cb]" data-product-type={presentation.type}>
+    <div
+      className="product-visual relative overflow-hidden rounded-2xl bg-[#eae1cb]"
+      data-image-scale={presentation.imageScale ?? "standard"}
+      data-product-type={presentation.type}
+    >
       {imagePaths.length ? (
-        <div className={`product-visual-images ${imagePaths.length > 1 ? "product-visual-images-dual" : ""}`}>
+        <div className={`product-visual-images ${imagePaths.length > 1 ? "product-visual-images-dual" : "product-visual-images-single"}`}>
           {imagePaths.map((path, index) => (
             <div className="product-visual-image" key={path}>
               <Image
                 src={path}
                 alt={imagePaths.length > 1 ? `${name} — varijanta ${index + 1}` : name}
                 fill
-                className="object-contain p-4"
+                className="product-visual-media object-contain"
                 sizes={sizes}
-                priority={priority && index === 0}
+                preload={preload && index === 0}
+                quality={90}
               />
             </div>
           ))}
         </div>
       ) : (
         <div
-          className="flex h-full items-center justify-center p-6 text-center text-sm text-[#5b6960]"
+          className="product-image-fallback"
           data-testid="missing-product-image"
         >
-          Slika proizvoda još nije dostupna
+          <span aria-hidden="true">BIOTACT</span>
+          <strong>Slika proizvoda još nije dostupna</strong>
+          <small>Prikaz će biti dodat tek nakon provere tačnog LR pakovanja.</small>
         </div>
       )}
       {presentation.badge ? <span className="product-type-badge">{presentation.badge}</span> : null}

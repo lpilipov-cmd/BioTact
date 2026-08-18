@@ -65,6 +65,28 @@ The German collection shows newer Açaí Pro Summer and Berry Dream Bowl packagi
 
 The detailed record for every article, including source reference, dimensions, local path, and variant-verification note, is in `data/lr-health-product-images-review.json`.
 
+## R2 image-quality upgrade
+
+All 50 product records and all 40 unique image files were re-audited against the reviewed Serbian SKU list, the owner catalogues, the official Serbian LR reference site and exact product pages in the official LR online shop. The final local assets are never hotlinked.
+
+- **33 unique images upgraded** to exact official LR CDN product assets at **884 × 1200 px**.
+- **7 unique images retained** because the existing verified source remains appropriate: 80900, 81100, 81140, 81170, 81247, 81248 and 81249.
+- **8 multipack relationships retained** without inventing outer packaging. Their constituent artwork benefits automatically when the underlying individual image was upgraded.
+- **2 TurboKid sets remain unresolved** and continue to use the neutral BIOTACT fallback: 95213 and 96034.
+- Official source domains used: `shop.lrworld.com`, `cdn.lrworld.com` and `srb.lr-world.info`.
+
+Representative resolution improvements:
+
+| Article | Previous source / derivative | New source / derivative | Decision |
+| --- | --- | --- | --- |
+| 80700 | 239 × 325 px | 884 × 1200 px | Exact Traditional Honey bottle from the official LR shop/CDN. |
+| 80325 | 239 × 325 px | 884 × 1200 px | Exact Cistus Incanus capsules and matching short article number. |
+| 80940 | 239 × 325 px | 884 × 1200 px | Exact Mind Master Formula Gold bottle. |
+| 81245 | 1024 × 768 px recipe visual | 884 × 1200 px package visual | The exact Spicy Curry package replaces the earlier prepared-soup photograph. |
+| 81260 | 679 × 473 px | 884 × 1200 px | Exact official LR BODY MISSION one-month free-choice set. |
+
+The same exact-package correction was applied to the available FIGUACTIVE shakes and soups. Small retained snack images (81248 and 81249) are constrained to their useful native display size instead of being stretched on the detail page. Every record now carries its previous source and dimensions, upgraded URL and dimensions where applicable, local source and optimized paths, verification reason, and one explicit status: `upgraded_official`, `retained_verified` or `unresolved`.
+
 ## Safety confirmation
 
 No substitute images were used. LR branding was not removed. Images and outer packaging were not generated. Public product content does not expose partner prices or points, article numbers remain relegated to technical details, and inactive records remain unavailable through public RLS.

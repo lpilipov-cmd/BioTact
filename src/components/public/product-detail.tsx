@@ -32,12 +32,20 @@ export function ProductDetail({
       <Link href={cataloguePath} className="product-back-link">← Nazad na proizvode</Link>
       {preview ? <p className="mt-6 inline-flex rounded-full bg-[#17301f] px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#f7f3ea]">Zaštićeni vlasnički pregled</p> : null}
       <article className="product-detail-hero">
-        <div className="product-detail-image"><ProductImage imagePath={product.image_path} articleNumber={product.article_number} name={product.name} sizes="(max-width: 768px) 100vw, 50vw" priority /></div>
-        <div className="flex flex-col justify-center">
+        <div className="product-detail-image">
+          <ProductImage
+            imagePath={product.image_path}
+            articleNumber={product.article_number}
+            name={product.name}
+            sizes="(max-width: 768px) calc(100vw - 2rem), (max-width: 1024px) 40rem, 36rem"
+            preload
+          />
+        </div>
+        <div className="product-detail-information">
           <p className="eyebrow">{product.subcategory ?? product.category}</p>
-          <h1 className="mt-4 text-4xl font-bold leading-[1.06] tracking-[-0.03em] sm:text-5xl">{product.name}</h1>
-          <p className="mt-5 text-2xl font-bold">{formatEurPrice(product.catalogue_price_eur)}</p>
-          <div className="mt-6 border-y border-[#17301f]/15 py-5">
+          <h1>{product.name}</h1>
+          <p className="product-detail-price">{formatEurPrice(product.catalogue_price_eur)}</p>
+          <div className="product-detail-package">
             <p className="text-xs font-bold uppercase tracking-wider text-[#7a6b45]">Sadržaj pakovanja</p>
             <p className="mt-2 font-semibold">{product.package_content ?? "Na upit"}</p>
             {presentation.quantity ? <p className="mt-2 text-lg font-bold text-[#17301f]">{presentation.quantity}</p> : null}
@@ -49,7 +57,7 @@ export function ProductDetail({
             <li><span>02</span><strong>Jasno pakovanje</strong><small>Sadržaj i kataloška cena prikazani su odvojeno i pregledno.</small></li>
             <li><span>03</span><strong>Lična podrška</strong><small>Za dostupnost i poručivanje pošaljite upit BIOTACT podršci.</small></li>
           </ul>
-          <Link href={`/kontakt?product=${encodeURIComponent(product.slug)}`} className="button-primary mt-8 self-start">Pošalji upit</Link>
+          <Link href={`/kontakt?product=${encodeURIComponent(product.slug)}`} className="button-primary product-detail-action">Pošalji upit</Link>
         </div>
       </article>
       <aside className="product-disclaimer">Dodaci ishrani nisu zamena za raznovrsnu i uravnoteženu ishranu i zdrav način života. Informacije ne predstavljaju medicinski savet.</aside>
