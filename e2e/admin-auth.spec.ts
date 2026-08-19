@@ -62,6 +62,38 @@ test("administrator pristupa zaštićenoj strani i odjavljuje se", async ({
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
   expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
 
+  await page.goto("/admin/packages/preview");
+  await expect(page.getByRole("heading", { name: "Paketi koji izbor čine jednostavnijim." })).toBeVisible();
+  await expect(page.getByTestId("public-package-card")).toHaveCount(4);
+  for (const name of ["Imunitet Start", "Creva & Energija", "Pokret & Snaga", "Srce & Cirkulacija"]) {
+    await expect(page.getByRole("heading", { name })).toBeVisible();
+  }
+  await expect(page.getByText("Cena na upit")).toHaveCount(4);
+  await expect(page.getByText(/partnerska cena|poeni/i)).toHaveCount(0);
+  await expect(page.getByText(/80361-50|80325-50|81180-99|80205-650|80850-680|80190-50|80800-50|80338-699|80331-50/)).toHaveCount(0);
+  await expect(page.locator(".package-composition[data-count='2']")).toHaveCount(3);
+  await expect(page.locator(".package-composition[data-count='3']")).toHaveCount(1);
+  for (const image of await page.locator(".package-composition img").all()) {
+    await expect(image).toBeVisible();
+    await expect.poll(() => image.evaluate((element) => (element as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  }
+
+  await page.getByRole("link", { name: "Pogledaj paket Pokret & Snaga" }).click();
+  await expect(page).toHaveURL(/\/admin\/packages\/preview\/pokret-snaga$/);
+  await expect(page.getByRole("heading", { name: "Pokret & Snaga" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Šta paket sadrži" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Pogledaj proizvod Aloe vera Freedom napitak" })).toHaveAttribute("href", "/admin/products/preview/aloe-vera-freedom-napitak-80850");
+  await expect(page.getByRole("link", { name: "Pogledaj proizvod Active Freedom kapsule" })).toHaveAttribute("href", "/admin/products/preview/active-freedom-kapsule-80190");
+  await expect(page.getByRole("link", { name: "Pošalji upit", exact: true })).toHaveAttribute("href", "/kontakt?package=pokret-snaga");
+  await expect(page.getByText(/partnerska cena|poeni|80850-680|80190-50/i)).toHaveCount(0);
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
+
+  for (const width of [1280, 1024, 768, 375]) {
+    await page.setViewportSize({ width, height: width === 375 ? 812 : 900 });
+    await expect(page.getByRole("link", { name: "Pošalji upit", exact: true })).toBeVisible();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
+  }
+
   await page.goto("/admin/products/preview");
   await expect(page.getByRole("heading", { name: "BIOTACT katalog pre objave." })).toBeVisible();
   await expect(page.locator("[data-testid=product-grid] article")).toHaveCount(50);

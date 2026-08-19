@@ -18,12 +18,14 @@ export default async function AdminPackagesPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#5b6960]">Administracija</p>
           <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Paketi</h1>
         </div>
-        <Link
-          href="/admin/packages/new"
-          className="inline-flex min-h-11 items-center rounded-xl bg-[#17301f] px-4 font-bold text-[#f7f3ea]"
-        >
-          Novi paket
-        </Link>
+        <div className="flex flex-wrap gap-2">
+          <Link href="/admin/packages/preview" className="inline-flex min-h-11 items-center rounded-xl border border-[#17301f] px-4 font-bold">
+            Pregled paketa
+          </Link>
+          <Link href="/admin/packages/new" className="inline-flex min-h-11 items-center rounded-xl bg-[#17301f] px-4 font-bold text-[#f7f3ea]">
+            Novi paket
+          </Link>
+        </div>
       </div>
 
       {error ? (

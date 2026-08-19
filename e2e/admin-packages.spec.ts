@@ -89,10 +89,9 @@ test("administrator kreira i uređuje paket uz bezbednu validaciju", async ({
   await page.getByRole("button", { name: "Sačuvaj izmene" }).click();
   await expect(page.getByText("Paket je uspešno sačuvan.")).toBeVisible();
 
-  await page.goto(`/paketi/${updatedSlug}`);
-  await expect(page.getByRole("heading", { name: `Izmenjeni E2E paket ${suffix}` })).toBeVisible();
-  await expect(page.getByText("13.990")).toBeVisible();
-  await expect(page.getByText("Pokret", { exact: true })).toBeVisible();
+  const publicResponse = await page.goto(`/paketi/${updatedSlug}`);
+  expect(publicResponse?.status()).toBe(404);
+  await expect(page.getByRole("heading", { name: "Paket nije pronađen." })).toBeVisible();
 
   const packageBase = editUrl.slice(0, editUrl.lastIndexOf("/") + 1);
   for (const id of ["nije-uuid", "99999999-9999-4999-8999-999999999999"]) {
