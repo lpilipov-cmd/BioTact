@@ -52,7 +52,7 @@ test("paket kartice i CTA dugmad vode na postojeće javne tokove", async ({ page
   await expect(page).toHaveURL(new RegExp(`${href}$`));
 
   await page.goto("/");
-  await page.locator("main").getByRole("link", { name: "Pogledaj pakete" }).click();
+  await page.locator("main").getByRole("link", { name: "Istraži pakete" }).click();
   await expect(page).toHaveURL(/\/paketi$/);
   await page.goto("/");
   await page.locator("main").getByRole("link", { name: "Kontaktiraj nas" }).click();
