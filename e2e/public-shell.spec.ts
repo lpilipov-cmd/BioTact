@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const publicRoutes = ["/", "/paketi", "/paketi/privremeni-imunitet", "/proizvodi", "/kontakt", "/o-nama"];
+const publicRoutes = ["/", "/paketi", "/paketi/imunitet-start", "/proizvodi", "/kontakt", "/o-nama"];
 
 test("zajednički javni shell povezuje sve rute bez admin navigacije", async ({ page }, testInfo) => {
   for (const route of publicRoutes) {
@@ -82,6 +82,6 @@ test("javni sajt nema korpu ili checkout i objavljuje SEO rute", async ({ page, 
   const sitemapText = await sitemap.text();
   expect(sitemapText).toContain("/o-nama");
   expect(sitemapText).toContain("/proizvodi");
-  expect(sitemapText).toContain("/paketi/privremeni-imunitet");
+  expect(sitemapText).toContain("/paketi/imunitet-start");
   expect(sitemapText).not.toContain("/admin");
 });

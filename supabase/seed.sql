@@ -1,5 +1,6 @@
--- Development-only placeholders. Product names, descriptions, codes, and all
--- commercial data require owner verification before any production seed/import.
+-- LOCAL DEVELOPMENT AND E2E TESTING ONLY. These deterministic package IDs keep
+-- the fictional lead fixtures stable while the content mirrors the committed,
+-- catalogue-verified BIOTACT owner-review package set.
 insert into public.packages (
   id,
   slug,
@@ -12,13 +13,50 @@ insert into public.packages (
   sort_order
 )
 values
-  ('10000000-0000-4000-8000-000000000001', 'privremeni-imunitet', 'Privremeni paket - Imunitet', 'imunitet', 'Neutralni razvojni sadržaj za kategoriju imunitet. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-IMUNITET-001'], null, true, 10),
-  ('10000000-0000-4000-8000-000000000002', 'privremeni-digestija', 'Privremeni paket - Digestija', 'digestija', 'Neutralni razvojni sadržaj za kategoriju digestija. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-DIGESTIJA-001'], null, true, 20),
-  ('10000000-0000-4000-8000-000000000003', 'privremeni-forma', 'Privremeni paket - Forma', 'forma', 'Neutralni razvojni sadržaj za kategoriju forma. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-FORMA-001'], null, true, 30),
-  ('10000000-0000-4000-8000-000000000004', 'privremeni-pokret', 'Privremeni paket - Pokret', 'pokret', 'Neutralni razvojni sadržaj za kategoriju pokret. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-POKRET-001'], null, true, 40),
-  ('10000000-0000-4000-8000-000000000005', 'privremeni-lepota', 'Privremeni paket - Lepota', 'lepota', 'Neutralni razvojni sadržaj za kategoriju lepota. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-LEPOTA-001'], null, true, 50),
-  ('10000000-0000-4000-8000-000000000006', 'privremeni-srce', 'Privremeni paket - Srce', 'srce', 'Neutralni razvojni sadržaj za kategoriju srce. Konačan naziv i opis zahtevaju potvrdu vlasnika.', array['TEMP-SRCE-001'], null, true, 60),
-  ('10000000-0000-4000-8000-000000000007', 'privremeni-neaktivan', 'Privremeni paket - Neaktivan', 'forma', 'Neutralni razvojni sadržaj neaktivnog lokalnog paketa. Konačni podaci zahtevaju potvrdu vlasnika.', array['TEMP-INACTIVE-001'], null, false, 70)
+  (
+    '10000000-0000-4000-8000-000000000001',
+    'imunitet-start',
+    'Imunitet Start',
+    'imunitet',
+    'Namenjen osobama koje žele podršku svakodnevnoj wellness rutini. Paket objedinjuje LR LIFETAKT Tečni Colostrum i Cistus Incanus Capsule iz kataloga.',
+    array['80361-50', '80325-50'],
+    null,
+    true,
+    1
+  ),
+  (
+    '10000000-0000-4000-8000-000000000002',
+    'creva-energija',
+    'Creva & Energija',
+    'digestija',
+    'Namenjen osobama koje žele jednostavnu podršku svakodnevnoj wellness rutini i ishrani. Paket objedinjuje PRO 12+ i LR LIFETAKT Herbal Fasting Tea.',
+    array['81180-99', '80205-650'],
+    null,
+    true,
+    2
+  ),
+  (
+    '10000000-0000-4000-8000-000000000003',
+    'pokret-snaga',
+    'Pokret & Snaga',
+    'pokret',
+    'Namenjen osobama koje žele podršku aktivnom načinu života. Paket objedinjuje Aloe Vera Drinking Gel Active Freedom i LR LIFETAKT Active Freedom Capsule.',
+    array['80850-680', '80190-50'],
+    null,
+    true,
+    3
+  ),
+  (
+    '10000000-0000-4000-8000-000000000005',
+    'srce-cirkulacija',
+    'Srce & Cirkulacija',
+    'srce',
+    'Namenjen osobama koje žele podršku svakodnevnoj wellness rutini usmerenoj na srce i cirkulaciju. Paket objedinjuje Aloe Vera Drinking Gel Intense Sivera, Super Omega Capsule i LR LIFETAKT Reishi Plus Capsules.',
+    array['80800-50', '80338-699', '80331-50'],
+    null,
+    true,
+    4
+  )
 on conflict (slug) do update set
   name = excluded.name,
   category = excluded.category,

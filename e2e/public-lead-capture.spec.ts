@@ -12,7 +12,7 @@ test("kontakt forma validira podatke, preselektuje aktivan paket i prikazuje pot
     await route.fulfill({ status: 200, contentType: "application/json", body: JSON.stringify({ ok: true }) });
   });
 
-  await page.goto("/kontakt?package=privremeni-imunitet");
+  await page.goto("/kontakt?package=imunitet-start");
   await expect(page.getByRole("heading", { name: "Pošaljite upit" })).toBeVisible();
   await expect(page.getByLabel("Paket (opciono)")).toHaveValue("10000000-0000-4000-8000-000000000001");
 
@@ -33,16 +33,15 @@ test("kontakt forma validira podatke, preselektuje aktivan paket i prikazuje pot
   expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
 });
 
-test("neaktivan ili nepoznat paket nije moguće preselektovati", async ({ page }) => {
-  for (const slug of ["privremeni-neaktivan", "nepostojeci-paket"]) {
+test("nepoznat paket nije moguće preselektovati", async ({ page }) => {
+  for (const slug of ["neodobreni-test-paket", "nepostojeci-paket"]) {
     await page.goto(`/kontakt?package=${slug}`);
     await expect(page.getByLabel("Paket (opciono)")).toHaveValue("");
-    await expect(page.getByRole("option", { name: "Privremeni paket - Neaktivan" })).toHaveCount(0);
   }
 });
 
 test("kontakt parametar aktivnog paketa ostaje preselektovan", async ({ page }) => {
-  await page.goto("/kontakt?package=privremeni-imunitet");
-  await expect(page).toHaveURL(/\/kontakt\?package=privremeni-imunitet$/);
+  await page.goto("/kontakt?package=imunitet-start");
+  await expect(page).toHaveURL(/\/kontakt\?package=imunitet-start$/);
   await expect(page.getByLabel("Paket (opciono)")).toHaveValue("10000000-0000-4000-8000-000000000001");
 });

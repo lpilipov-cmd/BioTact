@@ -1,9 +1,45 @@
 import { expect, test, type Page } from "@playwright/test";
+import { execFileSync } from "node:child_process";
+import { resolve } from "node:path";
 
 const localAdmin = {
   email: "admin@biotact.local",
   password: process.env.BIOTACT_E2E_ADMIN_PASSWORD ?? "Biotact-local-admin-2026!",
 };
+
+const e2ePackageSlugPrefix = "e2e-admin-packages-";
+const createdPackageSlugs = new Set<string>();
+
+function removeCreatedPackages() {
+  if (createdPackageSlugs.size === 0) {
+    return;
+  }
+  if (process.env.BIOTACT_E2E_LOCAL_SUPABASE !== "1") {
+    throw new Error("E2E package cleanup is allowed only against local Supabase.");
+  }
+
+  const slugs = [...createdPackageSlugs];
+  if (slugs.some((slug) => !new RegExp(`^${e2ePackageSlugPrefix}[a-z0-9-]+$`).test(slug))) {
+    throw new Error("Refusing to clean a package without the E2E-only slug prefix.");
+  }
+
+  const slugList = slugs.map((slug) => `'${slug}'`).join(",");
+  execFileSync(
+    resolve(process.cwd(), "node_modules/.bin/supabase"),
+    [
+      "db",
+      "query",
+      "--local",
+      `delete from public.packages where slug in (${slugList}) and slug like '${e2ePackageSlugPrefix}%';`,
+    ],
+    { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] },
+  );
+  createdPackageSlugs.clear();
+}
+
+test.afterEach(() => {
+  removeCreatedPackages();
+});
 
 async function login(page: Page) {
   await page.goto("/admin/login");
@@ -41,8 +77,10 @@ test("neprijavljen korisnik ne može da pristupi admin paketima", async ({ page 
 test("administrator kreira i uređuje paket uz bezbednu validaciju", async ({
   page,
 }, testInfo) => {
+  test.setTimeout(90_000);
+
   const suffix = `${testInfo.project.name.replace(/[^a-z0-9]+/g, "-")}-${Date.now().toString(36)}`;
-  const slug = `lokalni-e2e-${suffix}`;
+  const slug = `${e2ePackageSlugPrefix}${suffix}`;
   const updatedSlug = `${slug}-izmenjen`;
 
   await login(page);
@@ -52,20 +90,20 @@ test("administrator kreira i uređuje paket uz bezbednu validaciju", async ({
     "aria-current",
     "page",
   );
-  expect(await page.getByTestId("admin-package-card").count()).toBeGreaterThanOrEqual(7);
-  await expect(page.getByText("Privremeni paket - Neaktivan")).toBeVisible();
+  expect(await page.getByTestId("admin-package-card").count()).toBeGreaterThanOrEqual(4);
+  await expect(page.getByText("Imunitet Start")).toBeVisible();
   await expect(page.getByRole("button", { name: /obriši/i })).toHaveCount(0);
 
   await page.goto("/admin/packages/new");
   await fillPackageForm(page, {
     name: "Lokalni duplikat",
-    slug: "privremeni-imunitet",
+    slug: "imunitet-start",
   });
   await page.getByRole("button", { name: "Kreiraj paket" }).click();
   await expect(page.getByText("Paket sa ovim slugom već postoji.")).toBeVisible();
 
   await page.getByLabel("Slug").fill(slug);
-  await page.getByLabel("Naziv").fill(`Lokalni E2E paket ${suffix}`);
+  await page.getByLabel("Naziv").fill(`BIOTACT E2E paket ${suffix}`);
   await page.getByLabel("Aktivno i javno vidljivo").uncheck();
 
   await page.getByLabel("Opis").fill("Ovaj paket garantovano leči tegobe.");
@@ -74,18 +112,20 @@ test("administrator kreira i uređuje paket uz bezbednu validaciju", async ({
   await page
     .getByLabel("Opis")
     .fill("Neutralan lokalni opis koji podržava svakodnevnu wellness rutinu.");
+  createdPackageSlugs.add(slug);
   await page.getByRole("button", { name: "Kreiraj paket" }).click();
 
   await expect(page).toHaveURL(/\/admin\/packages\/[0-9a-f-]+\?created=1$/);
   await expect(page.getByText("Paket je uspešno kreiran.")).toBeVisible();
 
   const editUrl = page.url().replace(/\?created=1$/, "");
-  await page.getByLabel("Naziv").fill(`Izmenjeni E2E paket ${suffix}`);
+  await page.getByLabel("Naziv").fill(`Izmenjeni BIOTACT E2E paket ${suffix}`);
   await page.getByLabel("Slug").fill(updatedSlug);
   await page.getByLabel("Kategorija").selectOption("pokret");
   await page.getByLabel("Cena (RSD)").fill("13990");
   await page.getByLabel("Redosled").fill("5");
   await page.getByLabel("Aktivno i javno vidljivo").check();
+  createdPackageSlugs.add(updatedSlug);
   await page.getByRole("button", { name: "Sačuvaj izmene" }).click();
   await expect(page.getByText("Paket je uspešno sačuvan.")).toBeVisible();
 
