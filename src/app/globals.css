@@ -754,18 +754,24 @@ textarea {
 .storefront-section-heading > p { max-width: 34rem; align-self: end; color: #5b6960; line-height: 1.7; }
 .storefront-text-link { align-self: end; color: #17301f; font-weight: 800; text-decoration: underline; text-decoration-color: #c9a24d; text-underline-offset: 0.4rem; }
 
-.storefront-category-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
-.storefront-category-card { position: relative; min-height: 15rem; overflow: hidden; border-radius: 1.25rem; background: #dcd3c0; color: #f7f3ea; }
-.storefront-category-image { object-fit: contain; object-position: 75% 20%; padding: 0.75rem 0.5rem 3.5rem 35%; transition: transform 350ms ease; }
-.storefront-category-card:hover .storefront-category-image { transform: scale(1.04); }
-.storefront-category-shade { position: absolute; inset: 0; background: linear-gradient(155deg, #17301f 0%, rgb(23 48 31 / 80%) 48%, rgb(23 48 31 / 18%) 100%); }
-.storefront-category-index { position: absolute; z-index: 2; right: 0.8rem; top: 0.7rem; color: #dbc487; font-family: Georgia, serif; font-size: 0.85rem; }
-.storefront-category-content { position: absolute; z-index: 2; inset: auto 0 0; display: flex; min-height: 9rem; flex-direction: column; justify-content: flex-end; padding: 1rem; }
-.storefront-category-content strong { font-family: Georgia, serif; font-size: 1.45rem; font-weight: 500; line-height: 1; }
-.storefront-category-content small { display: none; margin-top: 0.55rem; color: rgb(247 243 234 / 70%); line-height: 1.45; }
-.storefront-category-content > span { margin-top: 0.9rem; color: #dbc487; font-size: 0.72rem; font-weight: 800; }
+.storefront-collections-section { padding-top: 7rem; }
+.storefront-category-grid { display: grid; gap: 0.85rem; }
+.storefront-category-card { position: relative; min-height: 19rem; overflow: hidden; border-radius: 1.25rem; background: linear-gradient(145deg, #31523a, #17301f); color: #f7f3ea; isolation: isolate; }
+.storefront-category-card::before { position: absolute; z-index: -1; width: 13rem; height: 13rem; right: -4rem; top: -4rem; border: 1px solid rgb(219 196 135 / 24%); border-radius: 50%; content: ""; }
+.storefront-category-card[data-collection="digestija-i-ravnoteza"],
+.storefront-category-card[data-collection="energija-i-fokus"],
+.storefront-category-card[data-collection="pokret-i-aktivan-zivot"],
+.storefront-category-card[data-collection="body-mission"] { background: linear-gradient(145deg, #e7dcc8, #cbbb9e); color: #17301f; }
+.storefront-category-image { z-index: -1; object-fit: contain; object-position: center 38%; padding: 1.25rem 1.5rem 5.5rem; filter: drop-shadow(0 1.4rem 1rem rgb(0 0 0 / 18%)); transition: transform 350ms ease; }
+.storefront-category-card:hover .storefront-category-image { transform: translateY(-0.25rem) scale(1.035); }
+.storefront-category-shade { position: absolute; z-index: 0; inset: 0; background: linear-gradient(180deg, transparent 42%, rgb(13 31 20 / 16%) 60%, rgb(13 31 20 / 94%) 100%); }
+.storefront-category-index { position: absolute; z-index: 2; right: 1rem; top: 0.9rem; color: #dbc487; font-family: Georgia, serif; font-size: 0.85rem; }
+.storefront-category-content { position: absolute; z-index: 2; inset: auto 0 0; display: flex; min-height: 8.5rem; flex-direction: column; justify-content: flex-end; padding: 1.15rem; color: #f7f3ea; }
+.storefront-category-content strong { max-width: 14ch; font-family: Georgia, serif; font-size: 1.55rem; font-weight: 500; line-height: 1.02; }
+.storefront-category-content > span { margin-top: 0.7rem; color: #dbc487; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
 
 .storefront-featured-grid { display: grid; gap: 1.25rem; }
+.storefront-featured-section { border-top: 1px solid color-mix(in srgb, #17301f 14%, transparent); }
 .storefront-empty { border: 1px solid color-mix(in srgb, #17301f 14%, transparent); border-radius: 2rem; padding: 4rem 1.5rem; text-align: center; }
 .storefront-empty h3 { margin-top: 1rem; font-family: Georgia, serif; font-size: 2rem; }
 .storefront-empty p:last-child { max-width: 36rem; margin: 1rem auto 0; color: #5b6960; }
@@ -844,8 +850,7 @@ textarea {
   .storefront-actions { flex-direction: row; }
   .storefront-section, .storefront-guided, .storefront-editorial { width: min(100% - 3rem, 82rem); padding-block: 7rem; }
   .storefront-section-heading { grid-template-columns: 1fr minmax(15rem, 0.55fr); }
-  .storefront-category-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
-  .storefront-category-content small { display: block; }
+  .storefront-category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
   .storefront-featured-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
   .storefront-package-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .storefront-trust-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -861,10 +866,11 @@ textarea {
   .storefront-hero { grid-template-columns: minmax(0, 1.02fr) minmax(30rem, 0.98fr); }
   .storefront-hero-copy { padding: 7rem max(2rem, calc((100vw - 86rem) / 2)) 6rem; padding-right: clamp(3rem, 5vw, 6rem); }
   .storefront-hero-visual { min-height: 47rem; }
-  .storefront-category-card { min-height: 22rem; }
-  .storefront-category-content { min-height: 12rem; padding: 1.4rem; }
-  .storefront-category-content strong { font-size: 1.8rem; }
-  .storefront-featured-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .storefront-category-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .storefront-category-card { min-height: 23rem; }
+  .storefront-category-content { min-height: 9.5rem; padding: 1.4rem; }
+  .storefront-category-content strong { font-size: 1.75rem; }
+  .storefront-featured-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .storefront-package-section { grid-template-columns: minmax(20rem, 0.72fr) minmax(0, 1.28fr); gap: 5rem; padding-block: 7rem; }
   .storefront-package-intro { position: sticky; top: 7rem; align-self: start; }
   .storefront-guided { grid-template-columns: minmax(20rem, 0.8fr) minmax(0, 1.2fr); gap: 7rem; }

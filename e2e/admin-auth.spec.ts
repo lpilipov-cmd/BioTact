@@ -56,7 +56,7 @@ test("administrator pristupa zaštićenoj strani i odjavljuje se", async ({
   await expect(page.getByRole("heading", { name: "Pametniji izbor za svakodnevni wellness." })).toBeVisible();
   await expect(page.getByText("Zaštićeni vlasnički pregled", { exact: true })).toBeVisible();
   await expect(page.getByTestId("featured-package-card")).toHaveCount(4);
-  await expect(page.getByRole("heading", { name: "Proizvodi koje vredi upoznati." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Izdvojeni proizvodi" })).toBeVisible();
   await expect(page.getByText(/partnerska cena|poeni/i)).toHaveCount(0);
   await expect(page.getByText(/artikal\s+\d+/i)).toHaveCount(0);
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
