@@ -9,11 +9,12 @@ type PackageCardProps = Readonly<{
   packageData: Pick<ApprovedPackagePresentation, "slug" | "name" | "category" | "focus" | "products"> & { priceRsd: number | null };
   detailBasePath?: string;
   priority?: boolean;
+  testId?: string;
 }>;
 
-export function PackageCard({ packageData, detailBasePath = "/paketi", priority = false }: PackageCardProps) {
+export function PackageCard({ packageData, detailBasePath = "/paketi", priority = false, testId = "public-package-card" }: PackageCardProps) {
   return (
-    <article className="package-card" data-testid="public-package-card">
+    <article className="package-card" data-testid={testId}>
       <Link href={`${detailBasePath}/${packageData.slug}`} className="package-card-visual-link" aria-label={`Pogledaj paket ${packageData.name}`}>
         <PackageComposition products={packageData.products} name={packageData.name} priority={priority} />
       </Link>
