@@ -33,30 +33,56 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
     productSlug,
   );
   const proof = createLeadFormProof(getLeadRateLimitSalt());
+  const selectedPackage = initialPackageId
+    ? packages?.find((item) => item.id === initialPackageId)
+    : undefined;
+  const selectedProduct = initialProductId
+    ? products?.find((item) => item.id === initialProductId)
+    : undefined;
+  const whatsappLink = createLeadSuccessWhatsAppLink(env.NEXT_PUBLIC_WHATSAPP_NUMBER);
 
   return (
-    <main id="glavni-sadrzaj" className="min-h-screen px-4 py-12 sm:px-6 sm:py-16">
-      <div className="mx-auto max-w-2xl">
-        <p className="eyebrow">Lični kontakt</p>
-        <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">Pošaljite upit</h1>
-        <p className="mt-4 leading-7 text-[#374c3d]">Ostavite kontakt i javićemo Vam se sa informacijama o BIOTACT paketima i načinu poručivanja.</p>
+    <main id="glavni-sadrzaj" className="contact-page">
+      <section className="contact-hero" aria-labelledby="contact-title">
+        <p className="eyebrow">KONTAKT</p>
+        <h1 id="contact-title">Tu smo da ti pomognemo da napraviš sledeći korak.</h1>
+        <p>Pošalji kratak upit i javićemo se sa jasnim informacijama o proizvodima, paketima i procesu poručivanja.</p>
+      </section>
 
-        {packageError || productError ? (
-          <p role="alert" className="mt-8 rounded-xl border border-red-900/20 bg-red-50 p-4">Opcije trenutno nije moguće učitati. Upit i dalje možete poslati bez izbora.</p>
-        ) : null}
+      <section className="contact-layout" aria-label="Kontakt forma i informacije">
+        <aside className="contact-aside">
+          <div>
+            <p className="eyebrow">Kako nastavljamo</p>
+            <h2>Lični odgovor, bez komplikovanja.</h2>
+            <p>Pregledaćemo upit i odgovoriti putem kontakta koji ostaviš u formi.</p>
+          </div>
+          <div className="contact-channel-note">
+            <span aria-hidden="true">01</span>
+            <p>{whatsappLink ? "Nakon slanja upita možeš nastaviti razgovor i putem WhatsApp-a." : "Kontakt počinje slanjem ove forme."}</p>
+          </div>
+          <p className="contact-expectation">Slanje forme predstavlja upit za informacije i kontakt — nije samostalna kartična kupovina.</p>
+        </aside>
 
-        <div className="mt-8">
+        <div className="contact-form-column">
+          {packageError || productError ? (
+            <p role="alert" className="contact-load-error">Opcije trenutno nije moguće učitati. Upit i dalje možeš poslati bez izbora.</p>
+          ) : null}
           <ContactForm
             packages={packages ?? []}
             products={products ?? []}
             initialPackageId={initialPackageId}
             initialProductId={initialProductId}
+            selectedContext={selectedPackage
+              ? { kind: "Paket", name: selectedPackage.name }
+              : selectedProduct
+                ? { kind: "Proizvod", name: selectedProduct.name }
+                : undefined}
             formStartedAt={proof.formStartedAt}
             formToken={proof.formToken}
-            whatsappLink={createLeadSuccessWhatsAppLink(env.NEXT_PUBLIC_WHATSAPP_NUMBER)}
+            whatsappLink={whatsappLink}
           />
         </div>
-      </div>
+      </section>
     </main>
   );
 }

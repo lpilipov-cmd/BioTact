@@ -13,7 +13,8 @@ test("kontakt forma validira podatke, preselektuje aktivan paket i prikazuje pot
   });
 
   await page.goto("/kontakt?package=imunitet-start");
-  await expect(page.getByRole("heading", { name: "Pošaljite upit" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Tu smo da ti pomognemo da napraviš sledeći korak." })).toBeVisible();
+  await expect(page.getByLabel("Upit za: Imunitet Start")).toContainText("Imunitet Start");
   await expect(page.getByLabel("Paket (opciono)")).toHaveValue("10000000-0000-4000-8000-000000000001");
 
   await page.getByRole("button", { name: "Pošalji upit" }).click();
@@ -27,8 +28,8 @@ test("kontakt forma validira podatke, preselektuje aktivan paket i prikazuje pot
   await page.waitForTimeout(1_500);
   await page.getByRole("button", { name: "Pošalji upit" }).click();
 
-  await expect(page.getByText("Hvala. Vaš upit je uspešno poslat.")).toBeVisible();
-  await expect(page.getByText("Javićemo Vam se u najkraćem roku.")).toBeVisible();
+  await expect(page.getByText("Hvala. Tvoj upit je uspešno poslat.")).toBeVisible();
+  await expect(page.getByText("Javićemo se u najkraćem roku putem kontakta koji si ostavio/la.")).toBeVisible();
   await expect(page.getByText(/lead ID/i)).toHaveCount(0);
   expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
 });
