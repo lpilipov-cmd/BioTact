@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="site-footer-main">
         <div className="site-footer-brand">
-          <Link href="/" aria-label="BIOTACT početna"><strong>BIOTACT</strong><span>Priroda. Nauka. Poverenje.</span></Link>
+          <Link href="/"><strong>BIOTACT</strong><span>Priroda. Nauka. Poverenje.</span></Link>
           <p>Odgovorno predstavljen wellness portfolio i lična podrška pri izboru.</p>
         </div>
         <nav aria-label="Navigacija u podnožju" className="site-footer-navigation">

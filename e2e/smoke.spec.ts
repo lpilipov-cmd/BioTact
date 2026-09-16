@@ -10,16 +10,19 @@ test("prikazuje kompletnu BIOTACT početnu stranicu i aktivne pakete", async ({ 
   await expect(
     page.getByText("Priroda. Nauka. Poverenje.", { exact: true }).first(),
   ).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Lakši put od izbora do razgovora." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Lakši način da izabereš." })).toBeVisible();
   await expect(page.getByTestId("featured-package-card")).toHaveCount(4);
   await expect(page.getByText("Privremeni paket - Neaktivan")).toHaveCount(0);
-  await expect(page.getByRole("heading", { name: "Nisi siguran šta da izabereš?" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Više jasnoće. Manje buke." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Nisi siguran odakle da počneš?" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Zašto BIOTACT?" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Pronađi rutinu koja ti odgovara." })).toBeVisible();
 
-  const main = page.locator("main");
-  await expect(main.getByRole("link", { name: "Istraži pakete" })).toHaveAttribute("href", "/paketi");
-  await expect(main.getByRole("link", { name: "Pogledaj proizvode" })).toHaveAttribute("href", "/proizvodi");
-  await expect(main.getByRole("link", { name: "Kontaktiraj nas" })).toHaveAttribute("href", "/kontakt");
+  const hero = page.getByRole("region", { name: "Proizvodi za rutinu koja ima smisla." });
+  const finalCta = page.getByRole("region", { name: "Pronađi rutinu koja ti odgovara." });
+  await expect(hero.getByRole("link", { name: "Istraži pakete" })).toHaveAttribute("href", "/paketi");
+  await expect(hero.getByRole("link", { name: "Pogledaj proizvode" })).toHaveAttribute("href", "/proizvodi");
+  await expect(finalCta.getByRole("link", { name: "Pogledaj proizvode" })).toHaveAttribute("href", "/proizvodi");
+  await expect(finalCta.getByRole("link", { name: "Kontaktiraj nas" })).toHaveAttribute("href", "/kontakt");
 
   const hasHorizontalOverflow = await page.evaluate(
     () => document.documentElement.scrollWidth > window.innerWidth,

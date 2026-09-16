@@ -53,7 +53,7 @@ test("administrator pristupa zaštićenoj strani i odjavljuje se", async ({
   await expect(page.getByText(localAdmin.email)).toBeVisible();
 
   await page.goto("/admin/storefront-preview");
-  await expect(page.getByRole("heading", { name: "Pametniji izbor za svakodnevni wellness." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Proizvodi za rutinu koja ima smisla." })).toBeVisible();
   await expect(page.getByText("Zaštićeni vlasnički pregled", { exact: true })).toBeVisible();
   await expect(page.getByTestId("featured-package-card")).toHaveCount(4);
   await expect(page.getByRole("heading", { name: "Izdvojeni proizvodi" })).toBeVisible();
