@@ -61,9 +61,13 @@ test("paket kartice i CTA dugmad vode na postojeće javne tokove", async ({ page
 
 test("o nama transparentno opisuje LR odnos bez prodajnih ili zdravstvenih obećanja", async ({ page }) => {
   await page.goto("/o-nama");
-  await expect(page.getByText("BIOTACT nije proizvođač tih proizvoda.")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Jednostavniji način da upoznaš LR portfolio." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Manje haosa. Više jasnoće." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Od pregleda do razgovora." })).toBeVisible();
+  await expect(page.getByText("BIOTACT predstavlja i distribuira proizvode iz LR Health & Beauty portfolija. BIOTACT nije proizvođač prikazanih LR proizvoda.")).toBeVisible();
   await expect(page.getByText("LR Health & Beauty", { exact: false }).first()).toBeVisible();
-  await expect(page.getByText("odgovarajući LR proces", { exact: false }).first()).toBeVisible();
+  await expect(page.getByRole("link", { name: "Pogledaj proizvode" })).toHaveAttribute("href", "/proizvodi");
+  await expect(page.getByRole("link", { name: "Pogledaj pakete" })).toHaveAttribute("href", "/paketi");
   await expect(page.getByText(/garantovan[ae] zarad|leči bolesti/i)).toHaveCount(0);
   await expect(page.getByText(/testimonials|svedočenja kupaca/i)).toHaveCount(0);
 });

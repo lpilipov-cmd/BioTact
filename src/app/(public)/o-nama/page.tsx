@@ -8,23 +8,80 @@ export const metadata: Metadata = {
   openGraph: { title: "O nama | BIOTACT", description: "Kako BIOTACT pruža wellness i korisničku podršku.", url: "/o-nama" },
 };
 
+const principles = [
+  ["01", "Jasna organizacija", "Odabrani proizvodi i paketi predstavljeni su kroz pregledne kategorije."],
+  ["02", "Transparentne informacije", "Važne informacije prikazujemo sažeto, bez preuveličanih obećanja."],
+  ["03", "Lična podrška", "Kada je potrebno, razgovor pomaže da sledeći korak bude jasniji."],
+] as const;
+
+const steps = [
+  ["01", "Istraži", "Upoznaj proizvode i pakete kroz jasno organizovan portfolio."],
+  ["02", "Uporedi", "Pregledaj dostupne informacije i pronađi opcije za svoju rutinu."],
+  ["03", "Kontaktiraj nas", "Pošalji upit za dodatne informacije i ličnu podršku."],
+] as const;
+
 export default function AboutPage() {
   return (
-    <main id="glavni-sadrzaj">
-      <section className="section-shell max-w-5xl">
-        <p className="eyebrow">O BIOTACT-u</p>
-        <h1 className="mt-4 max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">Lična podrška, transparentan proces.</h1>
-        <p className="mt-7 max-w-3xl text-xl leading-9 text-[#476050]">BIOTACT je wellness brend i mesto korisničke podrške za ljude koji žele jasne informacije i lični kontakt pre odluke o poručivanju.</p>
+    <main id="glavni-sadrzaj" className="about-page">
+      <section className="about-hero" aria-labelledby="about-title">
+        <div className="about-hero-copy">
+          <p className="eyebrow">O BIOTACT-U</p>
+          <h1 id="about-title">Jednostavniji način da upoznaš LR portfolio.</h1>
+          <p>BIOTACT organizuje i predstavlja odabrane LR Health &amp; Beauty proizvode kroz jasnije iskustvo koje je lakše istražiti.</p>
+        </div>
+        <div className="about-hero-mark" aria-hidden="true">
+          <span>BT</span>
+          <p>Jasnoća · organizacija · podrška</p>
+        </div>
       </section>
 
-      <section className="px-4 pb-20 sm:px-6 sm:pb-28 lg:px-8">
-        <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
-          <article className="premium-card"><p className="eyebrow">Naša uloga</p><h2 className="mt-3 text-2xl font-bold">Informisanje i podrška</h2><p className="mt-4 leading-8 text-[#476050]">Pomažemo pri izboru dostupnog paketa, odgovaramo na praktična pitanja i usmeravamo korisnika kroz odgovarajući proces poručivanja.</p></article>
-          <article className="premium-card"><p className="eyebrow">Poreklo proizvoda</p><h2 className="mt-3 text-2xl font-bold">LR Health &amp; Beauty portfolio</h2><p className="mt-4 leading-8 text-[#476050]">Proizvodi predstavljeni kroz BIOTACT dolaze iz portfolija LR Health &amp; Beauty. BIOTACT nije proizvođač tih proizvoda.</p></article>
-          <article className="premium-card"><p className="eyebrow">Poručivanje</p><h2 className="mt-3 text-2xl font-bold">Bez internet naplate</h2><p className="mt-4 leading-8 text-[#476050]">Upiti i poručivanje završavaju se kroz lični kontakt i odgovarajući LR proces. Na ovom sajtu nema korpe, checkout-a niti direktnog plaćanja.</p></article>
-          <article className="premium-card"><p className="eyebrow">Odgovorna komunikacija</p><h2 className="mt-3 text-2xl font-bold">Bez preuveličanih tvrdnji</h2><p className="mt-4 leading-8 text-[#476050]">Ne obećavamo lečenje, garantovane rezultate ili zaradu. Wellness informacije ne zamenjuju savet kvalifikovanog zdravstvenog stručnjaka.</p></article>
+      <section className="about-principles" aria-labelledby="approach-title">
+        <div className="about-section-heading">
+          <p className="eyebrow">Naš pristup</p>
+          <h2 id="approach-title">Manje haosa. Više jasnoće.</h2>
         </div>
-        <div className="mx-auto mt-10 max-w-5xl rounded-3xl bg-[#17301f] p-8 text-[#f7f3ea] sm:flex sm:items-center sm:justify-between sm:gap-8 sm:p-10"><div><h2 className="text-2xl font-bold">Imate pitanje?</h2><p className="mt-2 text-[#f7f3ea]/70">Pošaljite upit i javićemo Vam se lično.</p></div><Link href="/kontakt" className="mt-6 inline-flex min-h-12 items-center justify-center rounded-xl bg-[#f7f3ea] px-6 font-bold text-[#17301f] sm:mt-0">Kontaktirajte nas</Link></div>
+        <div className="about-principles-grid">
+          {principles.map(([number, title, description]) => (
+            <article key={number}>
+              <span>{number}</span>
+              <h3>{title}</h3>
+              <p>{description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="about-process" aria-labelledby="process-title">
+        <div className="about-section-heading">
+          <p className="eyebrow">Kako BIOTACT funkcioniše</p>
+          <h2 id="process-title">Od pregleda do razgovora.</h2>
+        </div>
+        <ol>
+          {steps.map(([number, title, description]) => (
+            <li key={number}>
+              <span>{number}</span>
+              <div>
+                <h3>{title}</h3>
+                <p>{description}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="about-transparency" aria-labelledby="transparency-title">
+        <p className="eyebrow">Transparentno o poreklu</p>
+        <h2 id="transparency-title">Jasno razdvajamo brend i proizvođača.</h2>
+        <p>BIOTACT predstavlja i distribuira proizvode iz LR Health &amp; Beauty portfolija. BIOTACT nije proizvođač prikazanih LR proizvoda.</p>
+      </section>
+
+      <section className="about-cta" aria-labelledby="about-cta-title">
+        <p className="eyebrow">Sledeći korak</p>
+        <h2 id="about-cta-title">Spreman da istražiš portfolio?</h2>
+        <div>
+          <Link href="/proizvodi" className="button-gold">Pogledaj proizvode</Link>
+          <Link href="/paketi" className="button-outline-light">Pogledaj pakete</Link>
+        </div>
       </section>
     </main>
   );
