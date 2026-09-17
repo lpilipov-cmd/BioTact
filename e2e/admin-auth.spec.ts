@@ -81,7 +81,7 @@ test("administrator pristupa zaštićenoj strani i odjavljuje se", async ({
   await page.getByRole("link", { name: "Pogledaj paket Pokret & Snaga" }).click();
   await expect(page).toHaveURL(/\/admin\/packages\/preview\/pokret-snaga$/);
   await expect(page.getByRole("heading", { name: "Pokret & Snaga" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Šta paket sadrži" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Proizvodi u paketu" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Pogledaj proizvod Aloe vera Freedom napitak" })).toHaveAttribute("href", "/admin/products/preview/aloe-vera-freedom-napitak-80850");
   await expect(page.getByRole("link", { name: "Pogledaj proizvod Active Freedom kapsule" })).toHaveAttribute("href", "/admin/products/preview/active-freedom-kapsule-80190");
   await expect(page.getByRole("link", { name: "Pošalji upit", exact: true })).toHaveAttribute("href", "/kontakt?package=pokret-snaga");

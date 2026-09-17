@@ -9,5 +9,5 @@ export type StorefrontPackage = Readonly<{
   category: string;
   description: string;
   price_rsd: number | null;
-  products: readonly Pick<StorefrontProduct, "article_number" | "name" | "image_path">[];
+  products: readonly Pick<StorefrontProduct, "article_number" | "slug" | "name" | "package_content" | "catalogue_price_eur" | "image_path">[];
 }>;

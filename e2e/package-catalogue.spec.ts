@@ -7,7 +7,17 @@ test("javni katalog prikazuje samo četiri odobrena lokalna paketa", async ({ pa
   for (const name of ["Imunitet Start", "Creva & Energija", "Pokret & Snaga", "Srce & Cirkulacija"]) {
     await expect(page.getByRole("heading", { name })).toBeVisible();
   }
+  const firstPackage = page.getByTestId("public-package-card").first();
+  await expect(firstPackage.getByText("Proizvodi u paketu")).toBeVisible();
+  await expect(firstPackage.getByText("Colostrum Liquid")).toBeVisible();
+  await expect(firstPackage.getByText("125 ml")).toBeVisible();
   await expect(page.getByText(/Privremeni paket|BIOTACT E2E paket/)).toHaveCount(0);
+
+  await page.getByRole("link", { name: "Pogledaj paket Imunitet Start" }).click();
+  await expect(page).toHaveURL(/\/paketi\/imunitet-start$/);
+  await expect(page.getByRole("heading", { name: "Proizvodi u paketu" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Colostrum Liquid" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Cistus Incanus kapsule" })).toBeVisible();
 
   await page.goto("/paketi?category=imunitet");
   await expect(page.getByTestId("public-package-card")).toHaveCount(1);
@@ -16,6 +26,10 @@ test("javni katalog prikazuje samo četiri odobrena lokalna paketa", async ({ pa
   await page.goto("/paketi?category=nepoznato");
   await expect(page.getByTestId("public-package-card")).toHaveCount(4);
   await expect(page.getByRole("link", { name: "Sve kolekcije" })).toHaveAttribute("aria-current", "page");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
+
+  await page.setViewportSize({ width: 375, height: 812 });
+  await expect(page.getByTestId("public-package-card").first().getByText("Proizvodi u paketu")).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
 });
 

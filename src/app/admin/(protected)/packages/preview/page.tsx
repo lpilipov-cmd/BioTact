@@ -10,8 +10,9 @@ export const dynamic = "force-dynamic";
 export default async function PackagePreviewPage() {
   const { supabase } = await requireAdministrator();
   const articleNumbers = approvedPackagePresentations.flatMap((item) => item.products.map((product) => product.articleNumber));
-  const { data: products } = await supabase.from("products").select("article_number").in("article_number", articleNumbers);
+  const { data: products } = await supabase.from("products").select("article_number,slug").in("article_number", articleNumbers);
   const availableArticles = new Set((products ?? []).map((item) => item.article_number));
+  const linkedProductSlugs = new Set((products ?? []).map((item) => item.slug));
 
   return (
     <main id="glavni-sadrzaj" className="packages-page package-preview-page">
@@ -23,7 +24,7 @@ export default async function PackagePreviewPage() {
       <div className="packages-content">
         <p className="package-preview-integrity" role="status">Pronađeno {availableArticles.size} od {articleNumbers.length} proizvoda iz odobrenih sastava.</p>
         <div className="package-list-grid" data-testid="public-package-list">
-          {approvedPackagePresentations.map((item, index) => <PackageCard key={item.slug} packageData={{ ...item, priceRsd: item.priceRsd }} detailBasePath="/admin/packages/preview" priority={index < 2} />)}
+          {approvedPackagePresentations.map((item, index) => <PackageCard key={item.slug} packageData={{ ...item, priceRsd: item.priceRsd }} detailBasePath="/admin/packages/preview" productDetailBasePath="/admin/products/preview" linkedProductSlugs={linkedProductSlugs} priority={index < 2} />)}
         </div>
       </div>
     </main>

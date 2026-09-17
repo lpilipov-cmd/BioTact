@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { formatPackagePrice, packageCategoryLabels } from "@/lib/packages/constants";
 import type { ApprovedPackagePresentation } from "@/lib/packages/presentation";
+import { formatEurPrice } from "@/lib/products/format";
 
 import { PackageComposition } from "./package-composition";
 
@@ -48,7 +49,7 @@ export function PackageDetail({
         <section className="package-included" aria-labelledby="package-included-heading">
           <div className="package-section-heading">
             <p className="package-kicker">Sastav kolekcije</p>
-            <h2 id="package-included-heading">Šta paket sadrži</h2>
+            <h2 id="package-included-heading">Proizvodi u paketu</h2>
             <p>{packageData.products.length} pažljivo grupisana {packageData.products.length === 2 ? "proizvoda" : "proizvoda"}, prikazana bez dodatne ambalaže ili izmišljenog pakovanja.</p>
           </div>
           <div className="package-product-grid">
@@ -62,6 +63,7 @@ export function PackageDetail({
                   <div className="package-product-copy">
                     <p>{product.packageContent}</p>
                     <h3>{product.name}</h3>
+                    {product.cataloguePriceEur !== undefined ? <strong>{formatEurPrice(product.cataloguePriceEur)}</strong> : null}
                     {hasLink ? <span>Pogledaj proizvod →</span> : <span>Detalji proizvoda biće dostupni po objavi</span>}
                   </div>
                 </>

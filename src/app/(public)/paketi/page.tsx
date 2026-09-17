@@ -27,6 +27,11 @@ export default async function PackagesPage({ searchParams }: PackagesPageProps) 
 
   if (category) query = query.eq("category", category);
   const { data, error } = await query;
+  const productArticleNumbers = approvedPackageSlugs.flatMap((slug) => getApprovedPackagePresentation(slug)?.products.map((product) => product.articleNumber) ?? []);
+  const { data: products } = productArticleNumbers.length
+    ? await supabase.from("products").select("article_number,slug").in("article_number", productArticleNumbers).eq("active", true)
+    : { data: [] };
+  const linkedProductSlugs = new Set((products ?? []).map((product) => product.slug));
   const packages = (data ?? []).flatMap((item) => {
     const presentation = getApprovedPackagePresentation(item.slug);
     return presentation && hasCanonicalProductMapping(item.slug, item.product_codes)
@@ -58,7 +63,7 @@ export default async function PackagesPage({ searchParams }: PackagesPageProps) 
           <section role="alert" className="package-empty-state"><p className="package-kicker">Trenutno nedostupno</p><h2>Pakete nije moguće učitati.</h2><p>Pokušajte ponovo kasnije ili nam pošaljite opšti upit.</p><Link href="/kontakt" className="button-primary">Pošalji upit</Link></section>
         ) : packages.length ? (
           <div className="package-list-grid" data-testid="public-package-list">
-            {packages.map((item, index) => <PackageCard key={item.slug} packageData={item} priority={index < 2} />)}
+            {packages.map((item, index) => <PackageCard key={item.slug} packageData={item} linkedProductSlugs={linkedProductSlugs} priority={index < 2} />)}
           </div>
         ) : (
           <section className="package-empty-state"><p className="package-kicker">Pažljivo biramo</p><h2>Nema aktivnih paketa u ovoj kategoriji.</h2><p>Prikazujemo samo odobrene pakete sa proverenim sastavom. Možete izabrati drugu kategoriju ili poslati opšti upit.</p><Link href="/kontakt" className="button-primary">Pošalji upit</Link></section>

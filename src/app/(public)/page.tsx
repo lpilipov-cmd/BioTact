@@ -21,6 +21,6 @@ export default async function Home() {
     supabase.from("packages").select("id,slug,name,category,description,price_rsd").eq("active", true).order("sort_order").order("name").limit(4),
   ]);
   const packageIds = (packages ?? []).map((item) => item.id);
-  const { data: relations } = packageIds.length ? await supabase.from("package_products").select("package_id,sort_order,product:products(article_number,name,image_path)").in("package_id", packageIds).order("sort_order") : { data: [] };
+  const { data: relations } = packageIds.length ? await supabase.from("package_products").select("package_id,sort_order,product:products(article_number,slug,name,package_content,catalogue_price_eur,image_path)").in("package_id", packageIds).order("sort_order") : { data: [] };
   return <StorefrontPage products={products ?? []} packages={buildStorefrontPackages(packages ?? [], relations ?? [])} />;
 }

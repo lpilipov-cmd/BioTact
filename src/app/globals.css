@@ -1964,3 +1964,109 @@ a.package-product-card .package-product-copy span {
     transition: none;
   }
 }
+
+/* Package product discovery */
+.package-card-visual-link .package-composition {
+  aspect-ratio: 16 / 7;
+}
+
+.package-card-products {
+  margin-top: 1.2rem;
+  border-top: 1px solid rgb(23 48 31 / 14%);
+  padding-top: 1rem;
+}
+
+.package-card-products > p {
+  color: #7a6b45;
+  font-size: 0.65rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.package-card-product-list {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.package-card-product-list > a,
+.package-card-product-item {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid rgb(23 48 31 / 10%);
+  border-radius: 0.9rem;
+  background: rgb(255 255 255 / 48%);
+  padding: 0.35rem 0.65rem 0.35rem 0.35rem;
+}
+
+.package-card-product-list > a:hover {
+  border-color: rgb(138 113 52 / 52%);
+  background: #fffdf8;
+}
+
+.package-card-product-image {
+  position: relative;
+  display: block;
+  width: 3.5rem;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  background: linear-gradient(145deg, #fffdf8, #e9e0cc);
+}
+
+.package-card-product-image img {
+  padding: 0.25rem;
+}
+
+.package-card-product-copy {
+  display: grid;
+  min-width: 0;
+  gap: 0.2rem;
+}
+
+.package-card-product-copy strong {
+  overflow-wrap: anywhere;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.package-card-product-copy small {
+  color: #68756c;
+  font-size: 0.68rem;
+}
+
+.package-product-copy > strong {
+  margin-top: 0.7rem;
+  color: #17301f;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 64rem) {
+  .package-list-grid .package-card {
+    display: block;
+  }
+
+  .package-list-grid .package-card-visual-link {
+    padding: 0.55rem 0.55rem 0;
+  }
+
+  .package-list-grid .package-composition {
+    height: auto;
+    aspect-ratio: 16 / 7;
+  }
+
+  .package-list-grid .package-card-body {
+    display: block;
+    padding: 1.45rem;
+  }
+
+  .storefront-package-grid .package-composition {
+    aspect-ratio: 16 / 7;
+  }
+}

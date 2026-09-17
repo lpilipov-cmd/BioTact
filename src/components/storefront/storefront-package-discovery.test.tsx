@@ -14,7 +14,14 @@ const packages: StorefrontPackage[] = approvedPackagePresentations.map((item) =>
   category: item.category,
   description: item.description,
   price_rsd: null,
-  products: [],
+  products: item.products.map((product) => ({
+    article_number: product.articleNumber,
+    slug: product.slug,
+    name: product.name,
+    package_content: product.packageContent,
+    catalogue_price_eur: null,
+    image_path: product.imagePath,
+  })),
 }));
 
 describe("Storefront package discovery", () => {
@@ -26,6 +33,8 @@ describe("Storefront package discovery", () => {
     expect(html).toContain("Imunitet Start");
     expect(html).toContain("Srce &amp; Cirkulacija");
     expect(html).toContain('href="/paketi/pokret-snaga"');
+    expect(html).toContain('href="/proizvodi/active-freedom-kapsule-80190"');
+    expect(html).toContain("Proizvodi u paketu");
     expect(html).not.toMatch(/partnerska cena|poeni|80361-50|80800-50/i);
   });
 

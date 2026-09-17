@@ -7,6 +7,7 @@ export type PackageProductPresentation = Readonly<{
   slug: string;
   packageContent: string;
   imagePath: string;
+  cataloguePriceEur?: number | null;
 }>;
 
 export type ApprovedPackagePresentation = Readonly<{
