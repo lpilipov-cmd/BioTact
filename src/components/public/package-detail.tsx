@@ -39,7 +39,11 @@ export function PackageDetail({
             <h1>{packageData.name}</h1>
             <p className="package-detail-description">{description}</p>
             <div className="package-detail-purchase">
-              <div><span>Cena paketa</span><strong>{formatPackagePrice(packageData.priceRsd)}</strong></div>
+              <div>
+                <span>Cena paketa</span>
+                <strong>{formatPackagePrice(packageData.priceRsd)}</strong>
+                {packageData.priceRsd === null ? <small>Cena se potvrđuje prilikom upita</small> : null}
+              </div>
               <Link href={contactHref} className="button-gold">Pošalji upit</Link>
             </div>
             <p className="package-detail-note">Upit ne predstavlja kupovinu. Dostupnost i poručivanje potvrđuju se kroz lični kontakt i odgovarajući LR proces.</p>

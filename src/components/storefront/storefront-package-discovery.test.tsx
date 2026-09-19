@@ -30,6 +30,7 @@ describe("Storefront package discovery", () => {
 
     expect(html.match(/data-testid="featured-package-card"/g)).toHaveLength(4);
     expect(html.match(/Cena na upit/g)).toHaveLength(4);
+    expect(html.match(/Cena se potvrđuje prilikom upita/g)).toHaveLength(4);
     expect(html).toContain("Imunitet Start");
     expect(html).toContain("Srce &amp; Cirkulacija");
     expect(html).toContain('href="/paketi/pokret-snaga"');

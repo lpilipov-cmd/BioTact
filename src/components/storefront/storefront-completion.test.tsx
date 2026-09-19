@@ -4,9 +4,20 @@ import { describe, expect, it } from "vitest";
 import { SiteFooter } from "@/components/public/site-footer";
 
 import { StorefrontCTA } from "./storefront-cta";
+import { OrderFlow } from "./order-flow";
 import { TrustSection } from "./trust-section";
 
 describe("Storefront completion", () => {
+  it("explains the three-step enquiry order flow without implying checkout", () => {
+    const html = renderToStaticMarkup(<OrderFlow />);
+
+    for (const step of ["Izaberi proizvod", "Pošalji upit", "Potvrdi porudžbinu"]) {
+      expect(html).toContain(step);
+    }
+    expect(html).toContain("nema samostalni kartični checkout");
+    expect(html).not.toMatch(/dodaj u korpu|plati karticom/i);
+  });
+
   it("presents four concise trust points and the LR relationship transparently", () => {
     const html = renderToStaticMarkup(<TrustSection />);
 

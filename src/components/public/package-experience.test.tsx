@@ -14,6 +14,7 @@ describe("premium prikaz paketa", () => {
     expect(html).toContain("Imunitet Start");
     expect(html).toContain("2 proizvoda");
     expect(html).toContain("Cena na upit");
+    expect(html).toContain("Cena se potvrđuje prilikom upita");
     expect(html).toContain("Proizvodi u paketu");
     expect(html).toContain("Colostrum Liquid");
     expect(html).toContain("125 ml");
@@ -40,6 +41,7 @@ describe("premium prikaz paketa", () => {
     expect(html).toContain('href="/admin/products/preview/active-freedom-kapsule-80190"');
     expect(html).toContain("Proizvodi u paketu");
     expect(html).toContain("49,90");
+    expect(html).toContain("Cena se potvrđuje prilikom upita");
     expect(html).toContain("Zašto je ovaj paket organizovan ovako");
     expect(html).not.toMatch(/partnerska cena|poeni|80850-680|80190-50/i);
   });

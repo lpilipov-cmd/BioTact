@@ -57,7 +57,10 @@ export function ProductDetail({
             <li><span>02</span><strong>Jasno pakovanje</strong><small>Sadržaj i kataloška cena prikazani su odvojeno i pregledno.</small></li>
             <li><span>03</span><strong>Lična podrška</strong><small>Za dostupnost i poručivanje pošaljite upit BIOTACT podršci.</small></li>
           </ul>
-          <Link href={`/kontakt?product=${encodeURIComponent(product.slug)}`} className="button-primary product-detail-action">Pošalji upit</Link>
+          <div className="product-detail-next-step">
+            <Link href={`/kontakt?product=${encodeURIComponent(product.slug)}`} className="button-primary product-detail-action">Pošalji upit za ovaj proizvod</Link>
+            <p>Pošalji upit, a mi ćemo ti potvrditi dostupnost i sledeće korake.</p>
+          </div>
         </div>
       </article>
       <aside className="product-disclaimer">Dodaci ishrani nisu zamena za raznovrsnu i uravnoteženu ishranu i zdrav način života. Informacije ne predstavljaju medicinski savet.</aside>

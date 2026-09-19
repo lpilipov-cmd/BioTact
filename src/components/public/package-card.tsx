@@ -63,7 +63,10 @@ export function PackageCard({
           </div>
         </div>
         <div className="package-card-footer">
-          <strong>{formatPackagePrice(packageData.priceRsd)}</strong>
+          <div className="package-card-price">
+            <strong>{formatPackagePrice(packageData.priceRsd)}</strong>
+            {packageData.priceRsd === null ? <small>Cena se potvrđuje prilikom upita</small> : null}
+          </div>
           <Link href={`${detailBasePath}/${packageData.slug}`}>Detalji paketa <span aria-hidden="true">→</span></Link>
         </div>
       </div>
