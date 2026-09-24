@@ -30,7 +30,7 @@ export default async function LeadsPage({ searchParams }: LeadsPageProps) {
   let query = supabase
     .from("leads")
     .select(
-      "id,name,contact,channel,status,created_at,package_interest_id,package:packages(name)",
+      "id,name,contact,channel,status,request_type,created_at,package_interest_id,package:packages(name)",
     )
     .order("created_at", { ascending: false });
 
@@ -114,7 +114,9 @@ export default async function LeadsPage({ searchParams }: LeadsPageProps) {
       ) : leads?.length ? (
         <div className="mt-8 grid gap-4" data-testid="lead-list">
           {leads.map((lead) => {
-            const packageName = lead.package?.name ?? "Nije izabran paket";
+            const packageName = lead.request_type === "cart_order"
+              ? "Zahtev za porudžbinu"
+              : lead.package?.name ?? "Nije izabran paket";
             const channel = leadChannels.includes(
               lead.channel as (typeof leadChannels)[number],
             )

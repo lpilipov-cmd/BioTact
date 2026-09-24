@@ -25,7 +25,7 @@ test("kupac dodaje proizvod, nastavlja pregled i upravlja korpom", async ({ page
   await expect(page.getByText("Pro 12+ kapsule", { exact: true })).toBeVisible();
   await expect(page.getByLabel("Količina za Pro 12+ kapsule").getByText("2", { exact: true })).toBeVisible();
   await expect(page.getByRole("link", { name: "Nastavi kupovinu" })).toHaveAttribute("href", "/proizvodi");
-  await expect(page.getByRole("link", { name: "Nastavi na porudžbinu" })).toHaveAttribute("href", "/kontakt?source=cart");
+  await expect(page.getByRole("link", { name: "Nastavi na porudžbinu" })).toHaveAttribute("href", "/porudzbina");
 
   const storedItemKeys = await page.evaluate(() => {
     const stored = JSON.parse(window.localStorage.getItem("biotact-cart-v1") ?? "{}") as {

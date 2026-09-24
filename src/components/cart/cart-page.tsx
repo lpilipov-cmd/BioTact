@@ -71,7 +71,7 @@ export function CartPage() {
             <p className="cart-total-note">Informativni zbir kataloških EUR cena. Dostupnost i konačni koraci potvrđuju se direktno sa BIOTACT podrškom.</p>
             <div className="cart-summary-actions">
               <Link href="/proizvodi" className="button-outline-light">Nastavi kupovinu</Link>
-              <Link href="/kontakt?source=cart" className="button-gold">Nastavi na porudžbinu</Link>
+              <Link href="/porudzbina" className="button-gold">Nastavi na porudžbinu</Link>
             </div>
             <p className="cart-checkout-note">Plaćanje karticom i samostalni checkout još nisu dostupni.</p>
           </aside>

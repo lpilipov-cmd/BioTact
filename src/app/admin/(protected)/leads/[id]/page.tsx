@@ -33,7 +33,7 @@ export default async function LeadDetailPage({ params }: LeadDetailPageProps) {
   const { data: lead, error } = await supabase
     .from("leads")
     .select(
-      "id,name,contact,channel,status,message,consent_given,consent_version,consented_at,created_at,updated_at,package:packages(name)",
+      "id,name,contact,channel,status,request_type,message,consent_given,consent_version,consented_at,created_at,updated_at,package:packages(name),items:lead_items(id,quantity,unit_catalogue_price_eur,product_name_snapshot)",
     )
     .eq("id", parsedId.data)
     .maybeSingle();
@@ -56,7 +56,9 @@ export default async function LeadDetailPage({ params }: LeadDetailPageProps) {
     );
   }
 
-  const packageName = lead.package?.name ?? "Nije izabran paket";
+  const packageName = lead.request_type === "cart_order"
+    ? "Zahtev za porudžbinu"
+    : lead.package?.name ?? "Nije izabran paket";
   const channel = leadChannels.includes(lead.channel as (typeof leadChannels)[number])
     ? leadChannelLabels[lead.channel as (typeof leadChannels)[number]]
     : "Nepoznat kanal";
@@ -89,6 +91,35 @@ export default async function LeadDetailPage({ params }: LeadDetailPageProps) {
           <Detail label="Poslednja izmena" value={dateFormatter.format(new Date(lead.updated_at))} />
         </dl>
 
+        {lead.request_type === "cart_order" ? (
+          <section className="mt-8 border-t border-[#17301f]/15 pt-6" aria-labelledby="order-items-title">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6b45]">Porudžbina</p>
+            <h2 id="order-items-title" className="mt-2 text-2xl font-bold">Proizvodi u zahtevu</h2>
+            {lead.items.length ? (
+              <>
+                <ul className="mt-5 grid gap-3">
+                  {lead.items.map((item) => {
+                    const lineTotal = Number(item.unit_catalogue_price_eur) * item.quantity;
+                    return (
+                      <li key={item.id} className="grid gap-2 rounded-xl border border-[#17301f]/12 bg-[#f8f3e8] p-4 sm:grid-cols-[minmax(0,1fr)_auto_auto] sm:items-center">
+                        <strong className="break-words">{item.product_name_snapshot}</strong>
+                        <span className="text-sm text-[#5b6960]">{item.quantity} × {formatAdminEur(item.unit_catalogue_price_eur)}</span>
+                        <strong>{formatAdminEur(lineTotal)}</strong>
+                      </li>
+                    );
+                  })}
+                </ul>
+                <div className="mt-4 flex items-center justify-between gap-4 rounded-xl bg-[#17301f] px-4 py-3 text-[#f7f3ea]">
+                  <span className="font-semibold">Informativno ukupno</span>
+                  <strong className="text-xl">{formatAdminEur(lead.items.reduce((total, item) => total + Number(item.unit_catalogue_price_eur) * item.quantity, 0))}</strong>
+                </div>
+              </>
+            ) : (
+              <p role="alert" className="mt-4 text-sm text-red-900">Stavke porudžbine trenutno nisu dostupne.</p>
+            )}
+          </section>
+        ) : null}
+
         <div className="mt-8 grid gap-6 border-t border-[#17301f]/15 pt-6 sm:grid-cols-2">
           <div>
             <h2 className="mb-3 font-bold">Promeni status</h2>
@@ -102,6 +133,10 @@ export default async function LeadDetailPage({ params }: LeadDetailPageProps) {
       </div>
     </main>
   );
+}
+
+function formatAdminEur(value: number) {
+  return new Intl.NumberFormat("sr-Latn-RS", { style: "currency", currency: "EUR" }).format(Number(value));
 }
 
 function Detail({

@@ -107,6 +107,51 @@ export type Database = {
         }
         Relationships: []
       }
+      lead_items: {
+        Row: {
+          created_at: string
+          id: string
+          lead_id: string
+          product_id: string
+          product_name_snapshot: string
+          quantity: number
+          unit_catalogue_price_eur: number
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          lead_id: string
+          product_id: string
+          product_name_snapshot: string
+          quantity: number
+          unit_catalogue_price_eur: number
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          lead_id?: string
+          product_id?: string
+          product_name_snapshot?: string
+          quantity?: number
+          unit_catalogue_price_eur?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "lead_items_lead_id_fkey"
+            columns: ["lead_id"]
+            isOneToOne: false
+            referencedRelation: "leads"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "lead_items_product_id_fkey"
+            columns: ["product_id"]
+            isOneToOne: false
+            referencedRelation: "products"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       leads: {
         Row: {
           channel: string
@@ -120,6 +165,7 @@ export type Database = {
           name: string
           package_interest_id: string | null
           product_interest_id: string | null
+          request_type: string
           status: string
           updated_at: string
         }
@@ -135,6 +181,7 @@ export type Database = {
           name: string
           package_interest_id?: string | null
           product_interest_id?: string | null
+          request_type?: string
           status?: string
           updated_at?: string
         }
@@ -150,6 +197,7 @@ export type Database = {
           name?: string
           package_interest_id?: string | null
           product_interest_id?: string | null
+          request_type?: string
           status?: string
           updated_at?: string
         }
@@ -319,6 +367,18 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      submit_cart_lead: {
+        Args: {
+          p_consent_given: boolean
+          p_contact: string
+          p_idempotency_key: string
+          p_ip_hash: string
+          p_items: Json
+          p_message?: string
+          p_name: string
+        }
+        Returns: boolean
+      }
       submit_lead: {
         Args: {
           p_consent_given: boolean

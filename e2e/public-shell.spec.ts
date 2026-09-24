@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const publicRoutes = ["/", "/paketi", "/paketi/imunitet-start", "/proizvodi", "/korpa", "/kontakt", "/o-nama"];
+const publicRoutes = ["/", "/paketi", "/paketi/imunitet-start", "/proizvodi", "/korpa", "/porudzbina", "/kontakt", "/o-nama"];
 
 test("zajednički javni shell povezuje sve rute bez admin navigacije", async ({ page }, testInfo) => {
   for (const route of publicRoutes) {
