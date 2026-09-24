@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+import { CartLink } from "@/components/cart/cart-link";
+
 const links = [
   { href: "/", label: "Početna" },
   { href: "/proizvodi", label: "Proizvodi" },
@@ -44,6 +46,8 @@ export function SiteHeader() {
             <span aria-hidden="true">↗</span>
           </Link>
         </nav>
+
+        <CartLink />
 
         <button
           type="button"

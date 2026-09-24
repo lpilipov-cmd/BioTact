@@ -1,9 +1,12 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 
+import { CartProvider } from "@/components/cart/cart-provider";
+
 import { ProductDetail } from "./product-detail";
 
 const product = {
+  id: "product-1",
   article_number: "80361",
   slug: "colostrum-liquid-80361",
   name: "Colostrum Liquid",
@@ -16,16 +19,16 @@ const product = {
 } as const;
 
 describe("public product detail conversion", () => {
-  it("keeps product information visible and explains the enquiry next step", () => {
-    const html = renderToStaticMarkup(<ProductDetail product={product} relatedProducts={[]} relatedPackages={[]} />);
+  it("keeps product information visible and makes cart the primary action", () => {
+    const html = renderToStaticMarkup(<CartProvider><ProductDetail product={product} relatedProducts={[]} relatedPackages={[]} /></CartProvider>);
 
     expect(html).toContain("Colostrum Liquid");
     expect(html).toContain("62,06");
     expect(html).toContain("125 ml");
     expect(html).toContain("Imunitet i kolostrum");
-    expect(html).toContain("Pošalji upit za ovaj proizvod");
-    expect(html).toContain("potvrditi dostupnost i sledeće korake");
+    expect(html).toContain("Dodaj u korpu");
+    expect(html).toContain("Imam pitanje o proizvodu");
     expect(html).toContain('href="/kontakt?product=colostrum-liquid-80361"');
-    expect(html).not.toMatch(/checkout|dodaj u korpu|plati/i);
+    expect(html).not.toMatch(/checkout|plati/i);
   });
 });

@@ -1,12 +1,13 @@
 import Link from "next/link";
 
+import { AddToCart } from "@/components/cart/add-to-cart";
 import { formatEurPrice } from "@/lib/products/format";
 import { getProductPresentation } from "@/lib/products/presentation";
 
 import type { CatalogueProduct } from "./product-catalogue";
 import { ProductImage } from "./product-image";
 
-type Product = CatalogueProduct & Readonly<{ article_number: string }>;
+type Product = CatalogueProduct & Readonly<{ id: string; article_number: string }>;
 type RelatedPackage = Readonly<{ slug: string; name: string }>;
 
 export function ProductDetail({
@@ -58,8 +59,22 @@ export function ProductDetail({
             <li><span>03</span><strong>Lična podrška</strong><small>Za dostupnost i poručivanje pošaljite upit BIOTACT podršci.</small></li>
           </ul>
           <div className="product-detail-next-step">
-            <Link href={`/kontakt?product=${encodeURIComponent(product.slug)}`} className="button-primary product-detail-action">Pošalji upit za ovaj proizvod</Link>
-            <p>Pošalji upit, a mi ćemo ti potvrditi dostupnost i sledeće korake.</p>
+            {preview ? (
+              <p>Ovo je zaštićeni pregled neaktivnog proizvoda. Dodavanje u javnu korpu nije omogućeno.</p>
+            ) : product.catalogue_price_eur === null ? (
+              <p>Cena proizvoda trenutno nije dostupna, pa ga nije moguće dodati u korpu.</p>
+            ) : (
+              <AddToCart
+                product={{
+                  id: product.id,
+                  slug: product.slug,
+                  name: product.name,
+                  priceEur: product.catalogue_price_eur,
+                  imagePath: product.image_path,
+                }}
+              />
+            )}
+            <Link href={`/kontakt?product=${encodeURIComponent(product.slug)}`} className="product-question-link">Imam pitanje o proizvodu</Link>
           </div>
         </div>
       </article>

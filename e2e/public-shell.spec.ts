@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const publicRoutes = ["/", "/paketi", "/paketi/imunitet-start", "/proizvodi", "/kontakt", "/o-nama"];
+const publicRoutes = ["/", "/paketi", "/paketi/imunitet-start", "/proizvodi", "/korpa", "/kontakt", "/o-nama"];
 
 test("zajednički javni shell povezuje sve rute bez admin navigacije", async ({ page }, testInfo) => {
   for (const route of publicRoutes) {
@@ -32,6 +32,7 @@ test("mobilni meni radi tastaturom na 375px", async ({ page }, testInfo) => {
 
   await page.keyboard.press("Tab");
   await expect(page.getByRole("link", { name: "Pređi na glavni sadržaj" })).toBeFocused();
+  await page.keyboard.press("Tab");
   await page.keyboard.press("Tab");
   await page.keyboard.press("Tab");
   const menuButton = page.getByRole("button", { name: "Otvori meni" });
@@ -72,10 +73,11 @@ test("o nama transparentno opisuje LR odnos bez prodajnih ili zdravstvenih obeć
   await expect(page.getByText(/testimonials|svedočenja kupaca/i)).toHaveCount(0);
 });
 
-test("javni sajt nema korpu ili checkout i objavljuje SEO rute", async ({ page, request }) => {
+test("javni sajt izlaže korpu bez checkouta i objavljuje SEO rute", async ({ page, request }) => {
   for (const route of publicRoutes) {
     await page.goto(route);
-    await expect(page.getByRole("link", { name: /korpa|checkout|plati/i })).toHaveCount(0);
+    await expect(page.getByRole("link", { name: /^Korpa \(\d+\)$/ })).toHaveAttribute("href", "/korpa");
+    await expect(page.getByRole("link", { name: /checkout|plati/i })).toHaveCount(0);
   }
 
   await page.goto("/o-nama");
