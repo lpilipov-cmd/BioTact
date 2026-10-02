@@ -6,7 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import { LoginForm } from "./login-form";
 
 type LoginPageProps = Readonly<{
-  searchParams: Promise<{ reason?: string }>;
+  searchParams: Promise<{ reason?: string; reset?: string }>;
 }>;
 
 export const dynamic = "force-dynamic";
@@ -22,12 +22,14 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  const { reason } = await searchParams;
+  const { reason, reset } = await searchParams;
   const initialMessage = user
     ? "Nalog nema administratorski pristup."
-    : reason
-      ? "Prijavite se da biste pristupili administraciji."
-      : null;
+    : reset === "uspesno"
+      ? "Lozinka je uspešno promenjena. Prijavite se novom lozinkom."
+      : reason
+        ? "Prijavite se da biste pristupili administraciji."
+        : null;
 
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-10 sm:px-6">

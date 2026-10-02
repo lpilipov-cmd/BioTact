@@ -1,0 +1,73 @@
+"use client";
+
+import Link from "next/link";
+import { useActionState } from "react";
+import { useFormStatus } from "react-dom";
+
+import { requestPasswordRecoveryAction } from "./actions";
+import { initialRecoveryState } from "./recovery-state";
+
+function SubmitButton() {
+  const { pending } = useFormStatus();
+
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className="min-h-12 w-full rounded-xl bg-[#17301f] px-5 py-3 font-semibold text-[#f7f3ea] transition hover:bg-[#1f3a28] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#17301f] disabled:cursor-wait disabled:opacity-70"
+    >
+      {pending ? "Slanje..." : "Pošalji link za oporavak"}
+    </button>
+  );
+}
+
+type RecoveryFormProps = Readonly<{
+  initialMessage?: string | null;
+}>;
+
+export function RecoveryForm({ initialMessage = null }: RecoveryFormProps) {
+  const [state, formAction] = useActionState(
+    requestPasswordRecoveryAction,
+    { ...initialRecoveryState, message: initialMessage },
+  );
+
+  return (
+    <form action={formAction} className="mt-8 space-y-5" noValidate>
+      <div>
+        <label htmlFor="email" className="block text-sm font-semibold">
+          Email adresa
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autoComplete="email"
+          required
+          maxLength={254}
+          className="mt-2 min-h-12 w-full rounded-xl border border-[#17301f]/25 bg-white px-4 py-3 text-base outline-none transition focus:border-[#17301f] focus:ring-2 focus:ring-[#17301f]/20"
+        />
+      </div>
+
+      {state.message ? (
+        <p
+          role={state.success ? "status" : "alert"}
+          className={`rounded-xl px-4 py-3 text-sm ${
+            state.success
+              ? "bg-[#edf4ed] text-[#17301f]"
+              : "bg-red-50 text-red-800"
+          }`}
+        >
+          {state.message}
+        </p>
+      ) : null}
+
+      <SubmitButton />
+      <Link
+        href="/admin/login"
+        className="block text-center text-sm font-semibold text-[#31583c] underline-offset-4 hover:underline"
+      >
+        Nazad na prijavu
+      </Link>
+    </form>
+  );
+}
