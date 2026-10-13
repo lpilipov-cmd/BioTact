@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  resolveSiteUrl,
   requireSupabaseEnvironment,
   validateEnvironment,
 } from "./env";
@@ -65,5 +66,20 @@ describe("validateEnvironment", () => {
     expect(validateEnvironment({ NEXT_PUBLIC_SITE_URL: "https://biotact.example" })).toEqual({
       NEXT_PUBLIC_SITE_URL: "https://biotact.example",
     });
+  });
+
+  it("koristi Vercel produkcioni URL kada javni kanonski URL nije podešen", () => {
+    expect(
+      resolveSiteUrl({
+        vercelProductionUrl: "bio-tact.vercel.app",
+        isVercel: true,
+      }),
+    ).toBe("https://bio-tact.vercel.app");
+  });
+
+  it("na Vercelu ne koristi lokalni URL kao tihi fallback", () => {
+    expect(() => resolveSiteUrl({ isVercel: true })).toThrow(
+      "Kanonski URL sajta nije podešen za produkciju.",
+    );
   });
 });

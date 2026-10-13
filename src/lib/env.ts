@@ -100,5 +100,33 @@ export function getLeadRateLimitSalt() {
 }
 
 export function getSiteUrl() {
-  return (env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
+  return resolveSiteUrl({
+    configuredUrl: env.NEXT_PUBLIC_SITE_URL,
+    vercelProductionUrl: process.env.VERCEL_PROJECT_PRODUCTION_URL,
+    isVercel: process.env.VERCEL === "1",
+  });
+}
+
+export function resolveSiteUrl({
+  configuredUrl,
+  vercelProductionUrl,
+  isVercel,
+}: Readonly<{
+  configuredUrl?: string;
+  vercelProductionUrl?: string;
+  isVercel?: boolean;
+}>) {
+  if (configuredUrl) {
+    return configuredUrl.replace(/\/$/, "");
+  }
+
+  if (vercelProductionUrl) {
+    return `https://${vercelProductionUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")}`;
+  }
+
+  if (isVercel) {
+    throw new Error("Kanonski URL sajta nije podešen za produkciju.");
+  }
+
+  return "http://localhost:3000";
 }
