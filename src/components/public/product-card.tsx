@@ -18,9 +18,12 @@ export function ProductCard({ product, detailBasePath = "/proizvodi", priority =
       <div className="product-card-body">
         <p className="product-card-classification">{collection.label}</p>
         <h3><Link href={`${detailBasePath}/${product.slug}`}>{product.name}</Link></h3>
+        {product.short_description ? <p className="product-card-description">{product.short_description}</p> : null}
         <div className="product-card-purchase">
-          <p className="product-card-content">{presentation.quantity ?? product.package_content ?? "Sadržaj pakovanja na upit"}</p>
-          <p className="product-card-price">{formatEurPrice(product.catalogue_price_eur)}</p>
+          <div className="product-card-meta">
+            <p><span>Pakovanje</span><strong>{presentation.quantity ?? product.package_content ?? "Na upit"}</strong></p>
+            <p><span>Kataloška cena</span><strong>{formatEurPrice(product.catalogue_price_eur)}</strong></p>
+          </div>
           <Link className="product-card-cta" href={`${detailBasePath}/${product.slug}`}>Pogledaj proizvod <span aria-hidden="true">→</span></Link>
         </div>
       </div>

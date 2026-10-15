@@ -25,10 +25,14 @@ describe("public product detail conversion", () => {
     expect(html).toContain("Colostrum Liquid");
     expect(html).toContain("62,06");
     expect(html).toContain("125 ml");
-    expect(html).toContain("Imunitet i kolostrum");
+    expect(html).toContain("Imunitet");
+    expect(html).toContain("Proizvod za jednostavnu svakodnevnu wellness rutinu.");
+    expect(html).toContain("Informacije o proizvodu");
+    expect(html).toContain("Vrsta proizvoda");
+    expect(html).toContain("Pojedinačni proizvod");
     expect(html).toContain("Dodaj u korpu");
     expect(html).toContain("Imam pitanje o proizvodu");
     expect(html).toContain('href="/kontakt?product=colostrum-liquid-80361"');
-    expect(html).not.toMatch(/checkout|plati/i);
+    expect(html).not.toMatch(/checkout|plati|partnerska cena|poeni/i);
   });
 });
