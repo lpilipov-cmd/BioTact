@@ -13,6 +13,7 @@ type PackageCardProps = Readonly<{
   linkedProductSlugs?: ReadonlySet<string>;
   priority?: boolean;
   testId?: string;
+  variant?: "standard" | "catalogue";
 }>;
 
 export function PackageCard({
@@ -22,9 +23,10 @@ export function PackageCard({
   linkedProductSlugs = new Set(),
   priority = false,
   testId = "public-package-card",
+  variant = "standard",
 }: PackageCardProps) {
   return (
-    <article className="package-card" data-testid={testId}>
+    <article className={`package-card package-card-${variant}`} data-testid={testId}>
       <Link href={`${detailBasePath}/${packageData.slug}`} className="package-card-visual-link" aria-label={`Pogledaj paket ${packageData.name}`}>
         <PackageComposition products={packageData.products} name={packageData.name} priority={priority} />
       </Link>
@@ -65,9 +67,9 @@ export function PackageCard({
         <div className="package-card-footer">
           <div className="package-card-price">
             <strong>{formatPackagePrice(packageData.priceRsd)}</strong>
-            {packageData.priceRsd === null ? <small>Cena se potvrđuje prilikom upita</small> : null}
+            {packageData.priceRsd === null ? <small>Cena se potvrđuje prilikom upita.</small> : null}
           </div>
-          <Link href={`${detailBasePath}/${packageData.slug}`}>Detalji paketa <span aria-hidden="true">→</span></Link>
+          <Link className="package-card-cta" href={`${detailBasePath}/${packageData.slug}`}>{variant === "catalogue" ? "Pogledaj paket" : "Detalji paketa"} <span aria-hidden="true">→</span></Link>
         </div>
       </div>
     </article>

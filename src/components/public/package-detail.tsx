@@ -42,21 +42,24 @@ export function PackageDetail({
               <div>
                 <span>Cena paketa</span>
                 <strong>{formatPackagePrice(packageData.priceRsd)}</strong>
-                {packageData.priceRsd === null ? <small>Cena se potvrđuje prilikom upita</small> : null}
+                {packageData.priceRsd === null ? <small>Cena se potvrđuje prilikom upita.</small> : null}
               </div>
-              <Link href={contactHref} className="button-gold">Pošalji upit</Link>
+              <div className="package-detail-actions">
+                <Link href="#package-included-heading" className="button-gold">Pogledaj proizvode</Link>
+                <Link href={contactHref} className="package-detail-contact-link">Pošalji upit</Link>
+              </div>
             </div>
-            <p className="package-detail-note">Upit ne predstavlja kupovinu. Dostupnost i poručivanje potvrđuju se kroz lični kontakt i odgovarajući LR proces.</p>
+            <p className="package-detail-note">Pregledajte proizvode u paketu i dodajte željene proizvode pojedinačno u korpu. Paket se ne dodaje u korpu kao celina.</p>
           </div>
         </article>
 
         <section className="package-included" aria-labelledby="package-included-heading">
           <div className="package-section-heading">
-            <p className="package-kicker">Sastav kolekcije</p>
-            <h2 id="package-included-heading">Proizvodi u paketu</h2>
-            <p>{packageData.products.length} pažljivo grupisana {packageData.products.length === 2 ? "proizvoda" : "proizvoda"}, prikazana bez dodatne ambalaže ili izmišljenog pakovanja.</p>
+            <p className="package-kicker">Proizvodi u paketu</p>
+            <h2 id="package-included-heading">Šta paket sadrži</h2>
+            <p>Svaki proizvod možete otvoriti i pregledati pojedinačno. Prikazane su samo proverene fotografije i dostupne javne informacije.</p>
           </div>
-          <div className="package-product-grid">
+          <div className="package-product-grid" data-count={packageData.products.length}>
             {packageData.products.map((product) => {
               const hasLink = linkedProductSlugs.has(product.slug);
               const content = (
@@ -67,8 +70,9 @@ export function PackageDetail({
                   <div className="package-product-copy">
                     <p>{product.packageContent}</p>
                     <h3>{product.name}</h3>
-                    {product.cataloguePriceEur !== undefined ? <strong>{formatEurPrice(product.cataloguePriceEur)}</strong> : null}
-                    {hasLink ? <span>Pogledaj proizvod →</span> : <span>Detalji proizvoda biće dostupni po objavi</span>}
+                    {product.shortDescription ? <p className="package-product-description">{product.shortDescription}</p> : null}
+                    {product.cataloguePriceEur !== undefined ? <span className="package-product-price"><small>Kataloška cena</small><strong>{formatEurPrice(product.cataloguePriceEur)}</strong></span> : null}
+                    {hasLink ? <span className="package-product-link">Pogledaj proizvod <i aria-hidden="true">→</i></span> : <span className="package-product-unavailable">Detalji proizvoda biće dostupni po objavi</span>}
                   </div>
                 </>
               );
@@ -85,8 +89,8 @@ export function PackageDetail({
         </section>
 
         <section className="package-rationale" aria-labelledby="package-rationale-heading">
-          <p className="package-kicker">Logika izbora</p>
-          <h2 id="package-rationale-heading">Zašto je ovaj paket organizovan ovako</h2>
+          <p className="package-kicker">Kontekst paketa</p>
+          <h2 id="package-rationale-heading">Zašto su proizvodi grupisani zajedno</h2>
           <p>{packageData.rationale}</p>
         </section>
 

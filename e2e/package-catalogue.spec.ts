@@ -15,7 +15,7 @@ test("javni katalog prikazuje samo četiri odobrena lokalna paketa", async ({ pa
 
   await page.getByRole("link", { name: "Pogledaj paket Imunitet Start" }).click();
   await expect(page).toHaveURL(/\/paketi\/imunitet-start$/);
-  await expect(page.getByRole("heading", { name: "Proizvodi u paketu" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Šta paket sadrži" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Colostrum Liquid" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Cistus Incanus kapsule" })).toBeVisible();
 

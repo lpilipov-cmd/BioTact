@@ -62,8 +62,8 @@ export default async function PackagesPage({ searchParams }: PackagesPageProps) 
         {error ? (
           <section role="alert" className="package-empty-state"><p className="package-kicker">Trenutno nedostupno</p><h2>Pakete nije moguće učitati.</h2><p>Pokušajte ponovo kasnije ili nam pošaljite opšti upit.</p><Link href="/kontakt" className="button-primary">Pošalji upit</Link></section>
         ) : packages.length ? (
-          <div className="package-list-grid" data-testid="public-package-list">
-            {packages.map((item, index) => <PackageCard key={item.slug} packageData={item} linkedProductSlugs={linkedProductSlugs} priority={index < 2} />)}
+          <div className="package-list-grid public-package-list-grid" data-testid="public-package-list">
+            {packages.map((item, index) => <PackageCard key={item.slug} packageData={item} linkedProductSlugs={linkedProductSlugs} priority={index < 2} variant="catalogue" />)}
           </div>
         ) : (
           <section className="package-empty-state"><p className="package-kicker">Pažljivo biramo</p><h2>Nema aktivnih paketa u ovoj kategoriji.</h2><p>Prikazujemo samo odobrene pakete sa proverenim sastavom. Možete izabrati drugu kategoriju ili poslati opšti upit.</p><Link href="/kontakt" className="button-primary">Pošalji upit</Link></section>

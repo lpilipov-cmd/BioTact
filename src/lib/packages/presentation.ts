@@ -7,6 +7,7 @@ export type PackageProductPresentation = Readonly<{
   slug: string;
   packageContent: string;
   imagePath: string;
+  shortDescription?: string | null;
   cataloguePriceEur?: number | null;
 }>;
 
@@ -28,9 +29,9 @@ export const approvedPackagePresentations = [
     slug: "imunitet-start",
     name: "Imunitet Start",
     category: "imunitet",
-    description: "Namenjen osobama koje žele podršku svakodnevnoj wellness rutini. Paket objedinjuje LR LIFETAKT Tečni Colostrum i Cistus Incanus Capsule iz kataloga.",
-    focus: "Dve dopunske formule za jednostavnu svakodnevnu rutinu.",
-    rationale: "Kombinacija je organizovana kao sažet početni izbor dva različita formata proizvoda za osobe koje žele jednostavniju wellness rutinu.",
+    description: "Dva LR proizvoda u različitim formatima, objedinjena kao pregledna selekcija za svakodnevnu wellness rutinu.",
+    focus: "Tečni i kapsulirani format u jednoj preglednoj selekciji.",
+    rationale: "Proizvodi su predstavljeni zajedno kako bi poređenje različitih formata i organizacija svakodnevne rutine bili jednostavniji.",
     productCodes: ["80361-50", "80325-50"],
     products: [
       { articleNumber: "80361", catalogueSourceCode: "80361-50", name: "Colostrum Liquid", slug: "colostrum-liquid-80361", packageContent: "125 ml", imagePath: "/products/80361/product.webp" },
@@ -43,9 +44,9 @@ export const approvedPackagePresentations = [
     slug: "creva-energija",
     name: "Creva & Energija",
     category: "digestija",
-    description: "Namenjen osobama koje žele jednostavnu podršku svakodnevnoj wellness rutini i ishrani. Paket objedinjuje PRO 12+ i LR LIFETAKT Herbal Fasting Tea.",
+    description: "Kapsule i biljna čajna mešavina, grupisane za lakše poređenje i organizaciju svakodnevne wellness rutine.",
     focus: "Kapsule i biljna čajna mešavina u jednoj jasnoj selekciji.",
-    rationale: "Paket povezuje dva različita formata proizvoda kako bi izbor za svakodnevnu rutinu i ishranu bio pregledniji.",
+    rationale: "Dva različita formata prikazana su zajedno kako bi njihov sadržaj, pakovanje i pojedinačne informacije bili lakši za pregled.",
     productCodes: ["81180-99", "80205-650"],
     products: [
       { articleNumber: "81180", catalogueSourceCode: "81180-99", name: "Pro 12+ kapsule", slug: "pro-12-kapsule-81180", packageContent: "30 kapsula", imagePath: "/products/81180/product.webp" },
@@ -58,9 +59,9 @@ export const approvedPackagePresentations = [
     slug: "pokret-snaga",
     name: "Pokret & Snaga",
     category: "pokret",
-    description: "Namenjen osobama koje žele podršku aktivnom načinu života. Paket objedinjuje Aloe Vera Drinking Gel Active Freedom i LR LIFETAKT Active Freedom Capsule.",
+    description: "Dva proizvoda iz Active Freedom linije, predstavljena zajedno kao tečni i kapsulirani format.",
     focus: "Dva Active Freedom formata za aktivnu svakodnevicu.",
-    rationale: "Dva proizvoda iz iste Active Freedom linije predstavljena su zajedno kako bi izbor između tečnog i kapsuliranog formata bio jednostavan i jasan.",
+    rationale: "Proizvodi iz iste linije grupisani su radi jasnog poređenja tečnog i kapsuliranog formata, bez pretpostavki o tome koji izbor više odgovara korisniku.",
     productCodes: ["80850-680", "80190-50"],
     products: [
       { articleNumber: "80850", catalogueSourceCode: "80850-680", name: "Aloe vera Freedom napitak", slug: "aloe-vera-freedom-napitak-80850", packageContent: "1000 ml", imagePath: "/products/80850/product.webp" },
@@ -73,9 +74,9 @@ export const approvedPackagePresentations = [
     slug: "srce-cirkulacija",
     name: "Srce & Cirkulacija",
     category: "srce",
-    description: "Namenjen osobama koje žele podršku svakodnevnoj wellness rutini usmerenoj na srce i cirkulaciju. Paket objedinjuje Aloe Vera Drinking Gel Intense Sivera, Super Omega Capsule i LR LIFETAKT Reishi Plus Capsules.",
+    description: "Tri LR proizvoda u različitim formatima, objedinjena u preglednu wellness selekciju.",
     focus: "Tri pažljivo grupisana proizvoda za svakodnevnu wellness rutinu.",
-    rationale: "Tri različita formata objedinjena su u jednu preglednu selekciju za osobe koje žele organizovaniji svakodnevni wellness izbor.",
+    rationale: "Tri različita formata prikazana su u jednoj selekciji kako bi poređenje proizvoda i organizacija ličnog izbora bili pregledniji.",
     productCodes: ["80800-50", "80338-699", "80331-50"],
     products: [
       { articleNumber: "80800", catalogueSourceCode: "80800-50", name: "Aloe vera Sivera napitak", slug: "aloe-vera-sivera-napitak-80800", packageContent: "1000 ml", imagePath: "/products/80800/product.webp" },

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: PackageDetailPageProps): Prom
   if (!presentation) return { title: "Paket nije pronađen" };
   const { data } = await getActivePackageBySlug(slug);
   if (!data || !hasCanonicalProductMapping(slug, data.product_codes)) return { title: "Paket nije pronađen" };
-  const description = data.description.replace(/\s+/g, " ").slice(0, 155);
+  const description = presentation.description.replace(/\s+/g, " ").slice(0, 155);
   return { title: data.name, description, alternates: { canonical: `/paketi/${data.slug}` }, openGraph: { title: `${data.name} | BIOTACT`, description, url: `/paketi/${data.slug}` } };
 }
 
@@ -34,7 +34,7 @@ export default async function PackageDetailPage({ params }: PackageDetailPagePro
   const supabase = await createClient();
   const { data: products } = await supabase
     .from("products")
-    .select("article_number,slug,name,package_content,catalogue_price_eur,image_path")
+    .select("article_number,slug,name,short_description,package_content,catalogue_price_eur,image_path")
     .in("article_number", presentation.products.map((product) => product.articleNumber))
     .eq("active", true);
   const productsByArticle = new Map((products ?? []).map((product) => [product.article_number, product]));
@@ -45,11 +45,12 @@ export default async function PackageDetailPage({ params }: PackageDetailPagePro
       ...product,
       slug: current.slug,
       name: current.name,
+      shortDescription: current.short_description,
       packageContent: current.package_content ?? product.packageContent,
       imagePath: current.image_path ?? product.imagePath,
       cataloguePriceEur: current.catalogue_price_eur,
     } : product;
   });
 
-  return <PackageDetail packageData={{ ...presentation, products: presentedProducts, name: packageData.name, priceRsd: packageData.price_rsd }} description={packageData.description} linkedProductSlugs={linkedProductSlugs} />;
+  return <PackageDetail packageData={{ ...presentation, products: presentedProducts, name: packageData.name, priceRsd: packageData.price_rsd }} linkedProductSlugs={linkedProductSlugs} />;
 }
